@@ -6,13 +6,13 @@
 //  Copyright © 2017 DDC.Mac1. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "KYTTeamMemberListViewController.h"
 
-@interface ViewController ()
+@interface KYTTeamMemberListViewController ()
 
 @end
 
-@implementation ViewController
+@implementation KYTTeamMemberListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

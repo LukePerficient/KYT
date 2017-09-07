@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewController.h
 //  KnowYourTeam
 //
 //  Created by DDC.Mac1 on 9/7/17.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface KYTTeamMemberListViewController : UIViewController
 
 
 @end

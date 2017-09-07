@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7C488DD91F619175007B6C31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C488DD81F619175007B6C31 /* main.m */; };
-		7C488DDC1F619175007B6C31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C488DDB1F619175007B6C31 /* AppDelegate.m */; };
-		7C488DDF1F619175007B6C31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C488DDE1F619175007B6C31 /* ViewController.m */; };
+		7C488DDC1F619175007B6C31 /* KYTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C488DDB1F619175007B6C31 /* KYTAppDelegate.m */; };
+		7C488DDF1F619175007B6C31 /* KYTTeamMemberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C488DDE1F619175007B6C31 /* KYTTeamMemberListViewController.m */; };
 		7C488DE21F619175007B6C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C488DE01F619175007B6C31 /* Main.storyboard */; };
 		7C488DE41F619175007B6C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C488DE31F619175007B6C31 /* Assets.xcassets */; };
 		7C488DE71F619175007B6C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C488DE51F619175007B6C31 /* LaunchScreen.storyboard */; };
@@ -37,10 +37,10 @@
 /* Begin PBXFileReference section */
 		7C488DD41F619175007B6C31 /* KnowYourTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowYourTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C488DD81F619175007B6C31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7C488DDA1F619175007B6C31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7C488DDB1F619175007B6C31 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7C488DDD1F619175007B6C31 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7C488DDE1F619175007B6C31 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7C488DDA1F619175007B6C31 /* KYTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTAppDelegate.h; sourceTree = "<group>"; };
+		7C488DDB1F619175007B6C31 /* KYTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYTAppDelegate.m; sourceTree = "<group>"; };
+		7C488DDD1F619175007B6C31 /* KYTTeamMemberListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTTeamMemberListViewController.h; sourceTree = "<group>"; };
+		7C488DDE1F619175007B6C31 /* KYTTeamMemberListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberListViewController.m; sourceTree = "<group>"; };
 		7C488DE11F619175007B6C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C488DE31F619175007B6C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C488DE61F619175007B6C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,10 +101,10 @@
 		7C488DD61F619175007B6C31 /* KnowYourTeam */ = {
 			isa = PBXGroup;
 			children = (
-				7C488DDA1F619175007B6C31 /* AppDelegate.h */,
-				7C488DDB1F619175007B6C31 /* AppDelegate.m */,
-				7C488DDD1F619175007B6C31 /* ViewController.h */,
-				7C488DDE1F619175007B6C31 /* ViewController.m */,
+				7C488DDA1F619175007B6C31 /* KYTAppDelegate.h */,
+				7C488DDB1F619175007B6C31 /* KYTAppDelegate.m */,
+				7C488DDD1F619175007B6C31 /* KYTTeamMemberListViewController.h */,
+				7C488DDE1F619175007B6C31 /* KYTTeamMemberListViewController.m */,
 				7C488DE01F619175007B6C31 /* Main.storyboard */,
 				7C488DE31F619175007B6C31 /* Assets.xcassets */,
 				7C488DE51F619175007B6C31 /* LaunchScreen.storyboard */,
@@ -202,6 +202,7 @@
 		7C488DCC1F619175007B6C31 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KYT;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = DDC.Mac1;
 				TargetAttributes = {
@@ -276,8 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C488DDF1F619175007B6C31 /* ViewController.m in Sources */,
-				7C488DDC1F619175007B6C31 /* AppDelegate.m in Sources */,
+				7C488DDF1F619175007B6C31 /* KYTTeamMemberListViewController.m in Sources */,
+				7C488DDC1F619175007B6C31 /* KYTAppDelegate.m in Sources */,
 				7C488DD91F619175007B6C31 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

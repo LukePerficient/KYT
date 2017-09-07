@@ -6,13 +6,13 @@
 //  Copyright © 2017 DDC.Mac1. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "KYTAppDelegate.h"
 
-@interface AppDelegate ()
+@interface KYTAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation KYTAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
