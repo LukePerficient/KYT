@@ -24,7 +24,7 @@
 
 // MARK: UIImagePickerControllerDelegate
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    [self dismissViewControllerAnimated:TRUE completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
@@ -32,7 +32,7 @@
     
     self.memberImage.image = selectedImage;
     
-    [self dismissViewControllerAnimated:TRUE completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 // MARK: Navigation
@@ -44,7 +44,7 @@
     NSString *lastName = self.lastNameText.text;
     UIImage *image = self.memberImage.image;
     
-    self.member = [[KYTTeamMember alloc] initWithFirstName:firstName initWithLastName:lastName initWithPhoto:image];
+    self.member = [[KYTTeamMember alloc] initWithFirstName:firstName WithLastName:lastName WithPhoto:image];
 }
 
 // MARK: Actions
@@ -56,7 +56,7 @@
     
     imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     imagePickerController.delegate = self;
-    [self presentViewController:imagePickerController animated:TRUE completion:nil];
+    [self presentViewController:imagePickerController animated:YES completion:nil];
 }
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender {

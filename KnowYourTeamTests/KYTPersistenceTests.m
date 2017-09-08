@@ -33,11 +33,11 @@
     self.teamMemberList = [[NSMutableArray alloc] init];
     
     // Add three members to team member list
-    [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Dustin" initWithLastName:@"Landry" initWithPhoto:[UIImage imageNamed:@"PersonImage"]]];
+    [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
     
-    [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Taylor" initWithLastName:@"Wood" initWithPhoto:[UIImage imageNamed:@"PersonImage"]]];
+    [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Taylor" WithLastName:@"Wood" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
     
-    [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Cameron" initWithLastName:@"Daigle" initWithPhoto:[UIImage imageNamed:@"PersonImage"]]];
+    [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Cameron" WithLastName:@"Daigle" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
 
     // Write
     [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:@"TeamMember.plist"];

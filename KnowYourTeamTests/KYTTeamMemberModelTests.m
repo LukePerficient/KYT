@@ -10,13 +10,10 @@
 #import "KYTTeamMember.h"
 
 @interface KYTTeamMemberModelTests : XCTestCase
-{
-    KYTTeamMember *member;
-    NSMutableDictionary *expectedResults;
-}
 
-@property (strong,atomic) KYTTeamMember *member;
-@property (strong,atomic) NSMutableDictionary *expectedResults;
+@property (strong,nonatomic) KYTTeamMember *member;
+@property (strong,nonatomic) NSMutableDictionary *expectedPositiveResults;
+@property (strong,nonatomic) NSMutableDictionary *expectedNegativeResults;
 
 @end
 
@@ -25,55 +22,58 @@
 - (void)setUp {
     [super setUp];
     
-    [self initalizeTestData];
+    [self initalizeElements];
+    
+    [self initializeTestData];
 }
 
 - (void)tearDown {
     [super tearDown];
     self.member = nil;
-    
+    self.expectedPositiveResults = nil;
+    self.expectedNegativeResults = nil;
 }
 
 - (void)testWithHappyPathMember {
-    [self.expectedResults setValue:@"Dustin" forKey:@"FirstName"];
-    [self.expectedResults setValue:@"Landry" forKey:@"LastName"];
-    [self.expectedResults setValue:[UIImage imageNamed:@"PersonImage"] forKey:@"Photo"];
+    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:@"PersonImage"]];
     
-    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"Dustin" initWithLastName:@"Landry" initWithPhoto:[UIImage imageNamed:@"PersonImage"]];
-    
-    XCTAssert(self.expectedResults[@"FirstName"] == happyMember.firstName);
-    XCTAssert(self.expectedResults[@"LastName"] == happyMember.lastName);
-    XCTAssert([UIImagePNGRepresentation(self.expectedResults[@"Photo"]) isEqual: UIImagePNGRepresentation(happyMember.photo)]);
+    XCTAssert(self.expectedPositiveResults[@"FirstName"] == happyMember.firstName);
+    XCTAssert(self.expectedPositiveResults[@"LastName"] == happyMember.lastName);
+    XCTAssert([UIImagePNGRepresentation(self.expectedPositiveResults[@"Photo"]) isEqual: UIImagePNGRepresentation(happyMember.photo)]);
 }
 
 - (void)testWithEmptyMemberInfo {
-    [self.expectedResults setValue:nil forKey:@"FirstName"];
-    [self.expectedResults setValue:nil forKey:@"LastName"];
-    [self.expectedResults setValue:nil forKey:@"Photo"];
+    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"" WithLastName:@"" WithPhoto:nil];
     
-    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"" initWithLastName:@"" initWithPhoto:nil];
-    
-    XCTAssert(self.expectedResults[@"FirstName"] == happyMember.firstName);
-    XCTAssert(self.expectedResults[@"LastName"] == happyMember.lastName);
-    XCTAssert(self.expectedResults[@"Photo"] == happyMember.photo);
+    XCTAssert(self.expectedNegativeResults[@"FirstName"] == happyMember.firstName);
+    XCTAssert(self.expectedNegativeResults[@"LastName"] == happyMember.lastName);
+    XCTAssert(self.expectedNegativeResults[@"Photo"] == happyMember.photo);
 }
 
 - (void)testWithInvalidMemberInfo {
-    [self.expectedResults setValue:nil forKey:@"FirstName"];
-    [self.expectedResults setValue:nil forKey:@"LastName"];
-    [self.expectedResults setValue:nil forKey:@"Photo"];
-    
-    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"4234#@$#@$]\[" initWithLastName:@"432][;',.2453)(*&^%$#@" initWithPhoto:nil];
+    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"4234#@$#@$]\[" WithLastName:@"432][;',.2453)(*&^%$#@" WithPhoto:nil];
 
-    XCTAssert(self.expectedResults[@"FirstName"] == happyMember.firstName);
-    XCTAssert(self.expectedResults[@"LastName"] == happyMember.lastName);
-    XCTAssert(self.expectedResults[@"Photo"] == happyMember.photo);
+    XCTAssert(self.expectedNegativeResults[@"FirstName"] == happyMember.firstName);
+    XCTAssert(self.expectedNegativeResults[@"LastName"] == happyMember.lastName);
+    XCTAssert(self.expectedNegativeResults[@"Photo"] == happyMember.photo);
 }
 
 // Mark: Private Methods
-- (void)initalizeTestData {
+- (void)initalizeElements {
     self.member = [[KYTTeamMember alloc] init];
-    self.expectedResults = [[NSMutableDictionary alloc] init];
+    self.expectedPositiveResults = [[NSMutableDictionary alloc] init];
+    self.expectedNegativeResults = [[NSMutableDictionary alloc] init];
+}
+
+- (void)initializeTestData
+{
+    [self.expectedPositiveResults setValue:@"Dustin" forKey:@"FirstName"];
+    [self.expectedPositiveResults setValue:@"Landry" forKey:@"LastName"];
+    [self.expectedPositiveResults setValue:[UIImage imageNamed:@"PersonImage"] forKey:@"Photo"];
+    
+    [self.expectedNegativeResults setValue:nil forKey:@"FirstName"];
+    [self.expectedNegativeResults setValue:nil forKey:@"LastName"];
+    [self.expectedNegativeResults setValue:nil forKey:@"Photo"];
 }
 
 

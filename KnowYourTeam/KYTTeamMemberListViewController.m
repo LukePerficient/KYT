@@ -29,6 +29,9 @@
     // Assign instance of self as tableview's delegate and datasource
     self.teamMemberTableView.dataSource = self;
     self.teamMemberTableView.delegate = self;
+    
+    //_teamMemberTableView.dataSource = self;
+    //_teamMemberTableView.delegate = self;
 }
 
 

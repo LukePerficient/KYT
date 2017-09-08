@@ -13,19 +13,14 @@
 #import <UIKit/UIKit.h>
 
 @interface KYTTeamMember : NSObject
-{
-    NSString *firstName;
-    NSString *lastName;
-    UIImage *photo;
-}
 
 @property (atomic,strong) NSString *firstName;
 @property (atomic,strong) NSString *lastName;
 @property (atomic,strong) UIImage *photo;
 
 - (id) initWithFirstName:(NSString*)newFirstName
-          initWithLastName:(NSString*)newLastName
-          initWithPhoto:(UIImage*)newPhoto;
+          WithLastName:(NSString*)newLastName
+          WithPhoto:(UIImage*)newPhoto;
 
 @end
 

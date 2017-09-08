@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface KYTTeamMemberViewCell : UITableViewCell
-{
+/*{
     UILabel *firstNameLabel;
     UILabel *lastNameLabel;
     UIImageView *imageView;
-}
+}*/
 //Test
 // Whatsup
 @property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;

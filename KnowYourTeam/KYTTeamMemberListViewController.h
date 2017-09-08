@@ -14,7 +14,7 @@
 
 @interface KYTTeamMemberListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
-    NSMutableArray *teamMemberList;
+    //NSMutableArray *teamMemberList;
 }
 
 @end
