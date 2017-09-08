@@ -15,6 +15,7 @@
     UIImageView *imageView;
 }
 //Test
+// Whatsup
 @property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
