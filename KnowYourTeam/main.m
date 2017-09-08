@@ -2,8 +2,8 @@
 //  main.m
 //  KnowYourTeam
 //
-//  Created by DDC.Mac1 on 9/7/17.
-//  Copyright © 2017 DDC.Mac1. All rights reserved.
+//  Created by DDC.Mac2 on 9/6/17.
+//  Copyright © 2017 DDC.Mac2. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

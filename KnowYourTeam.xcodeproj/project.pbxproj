@@ -7,68 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C488DD91F619175007B6C31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C488DD81F619175007B6C31 /* main.m */; };
-		7C488DDC1F619175007B6C31 /* KYTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C488DDB1F619175007B6C31 /* KYTAppDelegate.m */; };
-		7C488DDF1F619175007B6C31 /* KYTTeamMemberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C488DDE1F619175007B6C31 /* KYTTeamMemberListViewController.m */; };
-		7C488DE21F619175007B6C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C488DE01F619175007B6C31 /* Main.storyboard */; };
-		7C488DE41F619175007B6C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C488DE31F619175007B6C31 /* Assets.xcassets */; };
-		7C488DE71F619175007B6C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C488DE51F619175007B6C31 /* LaunchScreen.storyboard */; };
-		7C488DF21F619175007B6C31 /* KnowYourTeamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C488DF11F619175007B6C31 /* KnowYourTeamTests.m */; };
-		7C488DFD1F619175007B6C31 /* KnowYourTeamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C488DFC1F619175007B6C31 /* KnowYourTeamUITests.m */; };
+		4443B6DE1F604B0D008522BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B6DD1F604B0D008522BB /* main.m */; };
+		4443B6E11F604B0D008522BB /* KYTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B6E01F604B0D008522BB /* KYTAppDelegate.m */; };
+		4443B6E41F604B0D008522BB /* KYTTeamMemberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B6E31F604B0D008522BB /* KYTTeamMemberListViewController.m */; };
+		4443B6E71F604B0D008522BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4443B6E51F604B0D008522BB /* Main.storyboard */; };
+		4443B6E91F604B0D008522BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4443B6E81F604B0D008522BB /* Assets.xcassets */; };
+		4443B6EC1F604B0D008522BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4443B6EA1F604B0D008522BB /* LaunchScreen.storyboard */; };
+		4443B7041F606B39008522BB /* KYTTeamMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B7031F606B39008522BB /* KYTTeamMember.m */; };
+		4443B7081F6071E3008522BB /* KYTTeamMemberViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B7071F6071E3008522BB /* KYTTeamMemberViewCell.m */; };
+		444DE4591F618FC300DF7499 /* KYTMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE4581F618FC300DF7499 /* KYTMemberViewController.m */; };
+		444DE45B1F61C27E00DF7499 /* KYTTeamMemberModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE45A1F61C27E00DF7499 /* KYTTeamMemberModelTests.m */; };
+		444DE4601F61CF9E00DF7499 /* KYTStringValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE45F1F61CF9E00DF7499 /* KYTStringValidation.m */; };
+		444DE4691F61D47D00DF7499 /* KYTPersistenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE4681F61D47D00DF7499 /* KYTPersistenceTests.m */; };
+		444DE4701F61E17800DF7499 /* KYTTeamMemberPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE46F1F61E17800DF7499 /* KYTTeamMemberPersistence.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7C488DEE1F619175007B6C31 /* PBXContainerItemProxy */ = {
+		4443B6F31F604B0D008522BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7C488DCC1F619175007B6C31 /* Project object */;
+			containerPortal = 4443B6D11F604B0D008522BB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7C488DD31F619175007B6C31;
-			remoteInfo = KnowYourTeam;
-		};
-		7C488DF91F619175007B6C31 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7C488DCC1F619175007B6C31 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7C488DD31F619175007B6C31;
+			remoteGlobalIDString = 4443B6D81F604B0D008522BB;
 			remoteInfo = KnowYourTeam;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7C488DD41F619175007B6C31 /* KnowYourTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowYourTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C488DD81F619175007B6C31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7C488DDA1F619175007B6C31 /* KYTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTAppDelegate.h; sourceTree = "<group>"; };
-		7C488DDB1F619175007B6C31 /* KYTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYTAppDelegate.m; sourceTree = "<group>"; };
-		7C488DDD1F619175007B6C31 /* KYTTeamMemberListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTTeamMemberListViewController.h; sourceTree = "<group>"; };
-		7C488DDE1F619175007B6C31 /* KYTTeamMemberListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberListViewController.m; sourceTree = "<group>"; };
-		7C488DE11F619175007B6C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7C488DE31F619175007B6C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7C488DE61F619175007B6C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7C488DE81F619175007B6C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C488DED1F619175007B6C31 /* KnowYourTeamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowYourTeamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C488DF11F619175007B6C31 /* KnowYourTeamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnowYourTeamTests.m; sourceTree = "<group>"; };
-		7C488DF31F619175007B6C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C488DF81F619175007B6C31 /* KnowYourTeamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowYourTeamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C488DFC1F619175007B6C31 /* KnowYourTeamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnowYourTeamUITests.m; sourceTree = "<group>"; };
-		7C488DFE1F619175007B6C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4443B6D91F604B0D008522BB /* KnowYourTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowYourTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4443B6DD1F604B0D008522BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4443B6DF1F604B0D008522BB /* KYTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTAppDelegate.h; sourceTree = "<group>"; };
+		4443B6E01F604B0D008522BB /* KYTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYTAppDelegate.m; sourceTree = "<group>"; };
+		4443B6E21F604B0D008522BB /* KYTTeamMemberListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTTeamMemberListViewController.h; sourceTree = "<group>"; };
+		4443B6E31F604B0D008522BB /* KYTTeamMemberListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberListViewController.m; sourceTree = "<group>"; };
+		4443B6E61F604B0D008522BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4443B6E81F604B0D008522BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4443B6EB1F604B0D008522BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4443B6ED1F604B0D008522BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4443B6F21F604B0D008522BB /* KnowYourTeamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowYourTeamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4443B6F81F604B0D008522BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4443B7021F606B23008522BB /* KYTTeamMember.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTTeamMember.h; sourceTree = "<group>"; };
+		4443B7031F606B39008522BB /* KYTTeamMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMember.m; sourceTree = "<group>"; };
+		4443B7061F6071E3008522BB /* KYTTeamMemberViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTTeamMemberViewCell.h; sourceTree = "<group>"; };
+		4443B7071F6071E3008522BB /* KYTTeamMemberViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberViewCell.m; sourceTree = "<group>"; };
+		444DE4571F618FC300DF7499 /* KYTMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KYTMemberViewController.h; path = ../KYTMemberViewController.h; sourceTree = "<group>"; };
+		444DE4581F618FC300DF7499 /* KYTMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KYTMemberViewController.m; path = ../KYTMemberViewController.m; sourceTree = "<group>"; };
+		444DE45A1F61C27E00DF7499 /* KYTTeamMemberModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberModelTests.m; sourceTree = "<group>"; };
+		444DE45F1F61CF9E00DF7499 /* KYTStringValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTStringValidation.m; sourceTree = "<group>"; };
+		444DE4611F61CFED00DF7499 /* KYTStringValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTStringValidation.h; sourceTree = "<group>"; };
+		444DE4681F61D47D00DF7499 /* KYTPersistenceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTPersistenceTests.m; sourceTree = "<group>"; };
+		444DE46E1F61E12F00DF7499 /* KYTTeamMemberPersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTTeamMemberPersistence.h; sourceTree = "<group>"; };
+		444DE46F1F61E17800DF7499 /* KYTTeamMemberPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberPersistence.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7C488DD11F619175007B6C31 /* Frameworks */ = {
+		4443B6D61F604B0D008522BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C488DEA1F619175007B6C31 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C488DF51F619175007B6C31 /* Frameworks */ = {
+		4443B6EF1F604B0D008522BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,78 +77,134 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7C488DCB1F619175007B6C31 = {
+		4443B6D01F604B0D008522BB = {
 			isa = PBXGroup;
 			children = (
-				7C488DD61F619175007B6C31 /* KnowYourTeam */,
-				7C488DF01F619175007B6C31 /* KnowYourTeamTests */,
-				7C488DFB1F619175007B6C31 /* KnowYourTeamUITests */,
-				7C488DD51F619175007B6C31 /* Products */,
+				4443B6DB1F604B0D008522BB /* KnowYourTeam */,
+				4443B6F51F604B0D008522BB /* KnowYourTeamTests */,
+				4443B6DA1F604B0D008522BB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7C488DD51F619175007B6C31 /* Products */ = {
+		4443B6DA1F604B0D008522BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C488DD41F619175007B6C31 /* KnowYourTeam.app */,
-				7C488DED1F619175007B6C31 /* KnowYourTeamTests.xctest */,
-				7C488DF81F619175007B6C31 /* KnowYourTeamUITests.xctest */,
+				4443B6D91F604B0D008522BB /* KnowYourTeam.app */,
+				4443B6F21F604B0D008522BB /* KnowYourTeamTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7C488DD61F619175007B6C31 /* KnowYourTeam */ = {
+		4443B6DB1F604B0D008522BB /* KnowYourTeam */ = {
 			isa = PBXGroup;
 			children = (
-				7C488DDA1F619175007B6C31 /* KYTAppDelegate.h */,
-				7C488DDB1F619175007B6C31 /* KYTAppDelegate.m */,
-				7C488DDD1F619175007B6C31 /* KYTTeamMemberListViewController.h */,
-				7C488DDE1F619175007B6C31 /* KYTTeamMemberListViewController.m */,
-				7C488DE01F619175007B6C31 /* Main.storyboard */,
-				7C488DE31F619175007B6C31 /* Assets.xcassets */,
-				7C488DE51F619175007B6C31 /* LaunchScreen.storyboard */,
-				7C488DE81F619175007B6C31 /* Info.plist */,
-				7C488DD71F619175007B6C31 /* Supporting Files */,
+				444DE4621F61D28A00DF7499 /* TeamMemberList */,
+				444DE4631F61D2AA00DF7499 /* TeamMember */,
+				444DE45E1F61CF1C00DF7499 /* Utils */,
+				4443B7011F606AEF008522BB /* Models */,
+				4443B6DF1F604B0D008522BB /* KYTAppDelegate.h */,
+				4443B6E01F604B0D008522BB /* KYTAppDelegate.m */,
+				4443B6E51F604B0D008522BB /* Main.storyboard */,
+				4443B6EA1F604B0D008522BB /* LaunchScreen.storyboard */,
+				4443B6E81F604B0D008522BB /* Assets.xcassets */,
+				4443B6ED1F604B0D008522BB /* Info.plist */,
+				4443B6DC1F604B0D008522BB /* Supporting Files */,
 			);
 			path = KnowYourTeam;
 			sourceTree = "<group>";
 		};
-		7C488DD71F619175007B6C31 /* Supporting Files */ = {
+		4443B6DC1F604B0D008522BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7C488DD81F619175007B6C31 /* main.m */,
+				4443B6DD1F604B0D008522BB /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7C488DF01F619175007B6C31 /* KnowYourTeamTests */ = {
+		4443B6F51F604B0D008522BB /* KnowYourTeamTests */ = {
 			isa = PBXGroup;
 			children = (
-				7C488DF11F619175007B6C31 /* KnowYourTeamTests.m */,
-				7C488DF31F619175007B6C31 /* Info.plist */,
+				444DE45A1F61C27E00DF7499 /* KYTTeamMemberModelTests.m */,
+				444DE4681F61D47D00DF7499 /* KYTPersistenceTests.m */,
+				4443B6F81F604B0D008522BB /* Info.plist */,
 			);
 			path = KnowYourTeamTests;
 			sourceTree = "<group>";
 		};
-		7C488DFB1F619175007B6C31 /* KnowYourTeamUITests */ = {
+		4443B7011F606AEF008522BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7C488DFC1F619175007B6C31 /* KnowYourTeamUITests.m */,
-				7C488DFE1F619175007B6C31 /* Info.plist */,
+				4443B7021F606B23008522BB /* KYTTeamMember.h */,
+				4443B7031F606B39008522BB /* KYTTeamMember.m */,
 			);
-			path = KnowYourTeamUITests;
+			name = Models;
+			sourceTree = "<group>";
+		};
+		444DE45E1F61CF1C00DF7499 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				444DE4611F61CFED00DF7499 /* KYTStringValidation.h */,
+				444DE45F1F61CF9E00DF7499 /* KYTStringValidation.m */,
+				444DE46E1F61E12F00DF7499 /* KYTTeamMemberPersistence.h */,
+				444DE46F1F61E17800DF7499 /* KYTTeamMemberPersistence.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		444DE4621F61D28A00DF7499 /* TeamMemberList */ = {
+			isa = PBXGroup;
+			children = (
+				444DE4651F61D2FF00DF7499 /* Views */,
+				444DE4641F61D2DD00DF7499 /* Controllers */,
+			);
+			name = TeamMemberList;
+			sourceTree = "<group>";
+		};
+		444DE4631F61D2AA00DF7499 /* TeamMember */ = {
+			isa = PBXGroup;
+			children = (
+				444DE4661F61D31900DF7499 /* Controllers */,
+			);
+			name = TeamMember;
+			sourceTree = "<group>";
+		};
+		444DE4641F61D2DD00DF7499 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4443B6E21F604B0D008522BB /* KYTTeamMemberListViewController.h */,
+				4443B6E31F604B0D008522BB /* KYTTeamMemberListViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		444DE4651F61D2FF00DF7499 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4443B7061F6071E3008522BB /* KYTTeamMemberViewCell.h */,
+				4443B7071F6071E3008522BB /* KYTTeamMemberViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		444DE4661F61D31900DF7499 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				444DE4571F618FC300DF7499 /* KYTMemberViewController.h */,
+				444DE4581F618FC300DF7499 /* KYTMemberViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C488DD31F619175007B6C31 /* KnowYourTeam */ = {
+		4443B6D81F604B0D008522BB /* KnowYourTeam */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C488E011F619175007B6C31 /* Build configuration list for PBXNativeTarget "KnowYourTeam" */;
+			buildConfigurationList = 4443B6FB1F604B0D008522BB /* Build configuration list for PBXNativeTarget "KnowYourTeam" */;
 			buildPhases = (
-				7C488DD01F619175007B6C31 /* Sources */,
-				7C488DD11F619175007B6C31 /* Frameworks */,
-				7C488DD21F619175007B6C31 /* Resources */,
+				4443B6D51F604B0D008522BB /* Sources */,
+				4443B6D61F604B0D008522BB /* Frameworks */,
+				4443B6D71F604B0D008522BB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -157,75 +212,49 @@
 			);
 			name = KnowYourTeam;
 			productName = KnowYourTeam;
-			productReference = 7C488DD41F619175007B6C31 /* KnowYourTeam.app */;
+			productReference = 4443B6D91F604B0D008522BB /* KnowYourTeam.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7C488DEC1F619175007B6C31 /* KnowYourTeamTests */ = {
+		4443B6F11F604B0D008522BB /* KnowYourTeamTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C488E041F619175007B6C31 /* Build configuration list for PBXNativeTarget "KnowYourTeamTests" */;
+			buildConfigurationList = 4443B6FE1F604B0D008522BB /* Build configuration list for PBXNativeTarget "KnowYourTeamTests" */;
 			buildPhases = (
-				7C488DE91F619175007B6C31 /* Sources */,
-				7C488DEA1F619175007B6C31 /* Frameworks */,
-				7C488DEB1F619175007B6C31 /* Resources */,
+				4443B6EE1F604B0D008522BB /* Sources */,
+				4443B6EF1F604B0D008522BB /* Frameworks */,
+				4443B6F01F604B0D008522BB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7C488DEF1F619175007B6C31 /* PBXTargetDependency */,
+				4443B6F41F604B0D008522BB /* PBXTargetDependency */,
 			);
 			name = KnowYourTeamTests;
 			productName = KnowYourTeamTests;
-			productReference = 7C488DED1F619175007B6C31 /* KnowYourTeamTests.xctest */;
+			productReference = 4443B6F21F604B0D008522BB /* KnowYourTeamTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7C488DF71F619175007B6C31 /* KnowYourTeamUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7C488E071F619175007B6C31 /* Build configuration list for PBXNativeTarget "KnowYourTeamUITests" */;
-			buildPhases = (
-				7C488DF41F619175007B6C31 /* Sources */,
-				7C488DF51F619175007B6C31 /* Frameworks */,
-				7C488DF61F619175007B6C31 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7C488DFA1F619175007B6C31 /* PBXTargetDependency */,
-			);
-			name = KnowYourTeamUITests;
-			productName = KnowYourTeamUITests;
-			productReference = 7C488DF81F619175007B6C31 /* KnowYourTeamUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7C488DCC1F619175007B6C31 /* Project object */ = {
+		4443B6D11F604B0D008522BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KYT;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = DDC.Mac1;
+				ORGANIZATIONNAME = DDC.Mac2;
 				TargetAttributes = {
-					7C488DD31F619175007B6C31 = {
+					4443B6D81F604B0D008522BB = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = R39KQQ8QNU;
 						ProvisioningStyle = Automatic;
 					};
-					7C488DEC1F619175007B6C31 = {
+					4443B6F11F604B0D008522BB = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = R39KQQ8QNU;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 7C488DD31F619175007B6C31;
-					};
-					7C488DF71F619175007B6C31 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = R39KQQ8QNU;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 7C488DD31F619175007B6C31;
+						TestTargetID = 4443B6D81F604B0D008522BB;
 					};
 				};
 			};
-			buildConfigurationList = 7C488DCF1F619175007B6C31 /* Build configuration list for PBXProject "KnowYourTeam" */;
+			buildConfigurationList = 4443B6D41F604B0D008522BB /* Build configuration list for PBXProject "KnowYourTeam" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -233,37 +262,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 7C488DCB1F619175007B6C31;
-			productRefGroup = 7C488DD51F619175007B6C31 /* Products */;
+			mainGroup = 4443B6D01F604B0D008522BB;
+			productRefGroup = 4443B6DA1F604B0D008522BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7C488DD31F619175007B6C31 /* KnowYourTeam */,
-				7C488DEC1F619175007B6C31 /* KnowYourTeamTests */,
-				7C488DF71F619175007B6C31 /* KnowYourTeamUITests */,
+				4443B6D81F604B0D008522BB /* KnowYourTeam */,
+				4443B6F11F604B0D008522BB /* KnowYourTeamTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7C488DD21F619175007B6C31 /* Resources */ = {
+		4443B6D71F604B0D008522BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C488DE71F619175007B6C31 /* LaunchScreen.storyboard in Resources */,
-				7C488DE41F619175007B6C31 /* Assets.xcassets in Resources */,
-				7C488DE21F619175007B6C31 /* Main.storyboard in Resources */,
+				4443B6EC1F604B0D008522BB /* LaunchScreen.storyboard in Resources */,
+				4443B6E91F604B0D008522BB /* Assets.xcassets in Resources */,
+				4443B6E71F604B0D008522BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C488DEB1F619175007B6C31 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C488DF61F619175007B6C31 /* Resources */ = {
+		4443B6F01F604B0D008522BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,60 +294,53 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7C488DD01F619175007B6C31 /* Sources */ = {
+		4443B6D51F604B0D008522BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C488DDF1F619175007B6C31 /* KYTTeamMemberListViewController.m in Sources */,
-				7C488DDC1F619175007B6C31 /* KYTAppDelegate.m in Sources */,
-				7C488DD91F619175007B6C31 /* main.m in Sources */,
+				4443B6E41F604B0D008522BB /* KYTTeamMemberListViewController.m in Sources */,
+				444DE4701F61E17800DF7499 /* KYTTeamMemberPersistence.m in Sources */,
+				4443B7041F606B39008522BB /* KYTTeamMember.m in Sources */,
+				4443B6E11F604B0D008522BB /* KYTAppDelegate.m in Sources */,
+				444DE4591F618FC300DF7499 /* KYTMemberViewController.m in Sources */,
+				444DE4601F61CF9E00DF7499 /* KYTStringValidation.m in Sources */,
+				4443B7081F6071E3008522BB /* KYTTeamMemberViewCell.m in Sources */,
+				4443B6DE1F604B0D008522BB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C488DE91F619175007B6C31 /* Sources */ = {
+		4443B6EE1F604B0D008522BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C488DF21F619175007B6C31 /* KnowYourTeamTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C488DF41F619175007B6C31 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7C488DFD1F619175007B6C31 /* KnowYourTeamUITests.m in Sources */,
+				444DE4691F61D47D00DF7499 /* KYTPersistenceTests.m in Sources */,
+				444DE45B1F61C27E00DF7499 /* KYTTeamMemberModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7C488DEF1F619175007B6C31 /* PBXTargetDependency */ = {
+		4443B6F41F604B0D008522BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7C488DD31F619175007B6C31 /* KnowYourTeam */;
-			targetProxy = 7C488DEE1F619175007B6C31 /* PBXContainerItemProxy */;
-		};
-		7C488DFA1F619175007B6C31 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7C488DD31F619175007B6C31 /* KnowYourTeam */;
-			targetProxy = 7C488DF91F619175007B6C31 /* PBXContainerItemProxy */;
+			target = 4443B6D81F604B0D008522BB /* KnowYourTeam */;
+			targetProxy = 4443B6F31F604B0D008522BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7C488DE01F619175007B6C31 /* Main.storyboard */ = {
+		4443B6E51F604B0D008522BB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7C488DE11F619175007B6C31 /* Base */,
+				4443B6E61F604B0D008522BB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		7C488DE51F619175007B6C31 /* LaunchScreen.storyboard */ = {
+		4443B6EA1F604B0D008522BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7C488DE61F619175007B6C31 /* Base */,
+				4443B6EB1F604B0D008522BB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -334,7 +348,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7C488DFF1F619175007B6C31 /* Debug */ = {
+		4443B6F91F604B0D008522BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -383,7 +397,7 @@
 			};
 			name = Debug;
 		};
-		7C488E001F619175007B6C31 /* Release */ = {
+		4443B6FA1F604B0D008522BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -426,117 +440,83 @@
 			};
 			name = Release;
 		};
-		7C488E021F619175007B6C31 /* Debug */ = {
+		4443B6FC1F604B0D008522BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R39KQQ8QNU;
 				INFOPLIST_FILE = KnowYourTeam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = test.KnowYourTeam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Perficient.KnowYourTeam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		7C488E031F619175007B6C31 /* Release */ = {
+		4443B6FD1F604B0D008522BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R39KQQ8QNU;
 				INFOPLIST_FILE = KnowYourTeam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = test.KnowYourTeam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Perficient.KnowYourTeam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		7C488E051F619175007B6C31 /* Debug */ = {
+		4443B6FF1F604B0D008522BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = R39KQQ8QNU;
 				INFOPLIST_FILE = KnowYourTeamTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = test.KnowYourTeamTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Perficient.KnowYourTeamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnowYourTeam.app/KnowYourTeam";
 			};
 			name = Debug;
 		};
-		7C488E061F619175007B6C31 /* Release */ = {
+		4443B7001F604B0D008522BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = R39KQQ8QNU;
 				INFOPLIST_FILE = KnowYourTeamTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = test.KnowYourTeamTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Perficient.KnowYourTeamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnowYourTeam.app/KnowYourTeam";
-			};
-			name = Release;
-		};
-		7C488E081F619175007B6C31 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = R39KQQ8QNU;
-				INFOPLIST_FILE = KnowYourTeamUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = test.KnowYourTeamUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = KnowYourTeam;
-			};
-			name = Debug;
-		};
-		7C488E091F619175007B6C31 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = R39KQQ8QNU;
-				INFOPLIST_FILE = KnowYourTeamUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = test.KnowYourTeamUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = KnowYourTeam;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C488DCF1F619175007B6C31 /* Build configuration list for PBXProject "KnowYourTeam" */ = {
+		4443B6D41F604B0D008522BB /* Build configuration list for PBXProject "KnowYourTeam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C488DFF1F619175007B6C31 /* Debug */,
-				7C488E001F619175007B6C31 /* Release */,
+				4443B6F91F604B0D008522BB /* Debug */,
+				4443B6FA1F604B0D008522BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C488E011F619175007B6C31 /* Build configuration list for PBXNativeTarget "KnowYourTeam" */ = {
+		4443B6FB1F604B0D008522BB /* Build configuration list for PBXNativeTarget "KnowYourTeam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C488E021F619175007B6C31 /* Debug */,
-				7C488E031F619175007B6C31 /* Release */,
+				4443B6FC1F604B0D008522BB /* Debug */,
+				4443B6FD1F604B0D008522BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		7C488E041F619175007B6C31 /* Build configuration list for PBXNativeTarget "KnowYourTeamTests" */ = {
+		4443B6FE1F604B0D008522BB /* Build configuration list for PBXNativeTarget "KnowYourTeamTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C488E051F619175007B6C31 /* Debug */,
-				7C488E061F619175007B6C31 /* Release */,
+				4443B6FF1F604B0D008522BB /* Debug */,
+				4443B7001F604B0D008522BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		7C488E071F619175007B6C31 /* Build configuration list for PBXNativeTarget "KnowYourTeamUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7C488E081F619175007B6C31 /* Debug */,
-				7C488E091F619175007B6C31 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7C488DCC1F619175007B6C31 /* Project object */;
+	rootObject = 4443B6D11F604B0D008522BB /* Project object */;
 }
