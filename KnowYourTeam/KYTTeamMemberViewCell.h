@@ -10,10 +10,8 @@
 
 @interface KYTTeamMemberViewCell : UITableViewCell
 
-//Test
-// Whatsup
 @property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
