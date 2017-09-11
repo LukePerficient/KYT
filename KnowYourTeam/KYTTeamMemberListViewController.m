@@ -66,15 +66,18 @@
         sourceViewController = sender.sourceViewController;
         member = sourceViewController.member;
         
-        // Add a new member to list.
-        NSArray *path = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:[self.teamMemberList count] inSection:0]];
+        //Verify user entered data
+        if (member != nil){
+            // Add a new member to list.
+            NSArray *path = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:[self.teamMemberList count] inSection:0]];
             
-        [self.teamMemberList addObject:member];
+            [self.teamMemberList addObject:member];
             
-        [[self teamMemberTableView] insertRowsAtIndexPaths:path withRowAnimation:UITableViewRowAnimationAutomatic];
-        
-        // Save updated member list.
-        [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:@"TeamMember.plist"];
+            [[self teamMemberTableView] insertRowsAtIndexPaths:path withRowAnimation:UITableViewRowAnimationAutomatic];
+            
+            // Save updated member list.
+            [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:@"TeamMember.plist"];
+        }
     }
 }
 
@@ -86,7 +89,15 @@
 
 - (void)loadMemberData
 {
+    //Load data from plist
     self.teamMemberList = [KYTTeamMemberPersistence readFileToArray:@"TeamMember.plist"];
+    //If plist is blank, fill project with temp user data
+    if ([self.teamMemberList count] <= 0 ){
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Luke" WithLastName:@"Romero" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Mark" WithLastName:@"Shen" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
+    }
+    
 }
 
 
