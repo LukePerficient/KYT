@@ -38,8 +38,6 @@
 // MARK: Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    [super prepareForSegue:segue sender:sender];
-    
     self.member = [[KYTTeamMember alloc] initWithFirstName:_firstNameTxt.text WithLastName:_lastNameText.text WithPhoto:_memberImage.image];
 }
 
