@@ -28,9 +28,9 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
-    UIImage *selectedImage = info[UIImagePickerControllerOriginalImage];
-    
-    self.memberImage.image = selectedImage;
+    if ([self userSelectedImageIsNull:info]) {
+        self.memberImage.image = info[UIImagePickerControllerOriginalImage];
+    }
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -61,6 +61,12 @@
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+// MARK: Private methods
+- (BOOL)userSelectedImageIsNull:(NSDictionary<NSString *,id> *)info
+{
+    return info[UIImagePickerControllerOriginalImage] != nil;
 }
 
 @end
