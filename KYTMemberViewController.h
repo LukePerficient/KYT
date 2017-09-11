@@ -10,12 +10,6 @@
 #import "KYTTeamMember.h"
 
 @interface KYTMemberViewController : UIViewController <UIImagePickerControllerDelegate>
-{
-    UITextField *firstNameTxt;
-    UITextField *lastNameText;
-    UIImageView *memberImage;
-    KYTTeamMember *member;
-}
 
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTxt;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameText;

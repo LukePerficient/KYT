@@ -12,10 +12,10 @@
 
 @interface KYTPersistenceTests : XCTestCase
 {
-    NSMutableArray *teamMemberList;
+    NSMutableArray<KYTTeamMember *> *teamMemberList;
 }
 
-@property IBOutletCollection(KYTTeamMember) NSMutableArray *teamMemberList;
+//@property IBOutletCollection(KYTTeamMember) NSMutableArray *teamMemberList;
 
 @end
 
@@ -30,17 +30,17 @@
 }
 
 - (void)testReadWrite {
-    self.teamMemberList = [[NSMutableArray alloc] init];
+    teamMemberList = [[NSMutableArray alloc] init];
     
     // Add three members to team member list
-    [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
+    [teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
     
-    [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Taylor" WithLastName:@"Wood" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
+    [teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Taylor" WithLastName:@"Wood" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
     
-    [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Cameron" WithLastName:@"Daigle" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
+    [teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Cameron" WithLastName:@"Daigle" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
 
     // Write
-    [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:@"TeamMember.plist"];
+    [KYTTeamMemberPersistence writeArray:teamMemberList ToFilePath:@"TeamMember.plist"];
     
     // Read
     NSMutableArray<KYTTeamMember *> *readArray = [KYTTeamMemberPersistence readFileToArray:@"TeamMember.plist"];
