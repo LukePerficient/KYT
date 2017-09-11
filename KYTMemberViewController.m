@@ -40,11 +40,7 @@
 {
     [super prepareForSegue:segue sender:sender];
     
-    NSString *firstName = _firstNameTxt.text;
-    NSString *lastName = _lastNameText.text;
-    UIImage *image = _memberImage.image;
-    
-    self.member = [[KYTTeamMember alloc] initWithFirstName:firstName WithLastName:lastName WithPhoto:image];
+    self.member = [[KYTTeamMember alloc] initWithFirstName:_firstNameTxt.text WithLastName:_lastNameText.text WithPhoto:_memberImage.image];
 }
 
 // MARK: Actions
