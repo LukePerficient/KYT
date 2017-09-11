@@ -56,6 +56,20 @@
     return cell;
 }
 
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle==UITableViewCellEditingStyleDelete){
+        [_teamMemberList removeObjectAtIndex:indexPath.row];
+        [_teamMemberTableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation: UITableViewRowAnimationFade];
+        [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:@"TeamMember.plist"];
+    }
+}
+
 // Mark: Actions
 - (IBAction)unwindToTeamMemberList:(UIStoryboardSegue*)sender
 {
