@@ -37,25 +37,25 @@
 - (void)testWithHappyPathMember {
     KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:@"PersonImage"]];
     
-    XCTAssert(self.expectedPositiveResults[@"FirstName"] == happyMember.firstName);
-    XCTAssert(self.expectedPositiveResults[@"LastName"] == happyMember.lastName);
-    XCTAssert([UIImagePNGRepresentation(self.expectedPositiveResults[@"Photo"]) isEqual: UIImagePNGRepresentation(happyMember.photo)]);
+    XCTAssertEqual(self.expectedPositiveResults[@"FirstName"], happyMember.firstName);
+    XCTAssertEqual(self.expectedPositiveResults[@"LastName"], happyMember.lastName);
+    XCTAssertTrue([UIImagePNGRepresentation(self.expectedPositiveResults[@"Photo"]) isEqual: UIImagePNGRepresentation(happyMember.photo)]);
 }
 
 - (void)testWithEmptyMemberInfo {
     KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"" WithLastName:@"" WithPhoto:nil];
     
-    XCTAssert(self.expectedNegativeResults[@"FirstName"] == happyMember.firstName);
-    XCTAssert(self.expectedNegativeResults[@"LastName"] == happyMember.lastName);
-    XCTAssert(self.expectedNegativeResults[@"Photo"] == happyMember.photo);
+    XCTAssertEqual(self.expectedNegativeResults[@"FirstName"], happyMember.firstName);
+    XCTAssertEqual(self.expectedNegativeResults[@"LastName"], happyMember.lastName);
+    XCTAssertEqual(UIImagePNGRepresentation(self.expectedNegativeResults[@"Photo"]), UIImagePNGRepresentation(happyMember.photo));
 }
 
 - (void)testWithInvalidMemberInfo {
     KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"4234#@$#@$]\[" WithLastName:@"432][;',.2453)(*&^%$#@" WithPhoto:nil];
-
-    XCTAssert(self.expectedNegativeResults[@"FirstName"] == happyMember.firstName);
-    XCTAssert(self.expectedNegativeResults[@"LastName"] == happyMember.lastName);
-    XCTAssert(self.expectedNegativeResults[@"Photo"] == happyMember.photo);
+    
+    XCTAssertEqual(self.expectedNegativeResults[@"FirstName"], happyMember.firstName);
+    XCTAssertEqual(self.expectedNegativeResults[@"LastName"], happyMember.lastName);
+    XCTAssertEqual(UIImagePNGRepresentation(self.expectedNegativeResults[@"Photo"]), UIImagePNGRepresentation(happyMember.photo));
 }
 
 // Mark: Private Methods
