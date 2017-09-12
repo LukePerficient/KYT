@@ -28,11 +28,20 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    UIImage *selectedImage = info[UIImagePickerControllerOriginalImage];
+    
+    //self.memberImage.image = selectedImage;
+    _memberImage.image = selectedImage;
+
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    /*
     if ([self userSelectedImageIsNull:info]) {
         self.memberImage.image = info[UIImagePickerControllerOriginalImage];
     }
     
     [self dismissViewControllerAnimated:YES completion:nil];
+     */
 }
 
 // MARK: Navigation
