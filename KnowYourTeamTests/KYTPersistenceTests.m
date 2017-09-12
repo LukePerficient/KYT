@@ -45,10 +45,6 @@
     // Read
     NSMutableArray<KYTTeamMember *> *readArray = [KYTTeamMemberPersistence readFileToArray:@"TeamMember.plist"];
 
-    NSLog(@"1yo %@, 2yo %@",UIImagePNGRepresentation(teamMemberList[0].photo),UIImagePNGRepresentation(teamMemberList[1].photo));
-    
-    //XCTAssertEqual(UIImagePNGRepresentation(readArray[0].photo), UIImagePNGRepresentation([UIImage imageNamed:@"PersonImage"]));
-    
     XCTAssert([readArray[0].firstName isEqualToString:@"Dustin"] && [readArray[0].lastName isEqualToString:@"Landry"]);
     XCTAssert([readArray[1].firstName isEqualToString:@"Taylor"] && [readArray[1].lastName isEqualToString:@"Wood"]);
     XCTAssert([readArray[2].firstName isEqualToString:@"Cameron"] && [readArray[2].lastName isEqualToString:@"Daigle"]);
