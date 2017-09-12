@@ -13,6 +13,7 @@
 
 + (void)writeArray:(NSMutableArray *)newArray ToFilePath:(NSString *)newFilePath;
 + (NSMutableArray*)readFileToArray:(NSString *)newFilePath;
++ (NSString*)getDocPath:(NSString *)newFilePath;
 
 @end
 

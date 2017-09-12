@@ -48,6 +48,7 @@
     for (int i = 0; i < [teamMemberArray count]; i++) {
         [writeArray addObject:teamMemberArray[i].firstName];
         [writeArray addObject:teamMemberArray[i].lastName];
+        [writeArray addObject:UIImagePNGRepresentation(teamMemberArray[i].photo)];
     }
     
     return writeArray;
@@ -57,15 +58,19 @@
 {
     NSMutableArray<KYTTeamMember*> *readArray = [[NSMutableArray alloc] init];
     
-    for (int i = 0; i < [linearArray count]; i = i + 2) {
+    // Convert linear array to object array
+    for (int i = 0; i < [linearArray count]; i = i + 3) {
         KYTTeamMember *member = [[KYTTeamMember alloc] init];
         
         member.firstName = linearArray[i];
         member.lastName = linearArray[i+1];
-        member.photo = [UIImage imageNamed:@"PersonImage"];
+        //member.photo = [UIImage imageNamed:@"PersonImage"];
+        member.photo = [UIImage imageWithData:linearArray[i+2]];
         
         [readArray addObject:member];
     }
+    
+    //
     
     return readArray;
 }
