@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self initializeMembers];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,11 +49,11 @@
     [self.firstNameTxt resignFirstResponder];
     [self.lastNameText resignFirstResponder];
     
-    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    //UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
     
-    imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    imagePickerController.delegate = self;
-    [self presentViewController:imagePickerController animated:YES completion:nil];
+    self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    //imagePickerController.delegate = self;
+    [self presentViewController:self.imagePickerController animated:YES completion:nil];
 }
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender {
@@ -62,6 +64,12 @@
 - (BOOL)userSelectedImageIsNull:(NSDictionary<NSString *,id> *)info
 {
     return info[UIImagePickerControllerOriginalImage] != nil;
+}
+     
+- (void)initializeMembers
+{
+    self.imagePickerController = [[UIImagePickerController alloc] init];
+    self.imagePickerController.delegate = self;
 }
 
 @end
