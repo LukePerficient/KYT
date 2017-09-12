@@ -13,9 +13,6 @@
 #import "KYTTeamMemberPersistence.h"
 
 @interface KYTTeamMemberListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-{
-    //NSMutableArray *teamMemberList;
-}
 
 @end
 
