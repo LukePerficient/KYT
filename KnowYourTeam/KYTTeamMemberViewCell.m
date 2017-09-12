@@ -10,7 +10,7 @@
 
 @implementation KYTTeamMemberViewCell
 
-@synthesize imageView;
+//@synthesize imageView;
 
 - (void)awakeFromNib {
     [super awakeFromNib];

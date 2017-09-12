@@ -28,17 +28,34 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    UIImage *selectedImage = info[UIImagePickerControllerOriginalImage];
+    
+    //self.memberImage.image = selectedImage;
+    _memberImage.image = selectedImage;
+
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    /*
     if ([self userSelectedImageIsNull:info]) {
         self.memberImage.image = info[UIImagePickerControllerOriginalImage];
     }
     
     [self dismissViewControllerAnimated:YES completion:nil];
+     */
 }
 
 // MARK: Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    self.member = [[KYTTeamMember alloc] initWithFirstName:_firstNameTxt.text WithLastName:_lastNameText.text WithPhoto:_memberImage.image];
+    [super prepareForSegue:segue sender:sender];
+    
+    NSString *firstName = _firstNameTxt.text;
+    NSString *lastName = _lastNameText.text;
+    UIImage *image = _memberImage.image;
+    
+    self.member = [[KYTTeamMember alloc] initWithFirstName:firstName WithLastName:lastName WithPhoto:image];
+
+    //self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text WithLastName:self.lastNameText.text WithPhoto:self.memberImage.image];
 }
 
 // MARK: Actions
