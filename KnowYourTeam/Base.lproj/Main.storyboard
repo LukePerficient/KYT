@@ -136,7 +136,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PersonImage" translatesAutoresizingMaskIntoConstraints="NO" id="I2P-mL-9ID">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PersonImage" translatesAutoresizingMaskIntoConstraints="NO" id="I2P-mL-9ID">
                                 <rect key="frame" x="62" y="251" width="250" height="165"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="3QH-Gz-ytN" appends="YES" id="hUx-eQ-v4f"/>
