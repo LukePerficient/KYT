@@ -38,12 +38,16 @@
     [teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Taylor" WithLastName:@"Wood" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
     
     [teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Cameron" WithLastName:@"Daigle" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
-
+    
     // Write
     [KYTTeamMemberPersistence writeArray:teamMemberList ToFilePath:@"TeamMember.plist"];
     
     // Read
     NSMutableArray<KYTTeamMember *> *readArray = [KYTTeamMemberPersistence readFileToArray:@"TeamMember.plist"];
+
+    NSLog(@"1yo %@, 2yo %@",UIImagePNGRepresentation(teamMemberList[0].photo),UIImagePNGRepresentation(teamMemberList[1].photo));
+    
+    //XCTAssertEqual(UIImagePNGRepresentation(readArray[0].photo), UIImagePNGRepresentation([UIImage imageNamed:@"PersonImage"]));
     
     XCTAssert([readArray[0].firstName isEqualToString:@"Dustin"] && [readArray[0].lastName isEqualToString:@"Landry"]);
     XCTAssert([readArray[1].firstName isEqualToString:@"Taylor"] && [readArray[1].lastName isEqualToString:@"Wood"]);
@@ -51,7 +55,14 @@
 }
 
 - (void)testReadDataFromFile {
+    NSString *newFilePath = @"TeamMember.plist";
+    NSString *docfilePath = [KYTTeamMemberPersistence getDocPath:newFilePath];
     
+    NSMutableArray *linearArray = [[NSMutableArray alloc] initWithContentsOfFile:docfilePath];
+    
+    for (int i = 0; i < [linearArray count]; i++) {
+        NSLog(@"%@",linearArray[i]);
+    }
 }
 
 @end
