@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "KYTTeamMember.h"
+#import "KYTCustomAlerts.h"
+
+@class KYTImageSelectorDelegate;
 
 @interface KYTMemberViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
@@ -16,5 +19,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *memberImage;
 @property (strong, atomic) KYTTeamMember *member;
 @property (strong, atomic) UIImagePickerController *imagePickerController;
+@property KYTImageSelectorDelegate *imageSelectorDelegate;
 
 @end

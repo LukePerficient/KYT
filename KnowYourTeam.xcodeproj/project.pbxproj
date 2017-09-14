@@ -22,7 +22,9 @@
 		444DE4601F61CF9E00DF7499 /* KYTStringValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE45F1F61CF9E00DF7499 /* KYTStringValidation.m */; };
 		444DE4691F61D47D00DF7499 /* KYTPersistenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE4681F61D47D00DF7499 /* KYTPersistenceTests.m */; };
 		444DE4701F61E17800DF7499 /* KYTTeamMemberPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE46F1F61E17800DF7499 /* KYTTeamMemberPersistence.m */; };
-		44C3DD9B1F688F6D001AF76F /* KYTCedarPersistenceTestsSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44C3DD9A1F688F6D001AF76F /* KYTCedarPersistenceTestsSpec.mm */; };
+		44B86FEF1F6AE05B004DAEF2 /* KYTCustomAlerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B86FEE1F6AE05B004DAEF2 /* KYTCustomAlerts.m */; };
+		44B86FF11F6AE397004DAEF2 /* KYTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B86FF01F6AE397004DAEF2 /* KYTConstants.m */; };
+		44B86FF61F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B86FF51F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m */; };
 		59E483F31B5DDF4B2ED890FE /* libPods-KnowYourTeamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F2D91110495B90C8785E42 /* libPods-KnowYourTeamTests.a */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +66,12 @@
 		444DE4681F61D47D00DF7499 /* KYTPersistenceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTPersistenceTests.m; sourceTree = "<group>"; };
 		444DE46E1F61E12F00DF7499 /* KYTTeamMemberPersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTTeamMemberPersistence.h; sourceTree = "<group>"; };
 		444DE46F1F61E17800DF7499 /* KYTTeamMemberPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberPersistence.m; sourceTree = "<group>"; };
-		44C3DD9A1F688F6D001AF76F /* KYTCedarPersistenceTestsSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KYTCedarPersistenceTestsSpec.mm; sourceTree = "<group>"; };
+		44B86FED1F6AE04C004DAEF2 /* KYTCustomAlerts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTCustomAlerts.h; sourceTree = "<group>"; };
+		44B86FEE1F6AE05B004DAEF2 /* KYTCustomAlerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTCustomAlerts.m; sourceTree = "<group>"; };
+		44B86FF01F6AE397004DAEF2 /* KYTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTConstants.m; sourceTree = "<group>"; };
+		44B86FF21F6AE3A7004DAEF2 /* KYTConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTConstants.h; sourceTree = "<group>"; };
+		44B86FF41F6B05CD004DAEF2 /* KYTImageSelectorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTImageSelectorDelegate.h; sourceTree = "<group>"; };
+		44B86FF51F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTImageSelectorDelegate.m; sourceTree = "<group>"; };
 		50F2D91110495B90C8785E42 /* libPods-KnowYourTeamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowYourTeamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FED5FA1100159159AE95BDB /* Pods-KnowYourTeam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowYourTeam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowYourTeam/Pods-KnowYourTeam.debug.xcconfig"; sourceTree = "<group>"; };
 		B06C5A44165CFDDF2F27A470 /* Pods-KnowYourTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowYourTeam.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowYourTeam/Pods-KnowYourTeam.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,7 +162,6 @@
 				444DE45A1F61C27E00DF7499 /* KYTTeamMemberModelTests.m */,
 				444DE4681F61D47D00DF7499 /* KYTPersistenceTests.m */,
 				4443B6F81F604B0D008522BB /* Info.plist */,
-				44C3DD9A1F688F6D001AF76F /* KYTCedarPersistenceTestsSpec.mm */,
 			);
 			path = KnowYourTeamTests;
 			sourceTree = "<group>";
@@ -176,6 +182,10 @@
 				444DE45F1F61CF9E00DF7499 /* KYTStringValidation.m */,
 				444DE46E1F61E12F00DF7499 /* KYTTeamMemberPersistence.h */,
 				444DE46F1F61E17800DF7499 /* KYTTeamMemberPersistence.m */,
+				44B86FED1F6AE04C004DAEF2 /* KYTCustomAlerts.h */,
+				44B86FEE1F6AE05B004DAEF2 /* KYTCustomAlerts.m */,
+				44B86FF21F6AE3A7004DAEF2 /* KYTConstants.h */,
+				44B86FF01F6AE397004DAEF2 /* KYTConstants.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -192,6 +202,7 @@
 		444DE4631F61D2AA00DF7499 /* TeamMember */ = {
 			isa = PBXGroup;
 			children = (
+				44B86FF31F6B05A8004DAEF2 /* Delegates */,
 				444DE4661F61D31900DF7499 /* Controllers */,
 			);
 			name = TeamMember;
@@ -222,6 +233,15 @@
 				444DE4581F618FC300DF7499 /* KYTMemberViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		44B86FF31F6B05A8004DAEF2 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				44B86FF41F6B05CD004DAEF2 /* KYTImageSelectorDelegate.h */,
+				44B86FF51F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 		D0F6AC5B5F834D6B82A68A92 /* Frameworks */ = {
@@ -443,9 +463,12 @@
 			files = (
 				4443B6E41F604B0D008522BB /* KYTTeamMemberListViewController.m in Sources */,
 				444DE4701F61E17800DF7499 /* KYTTeamMemberPersistence.m in Sources */,
+				44B86FF61F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m in Sources */,
 				4443B7041F606B39008522BB /* KYTTeamMember.m in Sources */,
 				4443B6E11F604B0D008522BB /* KYTAppDelegate.m in Sources */,
+				44B86FEF1F6AE05B004DAEF2 /* KYTCustomAlerts.m in Sources */,
 				444DE4591F618FC300DF7499 /* KYTMemberViewController.m in Sources */,
+				44B86FF11F6AE397004DAEF2 /* KYTConstants.m in Sources */,
 				444DE4601F61CF9E00DF7499 /* KYTStringValidation.m in Sources */,
 				4443B7081F6071E3008522BB /* KYTTeamMemberViewCell.m in Sources */,
 				4443B6DE1F604B0D008522BB /* main.m in Sources */,
@@ -459,7 +482,6 @@
 				444DE4691F61D47D00DF7499 /* KYTPersistenceTests.m in Sources */,
 				444DE45B1F61C27E00DF7499 /* KYTTeamMemberModelTests.m in Sources */,
 				443EF3CE1F68B412005CADE3 /* KYTTeamMemberSpec.mm in Sources */,
-				44C3DD9B1F688F6D001AF76F /* KYTCedarPersistenceTestsSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

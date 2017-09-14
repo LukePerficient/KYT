@@ -44,9 +44,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    NSString *cellIdentifier = @"TeamMemeberTableViewCell";
-    
-    KYTTeamMemberViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    KYTTeamMemberViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_IDENTIFIER forIndexPath:indexPath];
     KYTTeamMember *teamMember = self.teamMemberList[indexPath.row];
     
     cell.firstNameLabel.text = teamMember.firstName;
@@ -66,7 +64,7 @@
     if (editingStyle==UITableViewCellEditingStyleDelete){
         [_teamMemberList removeObjectAtIndex:indexPath.row];
         [_teamMemberTableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation: UITableViewRowAnimationFade];
-        [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:@"TeamMember.plist"];
+        [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:TEAM_MEMBER_FILE_NAME];
     }
 }
 
@@ -90,7 +88,7 @@
             [[self teamMemberTableView] insertRowsAtIndexPaths:path withRowAnimation:UITableViewRowAnimationAutomatic];
             
             // Save updated member list.
-            [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:@"TeamMember.plist"];
+            [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:TEAM_MEMBER_FILE_NAME];
         }
     }
 }
@@ -104,12 +102,12 @@
 - (void)loadMemberData
 {
     //Load data from plist
-    self.teamMemberList = [KYTTeamMemberPersistence readFileToArray:@"TeamMember.plist"];
+    self.teamMemberList = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
     //If plist is blank, fill project with temp user data
     if ([self.teamMemberList count] <= 0 ){
-        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
-        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Luke" WithLastName:@"Romero" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
-        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Mark" WithLastName:@"Shen" WithPhoto:[UIImage imageNamed:@"PersonImage"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:DEFAULT_IMAGE_NAME]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Luke" WithLastName:@"Romero" WithPhoto:[UIImage imageNamed:DEFAULT_IMAGE_NAME]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Mark" WithLastName:@"Shen" WithPhoto:[UIImage imageNamed:DEFAULT_IMAGE_NAME]]];
     }
     
 }

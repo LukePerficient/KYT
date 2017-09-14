@@ -6,6 +6,7 @@ target 'KnowYourTeam' do
   # use_frameworks!
 
   # Pods for KnowYourTeam
+  pod 'Toast'
 
   target 'KnowYourTeamTests' do
     inherit! :search_paths

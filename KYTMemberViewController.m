@@ -7,6 +7,7 @@
 //
 
 #import "KYTMemberViewController.h"
+#import "KYTImageSelectorDelegate.h"
 
 @interface KYTMemberViewController ()
 
@@ -24,21 +25,19 @@
     [super didReceiveMemoryWarning];
 }
 
-// MARK: UIImagePickerControllerDelegate
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
-    if ([self userSelectedImageIsNull:info]) {
-        self.memberImage.image = info[UIImagePickerControllerOriginalImage];
-    }
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-}
-
 // MARK: Navigation
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text WithLastName:self.lastNameText.text WithPhoto:self.memberImage.image];
+    
+    if (self.member != nil) {
+        return YES;
+    } else {
+        [KYTCustomAlerts alertUserWithInvalidInformationMessage:self.view];
+        
+        return NO;
+    }
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text WithLastName:self.lastNameText.text WithPhoto:self.memberImage.image];
@@ -46,13 +45,12 @@
 
 // MARK: Actions
 - (IBAction)selectImageFromLibrary:(UITapGestureRecognizer *)sender {
-    [self.firstNameTxt resignFirstResponder];
-    [self.lastNameText resignFirstResponder];
+    //[_imageSelectorDelegate selectImageFromLibrary];
     
-    //UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    [self removeKeyboard];
     
     self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    //imagePickerController.delegate = self;
+    
     [self presentViewController:self.imagePickerController animated:YES completion:nil];
 }
 
@@ -68,8 +66,16 @@
      
 - (void)initializeMembers
 {
+    _imageSelectorDelegate = [[KYTImageSelectorDelegate alloc] initWithViewController:self];
+    
     self.imagePickerController = [[UIImagePickerController alloc] init];
-    self.imagePickerController.delegate = self;
+    self.imagePickerController.delegate = _imageSelectorDelegate;
+}
+
+- (void)removeKeyboard
+{
+    [self.firstNameTxt resignFirstResponder];
+    [self.lastNameText resignFirstResponder];
 }
 
 @end
