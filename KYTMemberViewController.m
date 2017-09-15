@@ -45,8 +45,6 @@
 
 // MARK: Actions
 - (IBAction)selectImageFromLibrary:(UITapGestureRecognizer *)sender {
-    //[_imageSelectorDelegate selectImageFromLibrary];
-    
     [self removeKeyboard];
     
     self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;

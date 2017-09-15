@@ -11,7 +11,7 @@
 
 @implementation KYTImageSelectorDelegate
 
-- (id)initWithViewController:(KYTMemberViewController *)delegatingViewController
+- (id)initWithViewController:(UIViewController<ImageSelector> *)delegatingViewController
 {
     self = [super init];
     
@@ -28,8 +28,6 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
-    NSLog(@"Hey Yoooooo");
-    
     if ([self userSelectedImageIsNull:info]) {
         _viewController.memberImage.image = info[UIImagePickerControllerOriginalImage];
     }
@@ -38,7 +36,7 @@
     
 }
 
-//
+// Private Methods
 - (BOOL)userSelectedImageIsNull:(NSDictionary<NSString *,id> *)info
 {
     return info[UIImagePickerControllerOriginalImage] != nil;

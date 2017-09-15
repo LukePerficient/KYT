@@ -14,14 +14,17 @@
 #ifndef KYTImageSelectorDelegate_h
 #define KYTImageSelectorDelegate_h
 
+@protocol ImageSelector <NSObject,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *memberImage;
+
+@end
+
 @interface KYTImageSelectorDelegate : NSObject <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
-@property (nonatomic, strong) KYTMemberViewController *viewController;
+@property (nonatomic, strong) UIViewController<ImageSelector> *viewController;
 
-- (id)initWithViewController:(KYTMemberViewController *)delegatingViewController;
-
-//- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker;
-//- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info;
+- (id)initWithViewController:(UIViewController<ImageSelector> *)delegatingViewController;
 
 @end
 
