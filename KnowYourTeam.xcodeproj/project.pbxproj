@@ -147,8 +147,6 @@
 				4443B6EA1F604B0D008522BB /* LaunchScreen.storyboard */,
 				4443B6E81F604B0D008522BB /* Assets.xcassets */,
 				4443B6ED1F604B0D008522BB /* Info.plist */,
-				444217141F702706009F6D32 /* KYTPageInitViewController.h */,
-				444217151F702706009F6D32 /* KYTPageInitViewController.m */,
 				4443B6DC1F604B0D008522BB /* Supporting Files */,
 			);
 			path = KnowYourTeam;
@@ -237,6 +235,8 @@
 		444DE4661F61D31900DF7499 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				444217141F702706009F6D32 /* KYTPageInitViewController.h */,
+				444217151F702706009F6D32 /* KYTPageInitViewController.m */,
 				444DE4571F618FC300DF7499 /* KYTMemberViewController.h */,
 				444DE4581F618FC300DF7499 /* KYTMemberViewController.m */,
 			);

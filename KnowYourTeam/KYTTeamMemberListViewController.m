@@ -42,7 +42,7 @@
 {
     self.selectedRowIndex = indexPath.row;
     
-    [self performSegueWithIdentifier:@"ShowPageView" sender:self];
+    [self performSegueWithIdentifier:SHOW_PAGE_VIEW_SEGUE sender:self];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -80,7 +80,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Make sure your segue name in storyboard is the same as this line
-    if ([[segue identifier] isEqualToString:@"ShowPageView"])
+    if ([[segue identifier] isEqualToString:SHOW_PAGE_VIEW_SEGUE])
     {
         // Get reference to the destination view controller
         KYTPageInitViewController *vc = [segue destinationViewController];

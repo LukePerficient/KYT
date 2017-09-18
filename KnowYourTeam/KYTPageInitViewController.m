@@ -31,7 +31,7 @@
 {
     _members = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
     
-    UIPageViewController *pageController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageController"];
+    UIPageViewController *pageController = [self.storyboard instantiateViewControllerWithIdentifier:PAGE_CONTROLLER];
     
     pageController.dataSource = self;
     
@@ -87,7 +87,7 @@
 {
     if (itemIndex < [_members count])
     {
-        KYTMemberViewController *pageItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemController"];
+        KYTMemberViewController *pageItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:ITEM_CONTROLLER];
         pageItemViewController.itemIndex = itemIndex;
         pageItemViewController.member = _members[itemIndex];
         return pageItemViewController;
