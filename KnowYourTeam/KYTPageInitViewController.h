@@ -13,5 +13,6 @@
 //@property (nonatomic, strong) NSArray *contentImages;
 @property (nonatomic, strong) NSArray *members;
 @property (nonatomic, strong) UIPageViewController *pageViewController;
+@property (nonatomic) NSInteger selectedRowIndex;
 
 @end

@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pXD-bW-mzg" id="du7-dO-ft5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lJ-Ek-Ug4">
@@ -56,7 +56,6 @@
                                         <connections>
                                             <outlet property="firstNameLabel" destination="9lJ-Ek-Ug4" id="xpN-mJ-kQy"/>
                                             <outlet property="lastNameLabel" destination="JfE-KJ-Rq3" id="nJ9-lR-0wX"/>
-                                            <segue destination="nLv-YC-mkr" kind="show" identifier="ShowPageView" id="Zvr-hq-urC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -79,6 +78,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="teamMemberTableView" destination="VI1-Pm-I73" id="Mww-mK-GMb"/>
+                        <segue destination="nLv-YC-mkr" kind="show" identifier="ShowPageView" id="Mgg-F5-fyH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

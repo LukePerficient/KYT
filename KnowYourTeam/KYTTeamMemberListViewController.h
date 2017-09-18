@@ -14,5 +14,7 @@
 
 @interface KYTTeamMemberListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic) NSInteger selectedRowIndex;
+
 @end
 

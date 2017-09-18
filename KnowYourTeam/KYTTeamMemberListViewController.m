@@ -7,6 +7,7 @@
 //
 
 #import "KYTTeamMemberListViewController.h"
+#import "KYTPageInitViewController.h"
 
 @interface KYTTeamMemberListViewController ()
 
@@ -37,6 +38,13 @@
 }
 
 // Mark: TableView Datasource
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectedRowIndex = indexPath.row;
+    
+    [self performSegueWithIdentifier:@"ShowPageView" sender:self];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.teamMemberList count];
@@ -65,6 +73,20 @@
         [_teamMemberList removeObjectAtIndex:indexPath.row];
         [_teamMemberTableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation: UITableViewRowAnimationFade];
         [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:TEAM_MEMBER_FILE_NAME];
+    }
+}
+
+// Mark: Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"ShowPageView"])
+    {
+        // Get reference to the destination view controller
+        KYTPageInitViewController *vc = [segue destinationViewController];
+        
+        // Pass any objects to the view controller here, like...
+        vc.selectedRowIndex = self.selectedRowIndex;
     }
 }
 

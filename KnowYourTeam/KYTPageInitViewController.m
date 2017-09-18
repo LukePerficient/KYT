@@ -37,7 +37,7 @@
     
     if([_members count])
     {
-        NSArray *startingViewControllers = @[[self itemControllerForIndex:0]]; //Member data in page view
+        NSArray *startingViewControllers = @[[self itemControllerForIndex:self.selectedRowIndex]]; //Member data in page view
         [pageController setViewControllers:startingViewControllers
                                  direction:UIPageViewControllerNavigationDirectionForward
                                   animated:NO
@@ -105,7 +105,7 @@
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
 {
-    return 0; //Sets page that is viewed from array
+    return self.selectedRowIndex; //Sets page that is viewed from array
 }
 
 #pragma mark - Additions
