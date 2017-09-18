@@ -11,7 +11,6 @@
 		4401D5D81F6C5E2300214460 /* KYTMagicalRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4401D5D71F6C5E2300214460 /* KYTMagicalRecordTests.m */; };
 		443EF3CE1F68B412005CADE3 /* KYTTeamMemberSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 443EF3CD1F68B412005CADE3 /* KYTTeamMemberSpec.mm */; };
 		444217161F702706009F6D32 /* KYTPageInitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444217151F702706009F6D32 /* KYTPageInitViewController.m */; };
-		444217191F7028D9009F6D32 /* KYTPageItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444217181F7028D9009F6D32 /* KYTPageItemViewController.m */; };
 		4443B6DE1F604B0D008522BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B6DD1F604B0D008522BB /* main.m */; };
 		4443B6E11F604B0D008522BB /* KYTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B6E01F604B0D008522BB /* KYTAppDelegate.m */; };
 		4443B6E41F604B0D008522BB /* KYTTeamMemberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B6E31F604B0D008522BB /* KYTTeamMemberListViewController.m */; };
@@ -48,8 +47,6 @@
 		443EF3CD1F68B412005CADE3 /* KYTTeamMemberSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KYTTeamMemberSpec.mm; sourceTree = "<group>"; };
 		444217141F702706009F6D32 /* KYTPageInitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTPageInitViewController.h; sourceTree = "<group>"; };
 		444217151F702706009F6D32 /* KYTPageInitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTPageInitViewController.m; sourceTree = "<group>"; };
-		444217171F7028D9009F6D32 /* KYTPageItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTPageItemViewController.h; sourceTree = "<group>"; };
-		444217181F7028D9009F6D32 /* KYTPageItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTPageItemViewController.m; sourceTree = "<group>"; };
 		4443B6D91F604B0D008522BB /* KnowYourTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowYourTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4443B6DD1F604B0D008522BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4443B6DF1F604B0D008522BB /* KYTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTAppDelegate.h; sourceTree = "<group>"; };
@@ -152,8 +149,6 @@
 				4443B6ED1F604B0D008522BB /* Info.plist */,
 				444217141F702706009F6D32 /* KYTPageInitViewController.h */,
 				444217151F702706009F6D32 /* KYTPageInitViewController.m */,
-				444217171F7028D9009F6D32 /* KYTPageItemViewController.h */,
-				444217181F7028D9009F6D32 /* KYTPageItemViewController.m */,
 				4443B6DC1F604B0D008522BB /* Supporting Files */,
 			);
 			path = KnowYourTeam;
@@ -475,7 +470,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4443B6E41F604B0D008522BB /* KYTTeamMemberListViewController.m in Sources */,
-				444217191F7028D9009F6D32 /* KYTPageItemViewController.m in Sources */,
 				444DE4701F61E17800DF7499 /* KYTTeamMemberPersistence.m in Sources */,
 				44B86FF61F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m in Sources */,
 				4443B7041F606B39008522BB /* KYTTeamMember.m in Sources */,

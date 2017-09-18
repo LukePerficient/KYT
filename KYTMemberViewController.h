@@ -17,8 +17,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTxt;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameText;
 @property (weak, nonatomic) IBOutlet UIImageView *memberImage;
+
 @property (strong, atomic) KYTTeamMember *member;
 @property (strong, atomic) UIImagePickerController *imagePickerController;
 @property KYTImageSelectorDelegate *imageSelectorDelegate;
+@property (nonatomic) NSUInteger itemIndex;
 
 @end

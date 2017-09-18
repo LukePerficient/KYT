@@ -10,7 +10,8 @@
 
 @interface KYTPageInitViewController : UIViewController <UIPageViewControllerDataSource>
 
-@property (nonatomic, strong) NSArray *contentImages;
+//@property (nonatomic, strong) NSArray *contentImages;
+@property (nonatomic, strong) NSArray *members;
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 
 @end

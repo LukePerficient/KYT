@@ -68,6 +68,12 @@
     
     self.imagePickerController = [[UIImagePickerController alloc] init];
     self.imagePickerController.delegate = _imageSelectorDelegate;
+    
+    if (_member) {
+        _firstNameTxt.text = _member.firstName;
+        _lastNameText.text = _member.lastName;
+        _memberImage.image = _member.photo;
+    }
 }
 
 - (void)removeKeyboard

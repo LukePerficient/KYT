@@ -88,7 +88,7 @@
         <!--Member Add-->
         <scene sceneID="CjV-WG-i39">
             <objects>
-                <viewController id="0z5-zt-an6" customClass="KYTMemberViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemController" id="0z5-zt-an6" customClass="KYTMemberViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PhA-tI-NLk"/>
                         <viewControllerLayoutGuide type="bottom" id="uxI-k3-brJ"/>
@@ -261,40 +261,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRL-9S-BPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2076" y="853"/>
-        </scene>
-        <!--Page Item View Controller-->
-        <scene sceneID="ZzI-8Z-mj3">
-            <objects>
-                <viewController storyboardIdentifier="ItemController" id="KBS-9u-81N" customClass="KYTPageItemViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eeq-da-0i2"/>
-                        <viewControllerLayoutGuide type="bottom" id="8oD-4q-DIS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uJH-PU-R3U">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LaY-8L-RqB">
-                                <rect key="frame" x="27" y="173" width="320" height="320"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="65C-Je-byu"/>
-                                    <constraint firstAttribute="height" constant="320" id="TDQ-Dr-qhp"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="LaY-8L-RqB" firstAttribute="centerX" secondItem="uJH-PU-R3U" secondAttribute="centerX" id="YYV-0m-xJS"/>
-                            <constraint firstItem="LaY-8L-RqB" firstAttribute="centerY" secondItem="uJH-PU-R3U" secondAttribute="centerY" id="xCF-vh-Ppl"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="contentImageView" destination="LaY-8L-RqB" id="gzk-WB-nCh"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pLZ-J9-0ct" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2076" y="1531"/>
         </scene>
     </scenes>
     <resources>

@@ -7,7 +7,10 @@
 //
 
 #import "KYTPageInitViewController.h"
-#import "KYTPageItemViewController.h"
+//#import "KYTPageItemViewController.h"
+#import "KYTTeamMemberPersistence.h"
+#import "KYTMemberViewController.h"
+#import "KYTTeamMember.h"
 
 @interface KYTPageInitViewController ()
 
@@ -26,18 +29,15 @@
 
 - (void)createPageViewController
 {
-    _contentImages = @[@"nature_pic_1",
-                       @"nature_pic_2",
-                       @"nature_pic_3",
-                       @"nature_pic_4"];
+    _members = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
     
     UIPageViewController *pageController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageController"];
     
     pageController.dataSource = self;
     
-    if([_contentImages count])
+    if([_members count])
     {
-        NSArray *startingViewControllers = @[[self itemControllerForIndex:0]];
+        NSArray *startingViewControllers = @[[self itemControllerForIndex:0]]; //Member data in page view
         [pageController setViewControllers:startingViewControllers
                                  direction:UIPageViewControllerNavigationDirectionForward
                                   animated:NO
@@ -61,7 +61,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    KYTPageItemViewController *itemController = (KYTPageItemViewController *)viewController;
+    KYTMemberViewController *itemController = (KYTMemberViewController *)viewController;
     
     if (itemController.itemIndex > 0)
     {
@@ -73,9 +73,9 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    KYTPageItemViewController *itemController = (KYTPageItemViewController *)viewController;
+    KYTMemberViewController *itemController = (KYTMemberViewController *)viewController;
     
-    if (itemController.itemIndex+1 < [_contentImages count])
+    if (itemController.itemIndex+1 < [_members count])
     {
         return [self itemControllerForIndex:itemController.itemIndex+1];
     }
@@ -83,13 +83,13 @@
     return nil;
 }
 
-- (KYTPageItemViewController *)itemControllerForIndex:(NSUInteger)itemIndex
+- (KYTMemberViewController *)itemControllerForIndex:(NSUInteger)itemIndex
 {
-    if (itemIndex < [_contentImages count])
+    if (itemIndex < [_members count])
     {
-        KYTPageItemViewController *pageItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemController"];
+        KYTMemberViewController *pageItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemController"];
         pageItemViewController.itemIndex = itemIndex;
-        pageItemViewController.imageName = _contentImages[itemIndex];
+        pageItemViewController.member = _members[itemIndex];
         return pageItemViewController;
     }
     
@@ -100,19 +100,19 @@
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    return [_contentImages count];
+    return [_members count];
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
 {
-    return 0;
+    return 0; //Sets page that is viewed from array
 }
 
 #pragma mark - Additions
 
 - (NSUInteger)currentControllerIndex
 {
-    KYTPageItemViewController *pageItemViewController = (KYTPageItemViewController *) [self currentController];
+    KYTMemberViewController *pageItemViewController = (KYTMemberViewController *) [self currentController];
     
     if (pageItemViewController)
     {
