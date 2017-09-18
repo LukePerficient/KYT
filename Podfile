@@ -2,15 +2,12 @@
 # platform :ios, '9.0'
 
 target 'KnowYourTeam' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
-
-  # Pods for KnowYourTeam
-  pod 'Toast'
+  pod 'Toast’
+  pod 'MagicalRecord'
 
   target 'KnowYourTeamTests' do
     inherit! :search_paths
-    # Pods for testing
+    
     pod 'Cedar'
   end
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		26EF9D56AAA105234323883A /* libPods-KnowYourTeam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E273890B94E5AB5360D3B6 /* libPods-KnowYourTeam.a */; };
+		4401D5D81F6C5E2300214460 /* KYTMagicalRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4401D5D71F6C5E2300214460 /* KYTMagicalRecordTests.m */; };
 		443EF3CE1F68B412005CADE3 /* KYTTeamMemberSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 443EF3CD1F68B412005CADE3 /* KYTTeamMemberSpec.mm */; };
 		4443B6DE1F604B0D008522BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B6DD1F604B0D008522BB /* main.m */; };
 		4443B6E11F604B0D008522BB /* KYTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B6E01F604B0D008522BB /* KYTAppDelegate.m */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		03ED8B347AC1F2549906C376 /* Pods-KnowYourTeamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowYourTeamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowYourTeamTests/Pods-KnowYourTeamTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D97BF24025BC18326A74D92 /* Pods-KnowYourTeamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowYourTeamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowYourTeamTests/Pods-KnowYourTeamTests.release.xcconfig"; sourceTree = "<group>"; };
+		4401D5D71F6C5E2300214460 /* KYTMagicalRecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTMagicalRecordTests.m; sourceTree = "<group>"; };
 		443EF3CD1F68B412005CADE3 /* KYTTeamMemberSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KYTTeamMemberSpec.mm; sourceTree = "<group>"; };
 		4443B6D91F604B0D008522BB /* KnowYourTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowYourTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4443B6DD1F604B0D008522BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				443EF3CD1F68B412005CADE3 /* KYTTeamMemberSpec.mm */,
 				444DE45A1F61C27E00DF7499 /* KYTTeamMemberModelTests.m */,
 				444DE4681F61D47D00DF7499 /* KYTPersistenceTests.m */,
+				4401D5D71F6C5E2300214460 /* KYTMagicalRecordTests.m */,
 				4443B6F81F604B0D008522BB /* Info.plist */,
 			);
 			path = KnowYourTeamTests;
@@ -481,6 +484,7 @@
 			files = (
 				444DE4691F61D47D00DF7499 /* KYTPersistenceTests.m in Sources */,
 				444DE45B1F61C27E00DF7499 /* KYTTeamMemberModelTests.m in Sources */,
+				4401D5D81F6C5E2300214460 /* KYTMagicalRecordTests.m in Sources */,
 				443EF3CE1F68B412005CADE3 /* KYTTeamMemberSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

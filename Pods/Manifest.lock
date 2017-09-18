@@ -1,15 +1,20 @@
 PODS:
   - Cedar (1.0)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
   - Toast (3.1.0)
 
 DEPENDENCIES:
   - Cedar
+  - MagicalRecord
   - Toast
 
 SPEC CHECKSUMS:
   Cedar: a641e5ed0353bd9d45782ce365d0822b7342cce3
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
 
-PODFILE CHECKSUM: 81b92b9a0f98456f8ed00dbc8ebb301fad649d30
+PODFILE CHECKSUM: c062ebc324980917285c56df34a470140420a6fe
 
 COCOAPODS: 1.3.1
