@@ -133,10 +133,22 @@
     self.teamMemberList = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
     //If plist is blank, fill project with temp user data
     if ([self.teamMemberList count] <= 0 ){
-        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:DEFAULT_IMAGE_NAME]]];
-        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Luke" WithLastName:@"Romero" WithPhoto:[UIImage imageNamed:DEFAULT_IMAGE_NAME]]];
-        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Mark" WithLastName:@"Shen" WithPhoto:[UIImage imageNamed:DEFAULT_IMAGE_NAME]]];
-    }
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:@"DustinLandry.jpeg"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Luke" WithLastName:@"Romero" WithPhoto:[UIImage imageNamed:@"LukeRomero.jpeg"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Mark" WithLastName:@"Shen" WithPhoto:[UIImage imageNamed:@"MarkShen.jpeg"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Ben" WithLastName:@"Rodrigue" WithPhoto:[UIImage imageNamed:@"BenRodrigue.jpeg"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Chris" WithLastName:@"Parich" WithPhoto:[UIImage imageNamed:@"ChrisParich.jpeg"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Erasto" WithLastName:@"Padron" WithPhoto:[UIImage imageNamed:@"ErastoPadron.jpeg"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"MaryBeth" WithLastName:@"Ostasz" WithPhoto:[UIImage imageNamed:@"MaryBethOstasz.jpeg"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Moony" WithLastName:@"Chen" WithPhoto:[UIImage imageNamed:@"MoonyChen.jpeg"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Roy" WithLastName:@"Condrey" WithPhoto:[UIImage imageNamed:@"RoyCondrey.jpeg"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Ruth" WithLastName:@"Miller" WithPhoto:[UIImage imageNamed:@"RuthMiller.jpeg"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Tim" WithLastName:@"Porter" WithPhoto:[UIImage imageNamed:@"TimPorter.jpeg"]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Titus" WithLastName:@"Treme" WithPhoto:[UIImage imageNamed:@"TitusTreme.jpeg"]]];
+        
+        [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:TEAM_MEMBER_FILE_NAME];
+        }
+    
     
 }
 
