@@ -17,8 +17,8 @@
 @implementation KYTTeamMember
 
 - (id) initWithFirstName:(NSString*)newFirstName
-          WithLastName:(NSString*)newLastName
-          WithPhoto:(UIImage*)newPhotoURL
+          withLastName:(NSString*)newLastName
+          withPhoto:(UIImage*)newPhotoURL
 {
     self = [super init];
     

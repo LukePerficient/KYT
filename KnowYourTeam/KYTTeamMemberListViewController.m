@@ -72,7 +72,7 @@
     if (editingStyle==UITableViewCellEditingStyleDelete){
         [_teamMemberList removeObjectAtIndex:indexPath.row];
         [_teamMemberTableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation: UITableViewRowAnimationFade];
-        [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:TEAM_MEMBER_FILE_NAME];
+        [KYTTeamMemberPersistence writeArray:self.teamMemberList toFilePath:TEAM_MEMBER_FILE_NAME];
     }
 }
 
@@ -110,7 +110,7 @@
             [[self teamMemberTableView] insertRowsAtIndexPaths:path withRowAnimation:UITableViewRowAnimationAutomatic];
             
             // Save updated member list.
-            [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:TEAM_MEMBER_FILE_NAME];
+            [KYTTeamMemberPersistence writeArray:self.teamMemberList toFilePath:TEAM_MEMBER_FILE_NAME];
         }
     }
 }
@@ -127,9 +127,9 @@
     self.teamMemberList = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
     //If plist is blank, fill project with temp user data
     if ([self.teamMemberList count] <= 0 ){
-        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:DEFAULT_IMAGE_NAME]]];
-        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Luke" WithLastName:@"Romero" WithPhoto:[UIImage imageNamed:DEFAULT_IMAGE_NAME]]];
-        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Mark" WithLastName:@"Shen" WithPhoto:[UIImage imageNamed:DEFAULT_IMAGE_NAME]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Dustin" withLastName:@"Landry" withPhoto:[UIImage imageNamed:DEFAULT_IMAGE_NAME]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Luke" withLastName:@"Romero" withPhoto:[UIImage imageNamed:DEFAULT_IMAGE_NAME]]];
+        [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Mark" withLastName:@"Shen" withPhoto:[UIImage imageNamed:DEFAULT_IMAGE_NAME]]];
     }
     
 }

@@ -11,7 +11,6 @@
 
 @interface KYTTeamMemberModelTests : XCTestCase
 
-@property (strong,nonatomic) KYTTeamMember *member;
 @property (strong,nonatomic) NSMutableDictionary *expectedPositiveResults;
 @property (strong,nonatomic) NSMutableDictionary *expectedNegativeResults;
 
@@ -29,13 +28,12 @@
 
 - (void)tearDown {
     [super tearDown];
-    self.member = nil;
     self.expectedPositiveResults = nil;
     self.expectedNegativeResults = nil;
 }
 
 - (void)testWithHappyPathMember {
-    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:@"PersonImage"]];
+    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"Dustin" withLastName:@"Landry" withPhoto:[UIImage imageNamed:@"PersonImage"]];
     
     XCTAssertEqual(self.expectedPositiveResults[@"FirstName"], happyMember.firstName);
     XCTAssertEqual(self.expectedPositiveResults[@"LastName"], happyMember.lastName);
@@ -43,7 +41,7 @@
 }
 
 - (void)testWithEmptyMemberInfo {
-    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"" WithLastName:@"" WithPhoto:nil];
+    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"" withLastName:@"" withPhoto:nil];
     
     XCTAssertEqual(self.expectedNegativeResults[@"FirstName"], happyMember.firstName);
     XCTAssertEqual(self.expectedNegativeResults[@"LastName"], happyMember.lastName);
@@ -51,7 +49,7 @@
 }
 
 - (void)testWithInvalidMemberInfo {
-    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"4234#@$#@$]\[" WithLastName:@"432][;',.2453)(*&^%$#@" WithPhoto:nil];
+    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"4234#@$#@$]\[" withLastName:@"432][;',.2453)(*&^%$#@" withPhoto:nil];
     
     XCTAssertEqual(self.expectedNegativeResults[@"FirstName"], happyMember.firstName);
     XCTAssertEqual(self.expectedNegativeResults[@"LastName"], happyMember.lastName);
@@ -60,7 +58,6 @@
 
 // Mark: Private Methods
 - (void)initalizeElements {
-    self.member = [[KYTTeamMember alloc] init];
     self.expectedPositiveResults = [[NSMutableDictionary alloc] init];
     self.expectedNegativeResults = [[NSMutableDictionary alloc] init];
 }

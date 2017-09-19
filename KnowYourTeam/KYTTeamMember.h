@@ -19,8 +19,8 @@
 @property (atomic,strong) UIImage *photo;
 
 - (id) initWithFirstName:(NSString*)newFirstName
-          WithLastName:(NSString*)newLastName
-          WithPhoto:(UIImage*)newPhoto;
+          withLastName:(NSString*)newLastName
+          withPhoto:(UIImage*)newPhoto;
 
 @end
 

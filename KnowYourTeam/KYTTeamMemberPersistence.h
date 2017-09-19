@@ -11,7 +11,7 @@
 
 @interface KYTTeamMemberPersistence : NSObject
 
-+ (void)writeArray:(NSMutableArray *)newArray ToFilePath:(NSString *)newFilePath;
++ (void)writeArray:(NSMutableArray *)newArray toFilePath:(NSString *)newFilePath;
 + (NSMutableArray*)readFileToArray:(NSString *)newFilePath;
 + (NSString*)getDocPath:(NSString *)newFilePath;
 
