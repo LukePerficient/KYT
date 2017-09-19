@@ -7,7 +7,7 @@
 //
 
 #import "KYTPageInitViewController.h"
-//#import "KYTPageItemViewController.h"
+#import "KYTTestMemberItemViewController.h"
 #import "KYTTeamMemberPersistence.h"
 #import "KYTMemberViewController.h"
 #import "KYTTeamMember.h"
@@ -31,7 +31,17 @@
 {
     _members = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
     
-    UIPageViewController *pageController = [self.storyboard instantiateViewControllerWithIdentifier:PAGE_CONTROLLER];
+   
+    
+    id previousViewController = [self.navigationController.viewControllers objectAtIndex:self.navigationController.viewControllers.count - 1];
+    UIPageViewController *pageController;
+    
+    if ([previousViewController isKindOfClass:[KYTPageInitViewController class]]) {
+        pageController = [self.storyboard instantiateViewControllerWithIdentifier:PAGE_CONTROLLER];
+    } else {
+        pageController = [self.storyboard instantiateViewControllerWithIdentifier:@"TestPageController"];
+    }
+    
     
     pageController.dataSource = self;
     
@@ -83,14 +93,23 @@
     return nil;
 }
 
-- (KYTMemberViewController *)itemControllerForIndex:(NSUInteger)itemIndex
+- (UIViewController *)itemControllerForIndex:(NSUInteger)itemIndex
 {
     if (itemIndex < [_members count])
     {
-        KYTMemberViewController *pageItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:ITEM_CONTROLLER];
-        pageItemViewController.itemIndex = itemIndex;
-        pageItemViewController.member = _members[itemIndex];
-        return pageItemViewController;
+        id previousViewController = [self.navigationController.viewControllers objectAtIndex:self.navigationController.viewControllers.count - 1];
+        
+        if ([previousViewController isKindOfClass:[KYTPageInitViewController class]]) {
+            KYTMemberViewController *pageItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:ITEM_CONTROLLER];
+            pageItemViewController.itemIndex = itemIndex;
+            pageItemViewController.member = _members[itemIndex];
+            return pageItemViewController;
+        } else {
+            KYTTestMemberItemViewController *pageItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TestItemController"];
+            pageItemViewController.itemIndex = itemIndex;
+            pageItemViewController.member = _members[itemIndex];
+            return pageItemViewController;
+        }
     }
     
     return nil;
