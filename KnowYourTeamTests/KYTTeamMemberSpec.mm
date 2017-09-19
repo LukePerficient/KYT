@@ -8,13 +8,9 @@ SPEC_BEGIN(KYTTeamMemberSpec)
 
 describe(@"KYTTeamMember", ^{
     __block KYTTeamMember *member;
-
-    beforeEach(^{
-        member = [[KYTTeamMember alloc] init];
-    });
     
     it(@"should save with happy path member", ^{
-        member = [[KYTTeamMember alloc] initWithFirstName:@"Dustin" WithLastName:@"Landry" WithPhoto:[UIImage imageNamed:@"PersonImage"]];
+        member = [[KYTTeamMember alloc] initWithFirstName:@"Dustin" withLastName:@"Landry" withPhoto:[UIImage imageNamed:@"PersonImage"]];
         
         member.firstName should equal(@"Dustin");
         member.lastName should equal(@"Landry");
@@ -22,7 +18,7 @@ describe(@"KYTTeamMember", ^{
     });
     
     it(@"should not save if user enters numbers or special characters", ^{
-        member = [[KYTTeamMember alloc] initWithFirstName:@"123@$#$@#$" WithLastName:@"#!@@3233123" WithPhoto:[UIImage imageNamed:@"PersonImage"]];
+        member = [[KYTTeamMember alloc] initWithFirstName:@"123@$#$@#$" withLastName:@"#!@@3233123" withPhoto:[UIImage imageNamed:@"PersonImage"]];
         
         member.firstName should be_nil;
         member.lastName should be_nil;
@@ -30,7 +26,7 @@ describe(@"KYTTeamMember", ^{
     });
     
     it(@"should not save if photo is nil", ^{
-        member = [[KYTTeamMember alloc] initWithFirstName:nil WithLastName:nil WithPhoto:nil];
+        member = [[KYTTeamMember alloc] initWithFirstName:nil withLastName:nil withPhoto:nil];
         
         member.firstName should be_nil;
         member.lastName should be_nil;
@@ -38,7 +34,7 @@ describe(@"KYTTeamMember", ^{
     });
     
     it(@"should not save if user doesn't enter information", ^{
-        member = [[KYTTeamMember alloc] initWithFirstName:@"" WithLastName:@"" WithPhoto:nil];
+        member = [[KYTTeamMember alloc] initWithFirstName:@"" withLastName:@"" withPhoto:nil];
         
         member.firstName should be_nil;
         member.lastName should be_nil;

@@ -12,7 +12,7 @@
 
 @implementation KYTTeamMemberPersistence
 
-+ (void)writeArray:(NSMutableArray<KYTTeamMember*> *)newArray ToFilePath:(NSString *)newFilePath;
++ (void)writeArray:(NSMutableArray<KYTTeamMember*> *)newArray toFilePath:(NSString *)newFilePath;
 {
     NSString *docfilePath = [KYTTeamMemberPersistence getDocPath:newFilePath];
     

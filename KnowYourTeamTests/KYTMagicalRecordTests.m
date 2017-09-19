@@ -18,7 +18,7 @@
 
 - (void)setUp {
     [super setUp];
-    [MagicalRecord setupCoreDataStack];
+    //[MagicalRecord setupCoreDataStack];
 
 }
 

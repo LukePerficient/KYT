@@ -40,7 +40,7 @@ BOOL allowChangeFlag;
 
 // MARK: Navigation
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text WithLastName:self.lastNameText.text WithPhoto:self.memberImage.image];
+    self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text withLastName:self.lastNameText.text withPhoto:self.memberImage.image];
     
     if (self.member != nil) {
         return YES;
@@ -53,7 +53,7 @@ BOOL allowChangeFlag;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text WithLastName:self.lastNameText.text WithPhoto:self.memberImage.image];
+    self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text withLastName:self.lastNameText.text withPhoto:self.memberImage.image];
 }
 
 // MARK: Actions

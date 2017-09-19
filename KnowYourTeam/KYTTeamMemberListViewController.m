@@ -74,7 +74,7 @@
     if (editingStyle==UITableViewCellEditingStyleDelete){
         [_teamMemberList removeObjectAtIndex:indexPath.row];
         [_teamMemberTableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation: UITableViewRowAnimationFade];
-        [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:TEAM_MEMBER_FILE_NAME];
+        [KYTTeamMemberPersistence writeArray:self.teamMemberList toFilePath:TEAM_MEMBER_FILE_NAME];
     }
 }
 
@@ -114,7 +114,7 @@
             [[self teamMemberTableView] insertRowsAtIndexPaths:path withRowAnimation:UITableViewRowAnimationAutomatic];
             
             // Save updated member list.
-            [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:TEAM_MEMBER_FILE_NAME];
+            [KYTTeamMemberPersistence writeArray:self.teamMemberList toFilePath:TEAM_MEMBER_FILE_NAME];
         }
     }
     
