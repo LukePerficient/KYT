@@ -24,9 +24,14 @@
 // MARK: Actions
 - (IBAction)checkUserAnswer:(UIButton *)sender {
     if ([_member.firstName isEqualToString:_memberTestTextField.text]) {
+        _answerTextField.textColor = [UIColor greenColor];
         _answerTextField.text = @"Correct";
+        
+        NSLog(@"Correct");
     } else {
+        _answerTextField.textColor = [UIColor redColor];
         _answerTextField.text = @"Incorrect";
+        NSLog(@"Incorrect");
     }
 }
 
