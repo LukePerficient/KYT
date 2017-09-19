@@ -30,6 +30,7 @@
     // Assign instance of self as tableview's delegate and datasource
     self.teamMemberTableView.dataSource = self;
     self.teamMemberTableView.delegate = self;
+    
 }
 
 
@@ -89,6 +90,8 @@
         // Pass any objects to the view controller here, like...
         vc.selectedRowIndex = self.selectedRowIndex;
     }
+    //Deselect row item
+    [self.teamMemberTableView deselectRowAtIndexPath:[self.teamMemberTableView indexPathForSelectedRow] animated:YES];
 }
 
 // Mark: Actions
@@ -114,6 +117,8 @@
             [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:TEAM_MEMBER_FILE_NAME];
         }
     }
+    
+    
 }
 
 // Mark: Private Methods
