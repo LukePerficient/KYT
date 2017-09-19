@@ -11,6 +11,8 @@
 
 @interface KYTMemberViewController ()
 
+- (IBAction)scaleImage:(UIPinchGestureRecognizer *)recognizer;
+
 @end
 
 @implementation KYTMemberViewController
@@ -52,6 +54,24 @@
     [self presentViewController:self.imagePickerController animated:YES completion:nil];
 }
 
+- (IBAction)scaleImage:(UIPinchGestureRecognizer *)recognizer {
+    CGRect prevFrame = _memberImage.frame;
+    CGPoint prevCenter = _memberImage.center;
+    
+
+    recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
+    recognizer.scale = 1;
+    //_memberImage.transform = CGAffineTransformIdentity;
+    if (recognizer.state == UIGestureRecognizerStateEnded) {
+        NSLog(@"LETGO::");
+        _memberImage.frame = prevFrame;
+        _memberImage.center = prevCenter;
+
+        //recognizer.scale = 1;
+    }
+    
+}
+
 - (IBAction)cancelAction:(UIBarButtonItem *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -75,6 +95,8 @@
         _memberImage.image = _member.photo;
     }
 }
+
+
 
 - (void)removeKeyboard
 {
