@@ -17,10 +17,20 @@
 
 @implementation KYTMemberViewController
 
+BOOL allowChangeFlag;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self initializeMembers];
+    if (_firstNameTxt.text.length == 0){
+        allowChangeFlag = YES;
+        
+    } else {
+        allowChangeFlag = NO;
+        _firstNameTxt.enabled = NO;
+        _lastNameText.enabled = NO;
+    }
     
 }
 
@@ -48,18 +58,20 @@
 
 // MARK: Actions
 - (IBAction)selectImageFromLibrary:(UITapGestureRecognizer *)sender {
-    [self removeKeyboard];
+    if (allowChangeFlag){
+        [self removeKeyboard];
     
-    self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     
-    [self presentViewController:self.imagePickerController animated:YES completion:nil];
+        [self presentViewController:self.imagePickerController animated:YES completion:nil];
+    }
 }
 
 - (IBAction)scaleImage:(UIPinchGestureRecognizer *)recognizer {
     recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
     recognizer.scale = 1;
     if (recognizer.state == UIGestureRecognizerStateEnded) {
-        //Reset ImageView to initial size
+        //Reset ImageView to initial size when user lets go
         _memberImage.frame = CGRectMake(IMAGE_VIEW_X, IMAGE_VIEW_Y, IMAGE_VIEW_WIDTH, IMAGE_VIEW_HEIGHT);
     }
 }
