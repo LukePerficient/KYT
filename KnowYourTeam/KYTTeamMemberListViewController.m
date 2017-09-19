@@ -146,6 +146,7 @@
         [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Tim" WithLastName:@"Porter" WithPhoto:[UIImage imageNamed:@"TimPorter.jpeg"]]];
         [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Titus" WithLastName:@"Treme" WithPhoto:[UIImage imageNamed:@"TitusTreme.jpeg"]]];
         
+        //Save initial member list
         [KYTTeamMemberPersistence writeArray:self.teamMemberList ToFilePath:TEAM_MEMBER_FILE_NAME];
         }
     
