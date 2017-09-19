@@ -21,6 +21,7 @@
     [super viewDidLoad];
     
     [self initializeMembers];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,21 +56,12 @@
 }
 
 - (IBAction)scaleImage:(UIPinchGestureRecognizer *)recognizer {
-    CGRect prevFrame = _memberImage.frame;
-    CGPoint prevCenter = _memberImage.center;
-    
-
     recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
     recognizer.scale = 1;
-    //_memberImage.transform = CGAffineTransformIdentity;
     if (recognizer.state == UIGestureRecognizerStateEnded) {
-        NSLog(@"LETGO::");
-        _memberImage.frame = prevFrame;
-        _memberImage.center = prevCenter;
-
-        //recognizer.scale = 1;
+        //Reset ImageView to initial size
+        _memberImage.frame = CGRectMake(IMAGE_VIEW_X, IMAGE_VIEW_Y, IMAGE_VIEW_WIDTH, IMAGE_VIEW_HEIGHT);
     }
-    
 }
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender {

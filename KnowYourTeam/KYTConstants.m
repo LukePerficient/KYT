@@ -22,3 +22,8 @@ NSString *const TEAM_MEMBER_FILE_NAME = @"TeamMember.plist";
 NSString *const DEFAULT_IMAGE_NAME = @"PersonImage";
 
 // 
+
+NSInteger const IMAGE_VIEW_WIDTH = 250;
+NSInteger const IMAGE_VIEW_HEIGHT = 165;
+NSInteger const IMAGE_VIEW_X = 62;
+NSInteger const IMAGE_VIEW_Y = 251;
