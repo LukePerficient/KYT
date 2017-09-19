@@ -77,6 +77,7 @@ BOOL allowChangeFlag;
 }
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender {
+    NSLog(@"Yo Man");
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

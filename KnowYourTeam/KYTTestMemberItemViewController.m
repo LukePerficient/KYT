@@ -24,23 +24,11 @@
 // MARK: Actions
 - (IBAction)checkUserAnswer:(UIButton *)sender {
     if ([_member.firstName isEqualToString:_memberTestTextField.text]) {
-        _answerTextField.textColor = [UIColor greenColor];
-        _answerTextField.layer.borderColor = [[UIColor greenColor]CGColor];
-        _answerTextField.layer.borderWidth = 2.0f;
-        _answerTextField.layer.cornerRadius = 5;
-        _answerTextField.clipsToBounds = YES;
+        [self prepareAnswerTextFieldWithColor:[UIColor greenColor]];
         _answerTextField.text = @"Correct";
-        
-        //NSLog(@"Correct");
     } else {
-        _answerTextField.textColor = [UIColor redColor];
-        _answerTextField.layer.borderColor = [[UIColor redColor]CGColor];
-        _answerTextField.layer.borderWidth = 2.0f;
-        _answerTextField.layer.cornerRadius = 5;
-        _answerTextField.clipsToBounds = YES;
+        [self prepareAnswerTextFieldWithColor:[UIColor redColor]];
         _answerTextField.text = @"Incorrect";
-        //NSLog(@"Incorrect");
-        
     }
     
     //Add code to pause for 1 sec, then move onto next slide.
@@ -53,6 +41,15 @@
     if (_member) {
         _memberPhoto.image = _member.photo;
     }
+}
+
+- (void)prepareAnswerTextFieldWithColor:(UIColor *)color
+{
+    _answerTextField.textColor = color;
+    _answerTextField.layer.borderColor = [color CGColor];
+    _answerTextField.layer.borderWidth = 2.0f;
+    _answerTextField.layer.cornerRadius = 5;
+    _answerTextField.clipsToBounds = YES;
 }
 
 @end

@@ -12,7 +12,7 @@
 NSString *const ALERT_INVALID_INFORMATION = @"Please enter valid information";
 
 // Identifiers
-NSString *const CELL_IDENTIFIER = @"TeamMemeberTableViewCell";
+NSString *const CELL_IDENTIFIER = @"TeamMemberTableViewCell";
 NSString *const ITEM_CONTROLLER = @"ItemController";
 NSString *const PAGE_CONTROLLER = @"PageController";
 NSString *const SHOW_PAGE_VIEW_SEGUE = @"ShowPageView";
