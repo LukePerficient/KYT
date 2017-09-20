@@ -8,21 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "KYTPImageSelector.h"
 
 @class KYTMemberViewController;
 
 #ifndef KYTImageSelectorDelegate_h
 #define KYTImageSelectorDelegate_h
 
-@protocol ImageSelector <NSObject,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
-
-@property (weak, nonatomic) IBOutlet UIImageView *memberImage;
-
-@end
-
 @interface KYTImageSelectorDelegate : NSObject <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
-//@property (nonatomic, strong) UIViewController<ImageSelector> *viewController;
 @property (nonatomic, weak) UIViewController<ImageSelector> *viewController;
 
 - (id)initWithViewController:(UIViewController<ImageSelector> *)delegatingViewController;

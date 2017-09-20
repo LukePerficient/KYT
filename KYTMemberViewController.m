@@ -9,6 +9,7 @@
 #import "KYTMemberViewController.h"
 #import "KYTImageSelectorDelegate.h"
 #import "KYTStringValidation.h"
+#import "KYTPImageSelector.h"
 
 @interface KYTMemberViewController ()
 
@@ -91,7 +92,7 @@ BOOL allowChangeFlag;
      
 - (void)initializeMembers
 {
-    _imageSelectorDelegate = [[KYTImageSelectorDelegate alloc] initWithViewController:self];
+    _imageSelectorDelegate = [[KYTImageSelectorDelegate alloc] initWithViewController:(UIViewController<ImageSelector> *)self];
     
     self.imagePickerController = [[UIImagePickerController alloc] init];
     self.imagePickerController.delegate = _imageSelectorDelegate;

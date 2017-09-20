@@ -72,6 +72,7 @@
 		444DE4681F61D47D00DF7499 /* KYTPersistenceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTPersistenceTests.m; sourceTree = "<group>"; };
 		444DE46E1F61E12F00DF7499 /* KYTTeamMemberPersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTTeamMemberPersistence.h; sourceTree = "<group>"; };
 		444DE46F1F61E17800DF7499 /* KYTTeamMemberPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberPersistence.m; sourceTree = "<group>"; };
+		449F8B681F72E4EB00C71B90 /* KYTPImageSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTPImageSelector.h; sourceTree = "<group>"; };
 		44AEEC9E1F7182EE00E18965 /* KYTTestMemberItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTTestMemberItemViewController.h; sourceTree = "<group>"; };
 		44AEEC9F1F7182EE00E18965 /* KYTTestMemberItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTestMemberItemViewController.m; sourceTree = "<group>"; };
 		44B86FED1F6AE04C004DAEF2 /* KYTCustomAlerts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTCustomAlerts.h; sourceTree = "<group>"; };
@@ -267,6 +268,7 @@
 		44B86FF31F6B05A8004DAEF2 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				449F8B681F72E4EB00C71B90 /* KYTPImageSelector.h */,
 				44B86FF41F6B05CD004DAEF2 /* KYTImageSelectorDelegate.h */,
 				44B86FF51F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m */,
 			);
