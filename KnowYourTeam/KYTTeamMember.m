@@ -23,17 +23,15 @@
     self = [super init];
     
     // First and Last Name must not be empty
-    if ([newFirstName isEqualToString:@""] && [newLastName isEqualToString:@""]) {
+    if ([newFirstName isEqualToString:@""] || [newLastName isEqualToString:@""]) {
         return nil;
     }
     
     // First and Last Name must not contain special characters
-    if ([KYTStringValidation containsSpecialCharacters:newFirstName]){
+    if ([KYTStringValidation containsSpecialCharacters:newFirstName] || [KYTStringValidation containsSpecialCharacters:newLastName]){
         return nil;
     }
-    if ([KYTStringValidation containsSpecialCharacters:newLastName]){
-        return nil;
-    }
+
         
     
     if (self) {
