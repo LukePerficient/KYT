@@ -20,7 +20,7 @@
 
 @property (strong, atomic) KYTTeamMember *member;
 @property (strong, atomic) UIImagePickerController *imagePickerController;
-@property KYTImageSelectorDelegate *imageSelectorDelegate;
+@property (strong, atomic) KYTImageSelectorDelegate *imageSelectorDelegate;
 @property (nonatomic) NSUInteger itemIndex;
 
 @end
