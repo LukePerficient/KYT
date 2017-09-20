@@ -28,9 +28,13 @@
     }
     
     // First and Last Name must not contain special characters
-    if ([KYTStringValidation containsSpecialCharacters:newFirstName] && [KYTStringValidation containsSpecialCharacters:newFirstName]) {
+    if ([KYTStringValidation containsSpecialCharacters:newFirstName]){
         return nil;
     }
+    if ([KYTStringValidation containsSpecialCharacters:newLastName]){
+        return nil;
+    }
+        
     
     if (self) {
         self.firstName = newFirstName;

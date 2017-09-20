@@ -8,6 +8,7 @@
 
 #import "KYTMemberViewController.h"
 #import "KYTImageSelectorDelegate.h"
+#import "KYTStringValidation.h"
 
 @interface KYTMemberViewController ()
 
@@ -35,11 +36,13 @@ BOOL allowChangeFlag;
 }
 
 - (void)didReceiveMemoryWarning {
+    NSLog(@"MemberViewController Did recieve memory warning");
     [super didReceiveMemoryWarning];
 }
 
 // MARK: Navigation
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+
     self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text withLastName:self.lastNameText.text withPhoto:self.memberImage.image];
     
     if (self.member != nil) {
@@ -77,7 +80,6 @@ BOOL allowChangeFlag;
 }
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender {
-    NSLog(@"Yo Man");
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
