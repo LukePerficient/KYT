@@ -149,8 +149,11 @@
         //Save initial member list
         [KYTTeamMemberPersistence writeArray:self.teamMemberList toFilePath:TEAM_MEMBER_FILE_NAME];
         }
-    
-    
+}
+
+-(void)dealloc
+{
+    NSLog(@"TeamMemberListViewController is being deallocated");
 }
 
 

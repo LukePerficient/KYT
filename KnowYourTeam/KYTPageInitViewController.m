@@ -31,8 +31,6 @@
 {
     _members = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
     
-   
-    
     id previousViewController = [self.navigationController.viewControllers objectAtIndex:self.navigationController.viewControllers.count - 1];
     UIPageViewController *pageController;
     
@@ -150,6 +148,9 @@
     
     return nil;
 }
-
+-(void)dealloc
+{
+    NSLog(@"PageViewController is being deallocated");
+}
 
 @end

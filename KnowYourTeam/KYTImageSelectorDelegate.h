@@ -22,7 +22,8 @@
 
 @interface KYTImageSelectorDelegate : NSObject <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
-@property (nonatomic, strong) UIViewController<ImageSelector> *viewController;
+//@property (nonatomic, strong) UIViewController<ImageSelector> *viewController;
+@property (nonatomic, weak) UIViewController<ImageSelector> *viewController;
 
 - (id)initWithViewController:(UIViewController<ImageSelector> *)delegatingViewController;
 

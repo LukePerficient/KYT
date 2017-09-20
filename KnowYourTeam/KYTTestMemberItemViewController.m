@@ -52,4 +52,9 @@
     _answerTextField.clipsToBounds = YES;
 }
 
+-(void)dealloc
+{
+    NSLog(@"TeamMemberItemViewController is being deallocated");
+}
+
 @end

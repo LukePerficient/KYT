@@ -101,12 +101,15 @@ BOOL allowChangeFlag;
     }
 }
 
-
-
 - (void)removeKeyboard
 {
     [self.firstNameTxt resignFirstResponder];
     [self.lastNameText resignFirstResponder];
+}
+
+-(void)dealloc
+{
+    NSLog(@"MemberViewController is being deallocated");
 }
 
 @end
