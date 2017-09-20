@@ -13,7 +13,7 @@
 
 + (BOOL)containsSpecialCharacters:(NSString *)testString
 {
-    NSCharacterSet * set = [[NSCharacterSet characterSetWithCharactersInString:@"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLKMNOPQRSTUVWXYZ0123456789"] invertedSet];
+    NSCharacterSet * set = [[NSCharacterSet characterSetWithCharactersInString:@"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLKMNOPQRSTUVWXYZ"] invertedSet];
     
     return [testString rangeOfCharacterFromSet:set].location != NSNotFound;
 }
