@@ -15,6 +15,8 @@
 @interface KYTTeamMemberListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic) NSInteger selectedRowIndex;
+@property (weak, nonatomic) IBOutlet UITableView *teamMemberTableView;
+@property IBOutletCollection(KYTTeamMember) NSMutableArray *teamMemberList;
 
 @end
 

@@ -17,5 +17,6 @@
 
 @property (strong, atomic) KYTTeamMember *member;
 @property (nonatomic) NSUInteger itemIndex;
+@property (nonatomic) NSUInteger totalUsers;
 
 @end

@@ -11,8 +11,6 @@
 
 @interface KYTTeamMemberListViewController ()
 
-@property (weak, nonatomic) IBOutlet UITableView *teamMemberTableView;
-@property IBOutletCollection(KYTTeamMember) NSMutableArray *teamMemberList;
 
 @end
 
