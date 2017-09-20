@@ -106,6 +106,7 @@
             KYTTestMemberItemViewController *pageItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TestItemController"];
             pageItemViewController.itemIndex = itemIndex;
             pageItemViewController.member = _members[itemIndex];
+            pageItemViewController.totalUsers = _members.count;
             return pageItemViewController;
         }
     }

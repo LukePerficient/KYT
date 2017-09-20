@@ -7,8 +7,11 @@
 //
 
 #import "KYTTestMemberItemViewController.h"
+#import "KYTTeamMemberListViewController.h"
+
 
 @interface KYTTestMemberItemViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *testNumber;
 
 @end
 
@@ -18,7 +21,7 @@
     [super viewDidLoad];
     
     [self initializeMembers];
-    
+    _testNumber.text = [NSString stringWithFormat:@"%lu of %lu", _itemIndex+1, (unsigned long)_totalUsers];
 }
 //Test
 // MARK: Actions
@@ -30,6 +33,8 @@
         [self prepareAnswerTextFieldWithColor:[UIColor redColor]];
         _answerTextField.text = @"Incorrect";
     }
+   
+    
     
     //Add code to pause for 1 sec, then move onto next slide.
     //Add code to disallow user from going back
