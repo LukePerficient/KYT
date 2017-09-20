@@ -12,6 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
-@property (strong, nonatomic) IBOutlet UIImageView *imageViewTable;
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewTable;
 
 @end

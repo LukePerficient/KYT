@@ -55,6 +55,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="firstNameLabel" destination="9lJ-Ek-Ug4" id="xpN-mJ-kQy"/>
+                                            <outlet property="imageViewTable" destination="lIs-FL-2lV" id="RxK-5n-ObJ"/>
                                             <outlet property="lastNameLabel" destination="JfE-KJ-Rq3" id="nJ9-lR-0wX"/>
                                         </connections>
                                     </tableViewCell>
@@ -211,7 +212,6 @@
         <!--Navigation Controller-->
         <scene sceneID="emo-Lu-Ie4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ix3-Tw-iLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rDM-oi-iKB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TQF-bf-kol">
@@ -223,6 +223,7 @@
                         <segue destination="0z5-zt-an6" kind="relationship" relationship="rootViewController" id="vwO-di-iCl"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ix3-Tw-iLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3954.4000000000001" y="130.88455772113943"/>
         </scene>

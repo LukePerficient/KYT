@@ -58,7 +58,7 @@
     
     cell.firstNameLabel.text = teamMember.firstName;
     cell.lastNameLabel.text = teamMember.lastName;
-    cell.imageView.image = teamMember.photo;
+    cell.imageViewTable.image = teamMember.photo;
     
     return cell;
 }
