@@ -80,8 +80,9 @@ BOOL allowChangeFlag;
     }
 }
 
-- (IBAction)cancelAction:(UIBarButtonItem *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+- (IBAction)cancelAction:(UIBarButtonItem *)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 // MARK: Private methods

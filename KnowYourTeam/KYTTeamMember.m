@@ -31,9 +31,7 @@
     if ([KYTStringValidation containsSpecialCharacters:newFirstName] || [KYTStringValidation containsSpecialCharacters:newLastName]){
         return nil;
     }
-
-        
-    
+  
     if (self) {
         self.firstName = newFirstName;
         self.lastName = newLastName;
