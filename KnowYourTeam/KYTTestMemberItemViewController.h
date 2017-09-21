@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KYTTeamMember.h"
-#import "KYTCustomAlerts.h"
+
+@class KYTTeamMember;
 
 @interface KYTTestMemberItemViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *memberTestTextField;

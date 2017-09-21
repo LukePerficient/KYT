@@ -11,6 +11,7 @@
 #import "KYTTeamMemberPersistence.h"
 #import "KYTMemberViewController.h"
 #import "KYTTeamMember.h"
+#import "KYTConstants.h"
 
 @interface KYTPageInitViewController ()
 
@@ -38,7 +39,7 @@
     if ([previousViewController isKindOfClass:[KYTPageInitViewController class]]) {
         pageController = [self.storyboard instantiateViewControllerWithIdentifier:PAGE_CONTROLLER];
     } else {
-        pageController = [self.storyboard instantiateViewControllerWithIdentifier:@"TestPageController"];
+        pageController = [self.storyboard instantiateViewControllerWithIdentifier:TEST_PAGE_IDENTIFIER];
     }
     
     
@@ -104,7 +105,7 @@
             pageItemViewController.member = _members[itemIndex];
             return pageItemViewController;
         } else {
-            KYTTestMemberItemViewController *pageItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TestItemController"];
+            KYTTestMemberItemViewController *pageItemViewController = [self.storyboard instantiateViewControllerWithIdentifier:TEST_ITEM_IDENTIFIER];
             pageItemViewController.itemIndex = itemIndex;
             pageItemViewController.member = _members[itemIndex];
             pageItemViewController.totalUsers = _members.count;

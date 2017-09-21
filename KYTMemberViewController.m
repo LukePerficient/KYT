@@ -7,9 +7,12 @@
 //
 
 #import "KYTMemberViewController.h"
+#import "KYTTeamMember.h"
+#import "KYTCustomAlerts.h"
 #import "KYTImageSelectorDelegate.h"
 #import "KYTStringValidation.h"
 #import "KYTPImageSelector.h"
+#import "KYTConstants.h"
 
 @interface KYTMemberViewController ()
 
