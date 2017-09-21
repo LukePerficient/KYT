@@ -7,6 +7,8 @@
 //
 
 #import "KYTTestMemberItemViewController.h"
+#import "KYTTeamMember.h"
+#import "KYTCustomAlerts.h"
 #import "KYTTeamMemberListViewController.h"
 
 
