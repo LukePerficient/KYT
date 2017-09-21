@@ -41,7 +41,6 @@
         pageController = [self.storyboard instantiateViewControllerWithIdentifier:@"TestPageController"];
     }
     
-    
     pageController.dataSource = self;
     
     if([_members count])
@@ -71,6 +70,11 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
     KYTMemberViewController *itemController = (KYTMemberViewController *)viewController;
+    
+    //If view controller is TestView, don't allow user to scroll backwards
+    if ([itemController.description rangeOfString:@"Test"].location != NSNotFound){
+        return nil;
+    }
     
     if (itemController.itemIndex > 0)
     {

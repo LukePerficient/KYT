@@ -274,6 +274,7 @@
                     </view>
                     <connections>
                         <outlet property="answerTextField" destination="Pch-Hg-jI2" id="9Bh-G7-Z7K"/>
+                        <outlet property="checkAnswerButton" destination="gig-De-pqX" id="HdG-1O-52L"/>
                         <outlet property="memberPhoto" destination="JjE-sm-CLb" id="IH8-84-nS1"/>
                         <outlet property="memberTestTextField" destination="Zw2-w3-V8E" id="edt-6e-Jc1"/>
                         <outlet property="testNumber" destination="tif-ME-ZFL" id="Dd1-U0-V3z"/>
@@ -332,8 +333,8 @@
     </scenes>
     <resources>
         <image name="PersonImage" width="250" height="165"/>
-        <image name="Test30" width="30" height="30"/>
-        <image name="User30" width="30" height="30"/>
+        <image name="Test30" width="25" height="25"/>
+        <image name="User30" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Mgg-F5-fyH"/>

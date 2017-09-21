@@ -13,6 +13,7 @@
 
 @interface KYTTestMemberItemViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *testNumber;
+@property (weak, nonatomic) IBOutlet UIButton *checkAnswerButton;
 
 @end
 
@@ -40,11 +41,13 @@
         [self prepareAnswerTextFieldWithColor:[UIColor redColor]];
         _answerTextField.text = @"Incorrect";
     }
-   
+
+    _memberTestTextField.enabled = NO;
+    _checkAnswerButton.enabled = NO;
     
     
+//    [self itemControllerForIndex:itemController.itemIndex+1];
     //Add code to pause for 1 sec, then move onto next slide.
-    //Add code to disallow user from going back
 }
 
 // MARK: Private Methods
