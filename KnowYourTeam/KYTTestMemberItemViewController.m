@@ -30,7 +30,7 @@
 //Test
 // MARK: Actions
 - (IBAction)checkUserAnswer:(UIButton *)sender {
-    if ([_member.firstName isEqualToString:_memberTestTextField.text]) {
+    if (![_member.firstName caseInsensitiveCompare:_memberTestTextField.text]) {
         [self prepareAnswerTextFieldWithColor:[UIColor greenColor]];
         _answerTextField.text = @"Correct";
         KYTPageInitViewController *parent = (KYTPageInitViewController *)self.parentViewController.parentViewController;
