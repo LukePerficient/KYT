@@ -33,23 +33,16 @@
     if ([_member.firstName isEqualToString:_memberTestTextField.text]) {
         [self prepareAnswerTextFieldWithColor:[UIColor greenColor]];
         _answerTextField.text = @"Correct";
-        
         KYTPageInitViewController *parent = (KYTPageInitViewController *)self.parentViewController.parentViewController;
         parent.answerCount += 1;
-        
         NSLog(@"Correct Answer Count = %lu", parent.answerCount);
-        
     } else {
         [self prepareAnswerTextFieldWithColor:[UIColor redColor]];
         _answerTextField.text = @"Incorrect";
     }
-
+    //Don't allow user to enter answer again
     _memberTestTextField.enabled = NO;
     _checkAnswerButton.enabled = NO;
-    
-    
-//    [self itemControllerForIndex:itemController.itemIndex+1];
-    //Add code to pause for 1 sec, then move onto next slide.
 }
 
 // MARK: Private Methods
@@ -67,6 +60,7 @@
     _answerTextField.layer.borderWidth = 2.0f;
     _answerTextField.layer.cornerRadius = 5;
     _answerTextField.clipsToBounds = YES;
+
 }
 
 -(void)dealloc
