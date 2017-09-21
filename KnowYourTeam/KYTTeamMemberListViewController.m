@@ -13,6 +13,7 @@
 #import "KYTTeamMemberPersistence.h"
 #import "KYTPageInitViewController.h"
 #import "KYTConstants.h"
+#import "KYTTeamMemberListTableViewDelegate.h"
 
 @interface KYTTeamMemberListViewController ()
 
@@ -26,14 +27,6 @@
     
     // Initialize Class and Instance Members
     [self initialzeMembers];
-    
-    // Load member data from plist file
-    [self loadMemberData];
-    
-    // Assign instance of self as tableview's delegate and datasource
-    self.teamMemberTableView.dataSource = self;
-    self.teamMemberTableView.delegate = self;
-    
 }
 
 
@@ -42,18 +35,6 @@
 }
 
 // Mark: TableView Datasource
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    self.selectedRowIndex = indexPath.row;
-    
-    [self performSegueWithIdentifier:SHOW_PAGE_VIEW_SEGUE sender:self];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [self.teamMemberList count];
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     KYTTeamMemberViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_IDENTIFIER forIndexPath:indexPath];
@@ -66,10 +47,9 @@
     return cell;
 }
 
-
-- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return UITableViewCellEditingStyleDelete;
+    return [self.teamMemberList count];
 }
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -128,6 +108,15 @@
 - (void)initialzeMembers
 {
     self.teamMemberList = [[NSMutableArray alloc] init];
+    
+    // Load member data from plist file
+    [self loadMemberData];
+    
+    // Assign instance of self as tableview's delegate and datasource
+    _tableViewDelegate = [[KYTTeamMemberListTableViewDelegate alloc] initWithViewController:(UIViewController<KYTListViewController> *)self];
+    
+    self.teamMemberTableView.dataSource = self;
+    self.teamMemberTableView.delegate = _tableViewDelegate;
 }
 
 - (void)loadMemberData

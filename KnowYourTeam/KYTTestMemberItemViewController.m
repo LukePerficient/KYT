@@ -33,11 +33,7 @@
         [self prepareAnswerTextFieldWithColor:[UIColor greenColor]];
         _answerTextField.text = @"Correct";
         
-        KYTPageInitViewController *parent = (KYTPageInitViewController *)self.parentViewController.parentViewController;
-        parent.answerCount += 1;
-        
-        NSLog(@"Correct Answer Count = %lu", parent.answerCount);
-        
+        [self incrementAnswerCount];
     } else {
         [self prepareAnswerTextFieldWithColor:[UIColor redColor]];
         _answerTextField.text = @"Incorrect";
@@ -69,6 +65,15 @@
 -(void)dealloc
 {
     NSLog(@"TeamMemberItemViewController is being deallocated");
+}
+
+// Private Methods:
+- (void)incrementAnswerCount
+{
+    KYTPageInitViewController *parent = (KYTPageInitViewController *)self.parentViewController.parentViewController;
+    parent.answerCount += 1;
+    
+    NSLog(@"Correct Answer Count = %lu", parent.answerCount);
 }
 
 @end

@@ -28,6 +28,7 @@
 		44B86FEF1F6AE05B004DAEF2 /* KYTCustomAlerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B86FEE1F6AE05B004DAEF2 /* KYTCustomAlerts.m */; };
 		44B86FF11F6AE397004DAEF2 /* KYTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B86FF01F6AE397004DAEF2 /* KYTConstants.m */; };
 		44B86FF61F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B86FF51F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m */; };
+		44BFEAC91F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BFEAC81F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m */; };
 		59E483F31B5DDF4B2ED890FE /* libPods-KnowYourTeamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F2D91110495B90C8785E42 /* libPods-KnowYourTeamTests.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,8 @@
 		44B86FF21F6AE3A7004DAEF2 /* KYTConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTConstants.h; sourceTree = "<group>"; };
 		44B86FF41F6B05CD004DAEF2 /* KYTImageSelectorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTImageSelectorDelegate.h; sourceTree = "<group>"; };
 		44B86FF51F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTImageSelectorDelegate.m; sourceTree = "<group>"; };
+		44BFEAC71F7420220038DDED /* KYTTeamMemberListTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTTeamMemberListTableViewDelegate.h; sourceTree = "<group>"; };
+		44BFEAC81F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberListTableViewDelegate.m; sourceTree = "<group>"; };
 		50F2D91110495B90C8785E42 /* libPods-KnowYourTeamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowYourTeamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FED5FA1100159159AE95BDB /* Pods-KnowYourTeam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowYourTeam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowYourTeam/Pods-KnowYourTeam.debug.xcconfig"; sourceTree = "<group>"; };
 		B06C5A44165CFDDF2F27A470 /* Pods-KnowYourTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowYourTeam.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowYourTeam/Pods-KnowYourTeam.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +207,7 @@
 		444DE4621F61D28A00DF7499 /* TeamMemberList */ = {
 			isa = PBXGroup;
 			children = (
+				44BFEAC61F741FBF0038DDED /* Delegates */,
 				444DE4651F61D2FF00DF7499 /* Views */,
 				444DE4641F61D2DD00DF7499 /* Controllers */,
 			);
@@ -271,6 +275,15 @@
 				449F8B681F72E4EB00C71B90 /* KYTPImageSelector.h */,
 				44B86FF41F6B05CD004DAEF2 /* KYTImageSelectorDelegate.h */,
 				44B86FF51F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		44BFEAC61F741FBF0038DDED /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				44BFEAC71F7420220038DDED /* KYTTeamMemberListTableViewDelegate.h */,
+				44BFEAC81F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -496,6 +509,7 @@
 				444DE4701F61E17800DF7499 /* KYTTeamMemberPersistence.m in Sources */,
 				44B86FF61F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m in Sources */,
 				4443B7041F606B39008522BB /* KYTTeamMember.m in Sources */,
+				44BFEAC91F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m in Sources */,
 				4443B6E11F604B0D008522BB /* KYTAppDelegate.m in Sources */,
 				44B86FEF1F6AE05B004DAEF2 /* KYTCustomAlerts.m in Sources */,
 				444217161F702706009F6D32 /* KYTPageInitViewController.m in Sources */,
