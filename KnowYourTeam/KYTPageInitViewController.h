@@ -13,5 +13,6 @@
 @property (nonatomic, strong) NSArray *members;
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 @property (nonatomic) NSInteger selectedRowIndex;
+@property (nonatomic) NSInteger answerCount;
 
 @end

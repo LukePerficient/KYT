@@ -23,6 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self initializeMembers];
     [self createPageViewController];
     [self setupPageControl];
 }
@@ -152,6 +153,12 @@
 -(void)dealloc
 {
     NSLog(@"PageViewController is being deallocated");
+}
+
+// Mark: Private Methods
+- (void)initializeMembers
+{
+    _answerCount = 0;
 }
 
 @end

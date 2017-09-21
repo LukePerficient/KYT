@@ -8,6 +8,7 @@
 
 #import "KYTTestMemberItemViewController.h"
 #import "KYTTeamMemberListViewController.h"
+#import "KYTPageInitViewController.h"
 
 
 @interface KYTTestMemberItemViewController ()
@@ -29,6 +30,12 @@
     if ([_member.firstName isEqualToString:_memberTestTextField.text]) {
         [self prepareAnswerTextFieldWithColor:[UIColor greenColor]];
         _answerTextField.text = @"Correct";
+        
+        KYTPageInitViewController *parent = (KYTPageInitViewController *)self.parentViewController.parentViewController;
+        parent.answerCount += 1;
+        
+        NSLog(@"Correct Answer Count = %lu", parent.answerCount);
+        
     } else {
         [self prepareAnswerTextFieldWithColor:[UIColor redColor]];
         _answerTextField.text = @"Incorrect";
