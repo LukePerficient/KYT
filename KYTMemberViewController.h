@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KYTTeamMember.h"
-#import "KYTCustomAlerts.h"
 
+@class KYTTeamMember;
 @class KYTImageSelectorDelegate;
 
 @interface KYTMemberViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>

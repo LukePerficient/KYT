@@ -11,6 +11,7 @@
 #import "KYTTeamMemberPersistence.h"
 #import "KYTMemberViewController.h"
 #import "KYTTeamMember.h"
+#import "KYTConstants.h"
 
 @interface KYTPageInitViewController ()
 

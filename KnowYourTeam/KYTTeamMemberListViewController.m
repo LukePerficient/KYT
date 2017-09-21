@@ -7,7 +7,12 @@
 //
 
 #import "KYTTeamMemberListViewController.h"
+#import "KYTTeamMember.h"
+#import "KYTTeamMemberViewCell.h"
+#import "KYTMemberViewController.h"
+#import "KYTTeamMemberPersistence.h"
 #import "KYTPageInitViewController.h"
+#import "KYTConstants.h"
 
 @interface KYTTeamMemberListViewController ()
 
