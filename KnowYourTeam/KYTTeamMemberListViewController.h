@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @class KYTTeamMember;
+@class KYTTeamMemberListTableViewDelegate;
 
-@interface KYTTeamMemberListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface KYTTeamMemberListViewController : UIViewController <UITableViewDataSource>
 
 @property (nonatomic) NSInteger selectedRowIndex;
 @property (weak, nonatomic) IBOutlet UITableView *teamMemberTableView;
 @property IBOutletCollection(KYTTeamMember) NSMutableArray *teamMemberList;
+@property (strong, nonatomic) KYTTeamMemberListTableViewDelegate *tableViewDelegate;
 
 @end
 
