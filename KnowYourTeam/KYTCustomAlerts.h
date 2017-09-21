@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "UIView+Toast.h"
-#import "KYTConstants.h"
 
 #ifndef KYTCustomAlerts_h
 #define KYTCustomAlerts_h
