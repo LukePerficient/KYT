@@ -14,6 +14,7 @@
 #import "KYTPageInitViewController.h"
 #import "KYTConstants.h"
 #import "KYTTeamMemberListTableViewDelegate.h"
+#import <QuartzCore/CALayer.h>
 
 @interface KYTTeamMemberListViewController ()
 
@@ -39,6 +40,12 @@
 {
     KYTTeamMemberViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_IDENTIFIER forIndexPath:indexPath];
     KYTTeamMember *teamMember = self.teamMemberList[indexPath.row];
+    
+    // Rounded Rect for cell image
+    CALayer *cellImageLayer = cell.imageViewTable.layer;
+    [cellImageLayer setCornerRadius:25];
+    [cellImageLayer setMasksToBounds:YES];
+
     
     cell.firstNameLabel.text = teamMember.firstName;
     cell.lastNameLabel.text = teamMember.lastName;

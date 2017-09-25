@@ -27,12 +27,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     _viewController.selectedRowIndex = indexPath.row;
-    
-    NSLog(@"Yo Boss");
-    
     [_viewController performSegueWithIdentifier:SHOW_PAGE_VIEW_SEGUE sender:self];
     
-    NSLog(@"Yo Boss");
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
