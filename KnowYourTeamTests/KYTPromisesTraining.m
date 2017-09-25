@@ -41,24 +41,34 @@
     [step1 then:^id(id value) {
         NSLog(@"State: %@",value);
         
+        XCTAssertEqual(value, @"Room is cleaned.");
+        
         return value;
     } error:^id (NSError *error) {
         NSLog(@"State: %@", error.localizedDescription);
         
-        return error;
+        XCTAssertEqual(error.localizedDescription, @"Room is not clean.");
+        
+        return error.localizedDescription;
     }];
+
 }
 
-- (void)testChainingOfPromises
+- (void)testChainingOfPromisess
 {
     [[[[self cleanRoom] then:^id(id value) {
         return [self removeGarbage:value];
     }] then:^id(id value) {
         return [self winIcecream:value];
-    }] then:^id (id value) {
-        NSLog(@"Finished. %@",value);
+    }] then:^id (NSString *value) {
+        NSLog(@"%@",value);
+        NSLog(@"Cleaned the room. Remove Garbage. Won Icecream.");
         
-        return nil;
+        NSString *expectedResult = @"Cleaned the room. Remove Garbage. Won Icecream.";
+
+        XCTAssert([@"Cleaned the room. Remove Garbage. Won Icecream." isEqualToString:expectedResult]);
+        
+        return value;
     }];
 }
 
