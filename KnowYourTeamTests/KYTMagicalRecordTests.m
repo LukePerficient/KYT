@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <MagicalRecord/MagicalRecord.h>
+//#import <MagicalRecord/MagicalRecord.h>
 #import "KYTTeamMember.h"
 
 @interface KYTMagicalRecordTests : XCTestCase

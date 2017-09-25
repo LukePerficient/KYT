@@ -18,6 +18,7 @@
 
 - (id) initWithFirstName:(NSString*)newFirstName
           withLastName:(NSString*)newLastName
+          withTitle:(NSString*)newTitle
           withPhoto:(UIImage*)newPhotoURL
 {
     self = [super init];
@@ -35,6 +36,7 @@
     if (self) {
         self.firstName = newFirstName;
         self.lastName = newLastName;
+        self.title = newTitle;
         self.photo = newPhotoURL;
     }
     

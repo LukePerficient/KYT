@@ -35,6 +35,7 @@ BOOL allowChangeFlag;
         allowChangeFlag = NO;
         _firstNameTxt.enabled = NO;
         _lastNameText.enabled = NO;
+        _titleText.enabled = NO;
     }
     
 }
@@ -47,7 +48,7 @@ BOOL allowChangeFlag;
 // MARK: Navigation
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
 
-    self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text withLastName:self.lastNameText.text withPhoto:self.memberImage.image];
+    self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text withLastName:self.lastNameText.text withTitle:self.titleText.text withPhoto:self.memberImage.image];
     
     if (self.member != nil) {
         return YES;
@@ -60,10 +61,12 @@ BOOL allowChangeFlag;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text withLastName:self.lastNameText.text withPhoto:self.memberImage.image];
+    self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text withLastName:self.lastNameText.text withTitle:self.titleText.text withPhoto:self.memberImage.image];
 }
 
 // MARK: Actions
+
+
 - (IBAction)selectImageFromLibrary:(UITapGestureRecognizer *)sender {
     if (allowChangeFlag){
         [self removeKeyboard];
@@ -104,6 +107,7 @@ BOOL allowChangeFlag;
     if (_member) {
         _firstNameTxt.text = _member.firstName;
         _lastNameText.text = _member.lastName;
+        _titleText.text = _member.title;
         _memberImage.image = _member.photo;
     }
 }

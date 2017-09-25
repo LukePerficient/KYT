@@ -16,10 +16,12 @@
 
 @property (atomic,strong) NSString *firstName;
 @property (atomic,strong) NSString *lastName;
+@property (atomic, strong) NSString *title;
 @property (atomic,strong) UIImage *photo;
 
 - (id) initWithFirstName:(NSString*)newFirstName
           withLastName:(NSString*)newLastName
+          withTitle:(NSString*)newTitle
           withPhoto:(UIImage*)newPhoto;
 
 @end

@@ -33,7 +33,7 @@
 }
 
 - (void)testWithHappyPathMember {
-    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"Dustin" withLastName:@"Landry" withPhoto:[UIImage imageNamed:@"PersonImage"]];
+    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"Dustin" withLastName:@"Landry" withTitle:@"Tech" withPhoto:[UIImage imageNamed:@"PersonImage"]];
     
     XCTAssertEqual(self.expectedPositiveResults[@"FirstName"], happyMember.firstName);
     XCTAssertEqual(self.expectedPositiveResults[@"LastName"], happyMember.lastName);
@@ -41,7 +41,7 @@
 }
 
 - (void)testWithEmptyMemberInfo {
-    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"" withLastName:@"" withPhoto:nil];
+    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"" withLastName:@"" withTitle:@"Tech" withPhoto:nil];
     
     XCTAssertEqual(self.expectedNegativeResults[@"FirstName"], happyMember.firstName);
     XCTAssertEqual(self.expectedNegativeResults[@"LastName"], happyMember.lastName);
@@ -49,7 +49,7 @@
 }
 
 - (void)testWithInvalidMemberInfo {
-    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"4234#@$#@$]\[" withLastName:@"432][;',.2453)(*&^%$#@" withPhoto:nil];
+    KYTTeamMember *happyMember = [[KYTTeamMember alloc] initWithFirstName:@"4234#@$#@$]\[" withLastName:@"432][;',.2453)(*&^%$#@" withTitle:@"Tech" withPhoto:nil];
     
     XCTAssertEqual(self.expectedNegativeResults[@"FirstName"], happyMember.firstName);
     XCTAssertEqual(self.expectedNegativeResults[@"LastName"], happyMember.lastName);
