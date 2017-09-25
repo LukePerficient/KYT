@@ -52,11 +52,12 @@
 - (void)testChainingOfPromises
 {
     [[[[self cleanRoom] then:^id(id value) {
-        return [self removeGarbage];
+        return [self removeGarbage:value];
     }] then:^id(id value) {
-        return [self winIcecream];
+        return [self winIcecream:value];
     }] then:^id (id value) {
-        NSLog(@"Finished.");
+        NSLog(@"Finished. %@",value);
+        
         return nil;
     }];
 }
@@ -67,14 +68,14 @@
     return [KSPromise resolve:@"Cleaned the room."];
 }
 
-- (KSPromise *)removeGarbage
+- (KSPromise *)removeGarbage:(id)message
 {
-    return [KSPromise resolve:@"Remove Garbage."];
+    return [KSPromise resolve:[NSString stringWithFormat:@"%@ Remove Garbage.",message]];
 }
 
-- (KSPromise *)winIcecream
+- (KSPromise *)winIcecream:(id)message
 {
-    return [KSPromise resolve:@"Won Icecream."];
+    return [KSPromise resolve:[NSString stringWithFormat:@"%@ Won Icecream.",message]];
 }
 
 
