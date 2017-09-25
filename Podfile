@@ -4,6 +4,7 @@
 target 'KnowYourTeam' do
   pod 'Toast’
   pod 'MagicalRecord'
+  pod 'KSDeferred'
 
   target 'KnowYourTeamTests' do
     inherit! :search_paths
