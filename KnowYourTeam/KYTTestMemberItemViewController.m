@@ -27,7 +27,7 @@
     [self initializeMembers];
     _testNumber.text = [NSString stringWithFormat:@"%lu of %lu", _itemIndex+1, (unsigned long)_totalUsers];
 }
-//Test
+
 // MARK: Actions
 - (IBAction)checkUserAnswer:(UIButton *)sender {
     if (![_member.firstName caseInsensitiveCompare:_memberTestTextField.text]) {

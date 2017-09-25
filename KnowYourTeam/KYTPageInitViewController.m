@@ -12,6 +12,7 @@
 #import "KYTMemberViewController.h"
 #import "KYTTeamMember.h"
 #import "KYTConstants.h"
+#import "NSMutableArray_Shuffling.h"
 
 @interface KYTPageInitViewController ()
 
@@ -31,8 +32,6 @@
 
 - (void)createPageViewController
 {
-    _members = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
-    
     id previousViewController = [self.navigationController.viewControllers objectAtIndex:self.navigationController.viewControllers.count - 1];
     UIPageViewController *pageController;
     
@@ -64,6 +63,19 @@
     [[UIPageControl appearance] setPageIndicatorTintColor:[UIColor grayColor]];
     [[UIPageControl appearance] setCurrentPageIndicatorTintColor:[UIColor whiteColor]];
     [[UIPageControl appearance] setBackgroundColor:[UIColor darkGrayColor]];
+}
+
+// MARK: UIResponder abstract interface methods
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake) {
+        [self shuffleAndResetTest];
+    }
 }
 
 #pragma mark UIPageViewControllerDataSource
@@ -164,6 +176,14 @@
 - (void)initializeMembers
 {
     _answerCount = 0;
+    _members = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
+}
+
+- (void)shuffleAndResetTest 
+{
+    [_members shuffle];
+    [self createPageViewController];
+    [self setupPageControl];
 }
 
 @end

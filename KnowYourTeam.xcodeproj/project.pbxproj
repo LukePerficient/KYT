@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		26EF9D56AAA105234323883A /* libPods-KnowYourTeam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E273890B94E5AB5360D3B6 /* libPods-KnowYourTeam.a */; };
 		4401D5D81F6C5E2300214460 /* KYTMagicalRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4401D5D71F6C5E2300214460 /* KYTMagicalRecordTests.m */; };
+		4423BA941F7966D000A3614A /* NSMutableArray_Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 4423BA931F7966D000A3614A /* NSMutableArray_Shuffling.m */; };
 		443EF3CE1F68B412005CADE3 /* KYTTeamMemberSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 443EF3CD1F68B412005CADE3 /* KYTTeamMemberSpec.mm */; };
 		444217161F702706009F6D32 /* KYTPageInitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444217151F702706009F6D32 /* KYTPageInitViewController.m */; };
 		4443B6DE1F604B0D008522BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B6DD1F604B0D008522BB /* main.m */; };
@@ -46,6 +47,8 @@
 		03ED8B347AC1F2549906C376 /* Pods-KnowYourTeamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowYourTeamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowYourTeamTests/Pods-KnowYourTeamTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D97BF24025BC18326A74D92 /* Pods-KnowYourTeamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowYourTeamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowYourTeamTests/Pods-KnowYourTeamTests.release.xcconfig"; sourceTree = "<group>"; };
 		4401D5D71F6C5E2300214460 /* KYTMagicalRecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTMagicalRecordTests.m; sourceTree = "<group>"; };
+		4423BA921F7966D000A3614A /* NSMutableArray_Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArray_Shuffling.h; sourceTree = "<group>"; };
+		4423BA931F7966D000A3614A /* NSMutableArray_Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArray_Shuffling.m; sourceTree = "<group>"; };
 		443EF3CD1F68B412005CADE3 /* KYTTeamMemberSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KYTTeamMemberSpec.mm; sourceTree = "<group>"; };
 		444217141F702706009F6D32 /* KYTPageInitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTPageInitViewController.h; sourceTree = "<group>"; };
 		444217151F702706009F6D32 /* KYTPageInitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTPageInitViewController.m; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 		444DE45E1F61CF1C00DF7499 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4423BA921F7966D000A3614A /* NSMutableArray_Shuffling.h */,
+				4423BA931F7966D000A3614A /* NSMutableArray_Shuffling.m */,
 				444DE4611F61CFED00DF7499 /* KYTStringValidation.h */,
 				444DE45F1F61CF9E00DF7499 /* KYTStringValidation.m */,
 				444DE46E1F61E12F00DF7499 /* KYTTeamMemberPersistence.h */,
@@ -519,6 +524,7 @@
 				444DE4601F61CF9E00DF7499 /* KYTStringValidation.m in Sources */,
 				4443B7081F6071E3008522BB /* KYTTeamMemberViewCell.m in Sources */,
 				4443B6DE1F604B0D008522BB /* main.m in Sources */,
+				4423BA941F7966D000A3614A /* NSMutableArray_Shuffling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
