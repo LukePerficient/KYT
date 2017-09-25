@@ -181,6 +181,9 @@
 
 - (void)shuffleAndResetTest 
 {
+    
+    
+    
     [_members shuffle];
     [self createPageViewController];
     [self setupPageControl];

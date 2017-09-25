@@ -10,6 +10,7 @@
 		26EF9D56AAA105234323883A /* libPods-KnowYourTeam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E273890B94E5AB5360D3B6 /* libPods-KnowYourTeam.a */; };
 		4401D5D81F6C5E2300214460 /* KYTMagicalRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4401D5D71F6C5E2300214460 /* KYTMagicalRecordTests.m */; };
 		4423BA941F7966D000A3614A /* NSMutableArray_Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 4423BA931F7966D000A3614A /* NSMutableArray_Shuffling.m */; };
+		4423BA981F797E0800A3614A /* KYTPromisesTraining.m in Sources */ = {isa = PBXBuildFile; fileRef = 4423BA971F797E0800A3614A /* KYTPromisesTraining.m */; };
 		443EF3CE1F68B412005CADE3 /* KYTTeamMemberSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 443EF3CD1F68B412005CADE3 /* KYTTeamMemberSpec.mm */; };
 		444217161F702706009F6D32 /* KYTPageInitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444217151F702706009F6D32 /* KYTPageInitViewController.m */; };
 		4443B6DE1F604B0D008522BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B6DD1F604B0D008522BB /* main.m */; };
@@ -49,6 +50,7 @@
 		4401D5D71F6C5E2300214460 /* KYTMagicalRecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTMagicalRecordTests.m; sourceTree = "<group>"; };
 		4423BA921F7966D000A3614A /* NSMutableArray_Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArray_Shuffling.h; sourceTree = "<group>"; };
 		4423BA931F7966D000A3614A /* NSMutableArray_Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArray_Shuffling.m; sourceTree = "<group>"; };
+		4423BA971F797E0800A3614A /* KYTPromisesTraining.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTPromisesTraining.m; sourceTree = "<group>"; };
 		443EF3CD1F68B412005CADE3 /* KYTTeamMemberSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KYTTeamMemberSpec.mm; sourceTree = "<group>"; };
 		444217141F702706009F6D32 /* KYTPageInitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTPageInitViewController.h; sourceTree = "<group>"; };
 		444217151F702706009F6D32 /* KYTPageInitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTPageInitViewController.m; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				444DE45A1F61C27E00DF7499 /* KYTTeamMemberModelTests.m */,
 				444DE4681F61D47D00DF7499 /* KYTPersistenceTests.m */,
 				4401D5D71F6C5E2300214460 /* KYTMagicalRecordTests.m */,
+				4423BA971F797E0800A3614A /* KYTPromisesTraining.m */,
 				4443B6F81F604B0D008522BB /* Info.plist */,
 			);
 			path = KnowYourTeamTests;
@@ -535,6 +538,7 @@
 				444DE4691F61D47D00DF7499 /* KYTPersistenceTests.m in Sources */,
 				444DE45B1F61C27E00DF7499 /* KYTTeamMemberModelTests.m in Sources */,
 				4401D5D81F6C5E2300214460 /* KYTMagicalRecordTests.m in Sources */,
+				4423BA981F797E0800A3614A /* KYTPromisesTraining.m in Sources */,
 				443EF3CE1F68B412005CADE3 /* KYTTeamMemberSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
