@@ -15,7 +15,7 @@
 {
     NSValue *toastCenterPoint = [NSValue valueWithCGPoint:CGPointMake([[UIScreen mainScreen] bounds].size.width/2.0, [[UIScreen mainScreen] bounds].size.height/3.0)];
     
-    [view makeToast:ALERT_INVALID_INFORMATION duration:1.0 position:toastCenterPoint];
+    [view makeToast:ALERT_INVALID_INFORMATION duration:1.0 position:toastCenterPoint alertType:@"Danger"];
 }
 
 @end
