@@ -18,4 +18,12 @@
     [view makeToast:ALERT_INVALID_INFORMATION duration:1.0 position:toastCenterPoint alertType:@"Warning"];
 }
 
++ (void)notifyUserOfScore:(NSInteger)score viewType:(UIView *)view
+{
+    NSValue *toastCenterPoint = [NSValue valueWithCGPoint:CGPointMake([[UIScreen mainScreen] bounds].size.width/2.0, [[UIScreen mainScreen] bounds].size.height/3.0)];
+    
+    [view makeToast:[NSString stringWithFormat:@"Player Score: %lu",score] duration:5.0 position:toastCenterPoint alertType:@"Success"];
+}
+
+
 @end

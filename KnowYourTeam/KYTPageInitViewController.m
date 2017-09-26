@@ -8,11 +8,14 @@
 
 #import "KYTPageInitViewController.h"
 #import "KYTTestMemberItemViewController.h"
+#import "KYTTeamMemberListViewController.h"
 #import "KYTTeamMemberPersistence.h"
 #import "KYTMemberViewController.h"
 #import "KYTTeamMember.h"
 #import "KYTConstants.h"
 #import "NSMutableArray_Shuffling.h"
+#import "KSPromise.h"
+#import "KYTCustomAlerts.h"
 
 @interface KYTPageInitViewController ()
 
@@ -179,14 +182,101 @@
     _members = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
 }
 
-- (void)shuffleAndResetTest 
+- (void)resetTest
 {
-    
-    
-    
-    [_members shuffle];
     [self createPageViewController];
     [self setupPageControl];
+}
+
+- (void)shuffleAndResetTest 
+{
+    [_members shuffle];
+    
+    [self resetTest];
+    
+}
+
+- (KSPromise *)verifyFinishedTest
+{
+    KSPromise *step1 = [KSPromise promise:^(resolveType resolve, rejectType reject) {
+        
+        KYTTestMemberItemViewController *pageTestViewController = (KYTTestMemberItemViewController *) [self currentController];
+
+        BOOL isTestFinished = pageTestViewController.itemIndex+1 == [_members count];
+        
+        if (isTestFinished) {
+            NSLog(@"Pass 1");
+            
+            resolve(@"Test Finished.");
+        } else {
+            NSLog(@"Pass 1");
+            
+            NSError *error = [NSError errorWithDomain:@"com.yourcompany.appname" code:3456 userInfo:@{NSLocalizedDescriptionKey:@"Test Incomplete."}];
+            reject(error);
+        }
+    }];
+    
+    return step1;
+}
+
+- (KSPromise *)notifyUserScore
+{
+    KSPromise *step2 = [KSPromise promise:^(resolveType resolve, rejectType reject) {
+        
+        //[KYTCustomAlerts notifyUserOfScore:_answerCount viewType:self.view];
+        
+        
+        UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"Test Complete"
+                                   message:[NSString stringWithFormat:@"You scored %lu", _answerCount]
+                                  delegate:self
+                         cancelButtonTitle:@"OK"
+                         otherButtonTitles:nil];
+        [alert show];
+        
+        BOOL isUserNotified = [alert cancelButtonIndex];
+        
+        if (!isUserNotified) {
+            NSLog(@"Pass 2");
+            resolve(@"User Notified.");
+        } else {
+            NSLog(@"Pass 2");
+            
+            NSError *error = [NSError errorWithDomain:@"com.yourcompany.appname" code:3456 userInfo:@{NSLocalizedDescriptionKey:@"Error notifing user."}];
+            reject(error);
+        }
+    }];
+    
+    
+    return step2;
+}
+
+- (KSPromise *)verifyTestIsReset
+{
+    KSPromise *step3 = [KSPromise promise:^(resolveType resolve, rejectType reject) {
+        
+        [self shuffleAndResetTest];
+        
+        //[self.pageViewController.view removeFromSuperview];
+        //[self.pageViewController removeFromParentViewController];
+        
+        self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:0];
+
+        BOOL isTestReset = [self.tabBarController.selectedViewController isKindOfClass:[UINavigationController class]];
+        
+        if (isTestReset) {
+            NSLog(@"Pass 3");
+            
+            resolve(@"User Notified.");
+        } else {
+            NSLog(@"Fail 3");
+            
+            NSError *error = [NSError errorWithDomain:@"com.yourcompany.appname" code:3456 userInfo:@{NSLocalizedDescriptionKey:@"Error notifing user."}];
+            reject(error);
+        }
+    }];
+    
+    
+    return step3;
 }
 
 @end

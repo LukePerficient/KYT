@@ -8,11 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class KSPromise;
+
 @interface KYTPageInitViewController : UIViewController <UIPageViewControllerDataSource>
 
 @property (nonatomic, strong) NSMutableArray *members;
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 @property (nonatomic) NSInteger selectedRowIndex;
 @property (nonatomic) NSInteger answerCount;
+
+- (KSPromise *)verifyFinishedTest;
+- (KSPromise *)notifyUserScore;
+- (KSPromise *)verifyTestIsReset;
 
 @end

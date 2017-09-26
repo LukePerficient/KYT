@@ -15,6 +15,7 @@
 @interface KYTCustomAlerts : NSObject
 
 + (void)alertUserWithInvalidInformationMessage:(UIView *)view;
++ (void)notifyUserOfScore:(NSInteger)score viewType:(UIView *)view;
 
 @end
 

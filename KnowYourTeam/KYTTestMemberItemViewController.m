@@ -11,6 +11,7 @@
 #import "KYTCustomAlerts.h"
 #import "KYTTeamMemberListViewController.h"
 #import "KYTPageInitViewController.h"
+#import "KSPromise.h"
 
 
 @interface KYTTestMemberItemViewController ()
@@ -43,6 +44,9 @@
     //Don't allow user to enter answer again
     _memberTestTextField.enabled = NO;
     _checkAnswerButton.enabled = NO;
+    
+    // Implemented KSPromise to check for test completion
+    [self checkTestCompletion];
 }
 
 // MARK: Private Methods
@@ -65,7 +69,7 @@
 
 -(void)dealloc
 {
-    NSLog(@"TeamMemberItemViewController is being deallocated");
+    //NSLog(@"TeamMemberItemViewController is being deallocated");
 }
 
 // Private Methods:
@@ -75,6 +79,19 @@
     parent.answerCount += 1;
     
     NSLog(@"Correct Answer Count = %lu", parent.answerCount);
+}
+
+- (void)checkTestCompletion
+{
+    KYTPageInitViewController *parent = (KYTPageInitViewController *)self.parentViewController.parentViewController;
+    
+    KSPromise *testFinishedStep = [parent verifyFinishedTest];
+    
+    [[testFinishedStep then:^id (id value) {
+        return [parent notifyUserScore];
+    }] then:^id (id value) {
+        return [parent verifyTestIsReset];
+    }];
 }
 
 @end
