@@ -54,7 +54,6 @@ BOOL allowChangeFlag;
         return YES;
     } else {
         [KYTCustomAlerts alertUserWithInvalidInformationMessage:self.view];
-        
         return NO;
     }
 }

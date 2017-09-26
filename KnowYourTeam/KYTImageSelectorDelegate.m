@@ -15,12 +15,9 @@
 - (id)initWithViewController:(UIViewController<ImageSelector> *)delegatingViewController
 {
     self = [super init];
-    
     if (self) {
         _viewController = delegatingViewController;
-        
     }
-    
     return self;
 }
 
@@ -37,8 +34,6 @@
     }
     
     [_viewController dismissViewControllerAnimated:YES completion:nil];
-    
-    
 }
 
 
