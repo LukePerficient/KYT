@@ -218,7 +218,7 @@
 		0A5953F7A4DD808917286E968C8E0A67 /* CDRExampleParent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRExampleParent.h; path = Source/Headers/Public/CDRExampleParent.h; sourceTree = "<group>"; };
 		0A8A6DD93EADBCD08F7B07DFDB8E5A44 /* Cedar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Cedar.h; path = Source/Headers/Public/Cedar.h; sourceTree = "<group>"; };
 		0ADC78CFF53436DCD1C34CC61487A0C1 /* CDRBufferedDefaultReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRBufferedDefaultReporter.h; path = Source/Headers/Public/Reporters/CDRBufferedDefaultReporter.h; sourceTree = "<group>"; };
-		0BC657071ED29AA86C5003934FB7D657 /* RejectedMethod.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RejectedMethod.mm; path = Source/Doubles/RejectedMethod.mm; sourceTree = "<group>"; };
+		0BC657071ED29AA86C5003934FB7D657 /* RejectedMethod.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RejectedMethod.mm; path = Source/Doubles/RejectedMethod.mm; sourceTree = "<group>"; };
 		10086320EA90CE34F748EB6EBD1B4606 /* RejectedMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RejectedMethod.h; path = Source/Headers/Public/Doubles/RejectedMethod.h; sourceTree = "<group>"; };
 		11654A316F12FF5E1FC427D2016DBDFC /* NSInvocation+CDRXExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+CDRXExample.m"; path = "Source/XCTest/NSInvocation+CDRXExample.m"; sourceTree = "<group>"; };
 		11AF535328F1049967BD9B70E8A39FBB /* CDRDefaultReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRDefaultReporter.m; path = Source/Reporters/CDRDefaultReporter.m; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 		15DB103FA3D980CF68619C7CA8B63B75 /* NSInvocation+Cedar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+Cedar.h"; path = "Source/Headers/Project/Extensions/NSInvocation+Cedar.h"; sourceTree = "<group>"; };
 		16194EBF98C07A0C6A7B59799B453CD0 /* Base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Base.h; path = Source/Headers/Public/Matchers/Base/Base.h; sourceTree = "<group>"; };
 		180464DFD55CC64D4BACB4B00CE190CC /* KSURLSessionClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSURLSessionClient.h; path = Deferred/KSURLSessionClient.h; sourceTree = "<group>"; };
-		18DB67B339E8AB4BC861D44CE9167DB0 /* CedarDouble.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CedarDouble.mm; path = Source/Doubles/CedarDouble.mm; sourceTree = "<group>"; };
+		18DB67B339E8AB4BC861D44CE9167DB0 /* CedarDouble.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CedarDouble.mm; path = Source/Doubles/CedarDouble.mm; sourceTree = "<group>"; };
 		192B9BDA59F562CCDE63E6780C85ED99 /* KSNullabilityCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSNullabilityCompat.h; path = Deferred/KSNullabilityCompat.h; sourceTree = "<group>"; };
 		1947022C257433ACDA92D9AB19512146 /* UIKitComparatorsContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIKitComparatorsContainer.h; path = Source/Headers/Public/Matchers/UIKit/iOS/UIKitComparatorsContainer.h; sourceTree = "<group>"; };
 		1A1A8A2F08A339113CF13E565A7FE603 /* ShouldSyntax.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ShouldSyntax.h; path = Source/Headers/Public/Matchers/ShouldSyntax.h; sourceTree = "<group>"; };
@@ -239,13 +239,13 @@
 		1CF0C34E3F560F748C56D1EBF3D2222A /* CDRNullabilityCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRNullabilityCompat.h; path = Source/Headers/Public/CDRNullabilityCompat.h; sourceTree = "<group>"; };
 		21D07B8FCD0136703410A5A7E177D11B /* Pods-KnowYourTeam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnowYourTeam.debug.xcconfig"; sourceTree = "<group>"; };
 		21D95D2B985C22860D1BF9F92D786D38 /* CedarMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CedarMatchers.h; path = Source/Headers/Public/Matchers/CedarMatchers.h; sourceTree = "<group>"; };
-		22B9C08FD60CE5941DE7B35092BF220D /* CDRSpyInfo.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CDRSpyInfo.mm; path = Source/Doubles/CDRSpyInfo.mm; sourceTree = "<group>"; };
+		22B9C08FD60CE5941DE7B35092BF220D /* CDRSpyInfo.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CDRSpyInfo.mm; path = Source/Doubles/CDRSpyInfo.mm; sourceTree = "<group>"; };
 		23A3F04EEDBA7A76CA819CFE28E07749 /* CDRNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRNil.m; path = Source/CDRNil.m; sourceTree = "<group>"; };
 		23DE6E9DCED2F2A421602CD8B7271CB6 /* Pods-KnowYourTeam-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KnowYourTeam-acknowledgements.plist"; sourceTree = "<group>"; };
-		252A520A6F6A2E94D53E5E1E6A868EA7 /* libToast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libToast.a; path = libToast.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		252A520A6F6A2E94D53E5E1E6A868EA7 /* libToast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libToast.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2830A4448FE11B07A6D186B4A322733C /* CDRSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRSpec.h; path = Source/Headers/Public/CDRSpec.h; sourceTree = "<group>"; };
 		2961868A7376A89DA34C61B659413990 /* CDROTestNamer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDROTestNamer.m; path = Source/ReporterHelpers/CDROTestNamer.m; sourceTree = "<group>"; };
-		2ADBFF13FBE524964123157FE8FFC64C /* libKSDeferred.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libKSDeferred.a; path = libKSDeferred.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADBFF13FBE524964123157FE8FFC64C /* libKSDeferred.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKSDeferred.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B69C2E5A86350C1C4F87189871244F1 /* Pods-KnowYourTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnowYourTeam.release.xcconfig"; sourceTree = "<group>"; };
 		2C68E3A6F0C3965265648F0CD2DFD838 /* CDRXCTestObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRXCTestObserver.m; path = Source/XCTest/CDRXCTestObserver.m; sourceTree = "<group>"; };
 		2CB0804BC7B12F0F9537CBFF3C67AD69 /* Exist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Exist.h; path = Source/Headers/Public/Matchers/Base/Exist.h; sourceTree = "<group>"; };
@@ -263,16 +263,16 @@
 		3B08F8A67B76427ABDC5F500D636A9AA /* NSInvocation+Cedar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+Cedar.m"; path = "Source/Extensions/NSInvocation+Cedar.m"; sourceTree = "<group>"; };
 		3B4462221D9879A398A0A7E8846CA0B6 /* CDRXCTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRXCTestCase.h; path = Source/Headers/Project/XCTest/CDRXCTestCase.h; sourceTree = "<group>"; };
 		3B770AB37DA5331B99A08D183F50D82F /* KSNetworkClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSNetworkClient.m; path = Deferred/KSNetworkClient.m; sourceTree = "<group>"; };
-		3C141C3F0254A2ABB674A11D780F1348 /* AnyInstanceOfClassArgument.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = AnyInstanceOfClassArgument.mm; path = Source/Doubles/Arguments/AnyInstanceOfClassArgument.mm; sourceTree = "<group>"; };
+		3C141C3F0254A2ABB674A11D780F1348 /* AnyInstanceOfClassArgument.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = AnyInstanceOfClassArgument.mm; path = Source/Doubles/Arguments/AnyInstanceOfClassArgument.mm; sourceTree = "<group>"; };
 		3C82F6DB886062AFECE12B30248899D7 /* BeEmpty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeEmpty.h; path = Source/Headers/Public/Matchers/Container/BeEmpty.h; sourceTree = "<group>"; };
-		3CBB264D5ED2594F92BE9B44EA44EDAA /* libPods-KnowYourTeamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-KnowYourTeamTests.a"; path = "libPods-KnowYourTeamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBB264D5ED2594F92BE9B44EA44EDAA /* libPods-KnowYourTeamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowYourTeamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDB79D0ABD5A56E687BE0614DE1C45D /* CedarDouble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CedarDouble.h; path = Source/Headers/Public/Doubles/CedarDouble.h; sourceTree = "<group>"; };
 		3E1A03F58D9E8B0D8B20393F239607B1 /* KSDeferred.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSDeferred.h; path = Deferred/KSDeferred.h; sourceTree = "<group>"; };
 		3E7231203386D1AED2BC67859871675B /* CDRXCTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRXCTestCase.m; path = Source/XCTest/CDRXCTestCase.m; sourceTree = "<group>"; };
 		3F18A75E57F7EBFDA4CA491816DED5A5 /* AnyInstanceArgument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyInstanceArgument.h; path = Source/Headers/Public/Doubles/Arguments/AnyInstanceArgument.h; sourceTree = "<group>"; };
 		41B2E39830D1D3E79EC9CD67312A02BC /* KSURLConnectionClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSURLConnectionClient.h; path = Deferred/KSURLConnectionClient.h; sourceTree = "<group>"; };
 		4227461A0E38E9721061EBD2AE0A2BE0 /* CedarStringifiers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CedarStringifiers.h; path = Source/Headers/Public/Matchers/CedarStringifiers.h; sourceTree = "<group>"; };
-		42D140FA121547A11A644FA71B6DAAC5 /* CDRFake.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CDRFake.mm; path = Source/Doubles/CDRFake.mm; sourceTree = "<group>"; };
+		42D140FA121547A11A644FA71B6DAAC5 /* CDRFake.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CDRFake.mm; path = Source/Doubles/CDRFake.mm; sourceTree = "<group>"; };
 		438C15743B0F18C5E4497C89444CBC02 /* CDRFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRFunctions.m; path = Source/CDRFunctions.m; sourceTree = "<group>"; };
 		453DE9B9D926FC97AD162A244C888463 /* StringifiersContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StringifiersContainer.h; path = Source/Headers/Public/Matchers/Stringifiers/StringifiersContainer.h; sourceTree = "<group>"; };
 		4693F8F0656D9A3F12353ECED6B7148D /* BeGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeGreaterThan.h; path = Source/Headers/Public/Matchers/Base/BeGreaterThan.h; sourceTree = "<group>"; };
@@ -287,7 +287,7 @@
 		4EFE8F07D2AD7225BA2E84BCCD865FCE /* CDRTeamCityReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRTeamCityReporter.h; path = Source/Headers/Public/Reporters/CDRTeamCityReporter.h; sourceTree = "<group>"; };
 		4F4457F33F48DD199E75815A59DCD008 /* KSURLConnectionClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSURLConnectionClient.m; path = Deferred/KSURLConnectionClient.m; sourceTree = "<group>"; };
 		52B6E5E3E7F774EECC7C1D4FB36459AC /* CedarApplicationDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CedarApplicationDelegate.m; path = Source/iOS/CedarApplicationDelegate.m; sourceTree = "<group>"; };
-		5424B1885BCC2BA8228F0A5561741D8E /* libPods-KnowYourTeam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-KnowYourTeam.a"; path = "libPods-KnowYourTeam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5424B1885BCC2BA8228F0A5561741D8E /* libPods-KnowYourTeam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowYourTeam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		55C98E4E32B2FCE86A5E017ECCF64043 /* Pods-KnowYourTeamTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KnowYourTeamTests-dummy.m"; sourceTree = "<group>"; };
 		564A6A22F640BB5844C29AE06A76C0E4 /* CDRExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRExample.m; path = Source/CDRExample.m; sourceTree = "<group>"; };
@@ -302,8 +302,8 @@
 		65A06D531CF34157897BBB6EF7DFBAC5 /* CDRExampleBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRExampleBase.h; path = Source/Headers/Public/CDRExampleBase.h; sourceTree = "<group>"; };
 		66259AEDEDECFCA6693F6D9AF7794C84 /* Pods-KnowYourTeamTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KnowYourTeamTests-frameworks.sh"; sourceTree = "<group>"; };
 		67339F12AE4399DE48FBF132CE8D6CBD /* HaveReceived.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HaveReceived.h; path = Source/Headers/Public/Doubles/HaveReceived.h; sourceTree = "<group>"; };
-		679B6F821AAD1591BCCE8519228FF8A5 /* InvocationMatcher.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = InvocationMatcher.mm; path = Source/Doubles/InvocationMatcher.mm; sourceTree = "<group>"; };
-		6973A3A806B87D6CED28044099882E9A /* RespondTo.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RespondTo.mm; path = Source/Matchers/Base/RespondTo.mm; sourceTree = "<group>"; };
+		679B6F821AAD1591BCCE8519228FF8A5 /* InvocationMatcher.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = InvocationMatcher.mm; path = Source/Doubles/InvocationMatcher.mm; sourceTree = "<group>"; };
+		6973A3A806B87D6CED28044099882E9A /* RespondTo.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RespondTo.mm; path = Source/Matchers/Base/RespondTo.mm; sourceTree = "<group>"; };
 		6B530FA7C8BCDBD72FCFB4F242B246B0 /* CDRFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRFunctions.h; path = Source/Headers/Public/CDRFunctions.h; sourceTree = "<group>"; };
 		6C60D5A16BE93CA40C4DA8AC32E3E70E /* Pods-KnowYourTeam-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KnowYourTeam-resources.sh"; sourceTree = "<group>"; };
 		6ED9B0110683EE4C794403BECA09B241 /* BeLTE.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeLTE.h; path = Source/Headers/Public/Matchers/Base/BeLTE.h; sourceTree = "<group>"; };
@@ -316,15 +316,15 @@
 		7B3EAF57DF7AA3A25A7FAF7F3F79ECA7 /* CedarApplicationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CedarApplicationDelegate.h; path = Source/Headers/Public/iOS/CedarApplicationDelegate.h; sourceTree = "<group>"; };
 		7B93C971EA18C9227F8AC3572D119DDB /* CDRNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRNil.h; path = Source/Headers/Project/CDRNil.h; sourceTree = "<group>"; };
 		7BBD6C82492449D5EF047688B38F9B2A /* CedarDoubleImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CedarDoubleImpl.h; path = Source/Headers/Project/Doubles/CedarDoubleImpl.h; sourceTree = "<group>"; };
-		7DE387013005EB9E03332191B8BA200A /* CDRSpy.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CDRSpy.mm; path = Source/Doubles/CDRSpy.mm; sourceTree = "<group>"; };
+		7DE387013005EB9E03332191B8BA200A /* CDRSpy.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CDRSpy.mm; path = Source/Doubles/CDRSpy.mm; sourceTree = "<group>"; };
 		7EA330EE75E17A5516222FD62B7D233B /* CompareEqual.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CompareEqual.h; path = Source/Headers/Public/Matchers/Comparators/CompareEqual.h; sourceTree = "<group>"; };
 		7F40474838ED58FA7D91B9BB693B72A0 /* StringifiersBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StringifiersBase.h; path = Source/Headers/Public/Matchers/Stringifiers/StringifiersBase.h; sourceTree = "<group>"; };
 		805808BE1E0429DDA07AF0DAC3490474 /* CDRXCTestFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRXCTestFunctions.m; path = Source/XCTest/CDRXCTestFunctions.m; sourceTree = "<group>"; };
 		809515C627086B2E87F8D6B07F682A21 /* CDRRuntimeUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRRuntimeUtilities.m; path = Source/CDRRuntimeUtilities.m; sourceTree = "<group>"; };
 		820033333CD4D4E6059597992050102C /* CDRHooks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRHooks.h; path = Source/Headers/Public/CDRHooks.h; sourceTree = "<group>"; };
 		829ED2A3A0ADA6093F2C52DA13CFD122 /* AnyInstanceConformingToProtocolArgument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyInstanceConformingToProtocolArgument.h; path = Source/Headers/Public/Doubles/Arguments/AnyInstanceConformingToProtocolArgument.h; sourceTree = "<group>"; };
-		82AEF2F7C0F78C7A83209375BA0F0AA7 /* StringifiersBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = StringifiersBase.mm; path = Source/Matchers/Stringifiers/StringifiersBase.mm; sourceTree = "<group>"; };
-		83E116216E42A13E7D5C800220C083CE /* ConformTo.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ConformTo.mm; path = Source/Matchers/Base/ConformTo.mm; sourceTree = "<group>"; };
+		82AEF2F7C0F78C7A83209375BA0F0AA7 /* StringifiersBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = StringifiersBase.mm; path = Source/Matchers/Stringifiers/StringifiersBase.mm; sourceTree = "<group>"; };
+		83E116216E42A13E7D5C800220C083CE /* ConformTo.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = ConformTo.mm; path = Source/Matchers/Base/ConformTo.mm; sourceTree = "<group>"; };
 		852FAAD7BB482A6F8B48260A242CEE7E /* BeNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeNil.h; path = Source/Headers/Public/Matchers/Base/BeNil.h; sourceTree = "<group>"; };
 		85B371AF4AB8E30E48B923BC895B3340 /* Pods-KnowYourTeam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KnowYourTeam-dummy.m"; sourceTree = "<group>"; };
 		880114ABB960A68C718B7E96C58C7EB9 /* CDRExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRExample.h; path = Source/Headers/Public/CDRExample.h; sourceTree = "<group>"; };
@@ -333,7 +333,7 @@
 		8DC2985E7F5C56E59FADEF34F171569C /* CDRColorizedReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRColorizedReporter.h; path = Source/Headers/Public/Reporters/CDRColorizedReporter.h; sourceTree = "<group>"; };
 		8F26A3F425190885ABC794905B86D057 /* BeLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeLessThan.h; path = Source/Headers/Public/Matchers/Base/BeLessThan.h; sourceTree = "<group>"; };
 		92559359221C457B634538D4226B113E /* MatcherTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MatcherTemplate.h; path = Source/Headers/Public/Matchers/MatcherTemplate.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		988924E325DD2C495AD3075D34DB4166 /* ComparatorsContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ComparatorsContainer.h; path = Source/Headers/Public/Matchers/Comparators/ComparatorsContainer.h; sourceTree = "<group>"; };
 		98BE502C9092905C418A59AA8ACF3561 /* CDRSpecFailure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRSpecFailure.m; path = Source/CDRSpecFailure.m; sourceTree = "<group>"; };
 		9ACB864928C7CA734BB58A5B948BEDCC /* CDRSymbolicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRSymbolicator.m; path = Source/CDRSymbolicator.m; sourceTree = "<group>"; };
@@ -341,12 +341,12 @@
 		9D245C642A3A9F4FCBE3237A3A939737 /* AnyInstanceOfClassArgument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyInstanceOfClassArgument.h; path = Source/Headers/Public/Doubles/Arguments/AnyInstanceOfClassArgument.h; sourceTree = "<group>"; };
 		9E569869DC2671FCBF850CFBB96992F4 /* ContainSubset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ContainSubset.h; path = Source/Headers/Public/Matchers/Container/ContainSubset.h; sourceTree = "<group>"; };
 		9E90D32CA90C65AF0ACCCD01AEA65711 /* KSDeferred.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSDeferred.m; path = Deferred/KSDeferred.m; sourceTree = "<group>"; };
-		A2E91617968EAF7E5BF27F80E382D2F6 /* CDRProtocolFake.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CDRProtocolFake.mm; path = Source/Doubles/CDRProtocolFake.mm; sourceTree = "<group>"; };
+		A2E91617968EAF7E5BF27F80E382D2F6 /* CDRProtocolFake.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CDRProtocolFake.mm; path = Source/Doubles/CDRProtocolFake.mm; sourceTree = "<group>"; };
 		A562BD98F085D3B3C2B7518F1A416AF1 /* NSMethodSignature+Cedar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+Cedar.h"; path = "Source/Headers/Project/Extensions/NSMethodSignature+Cedar.h"; sourceTree = "<group>"; };
 		A5B16227401E83BA07579992280CD94B /* CDRBufferedDefaultReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRBufferedDefaultReporter.m; path = Source/Reporters/CDRBufferedDefaultReporter.m; sourceTree = "<group>"; };
 		A62287A8E7D7C6550F279639EE329B7C /* CedarReporters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CedarReporters.h; path = Source/Headers/Public/Reporters/CedarReporters.h; sourceTree = "<group>"; };
 		A73D3C3C7B6D6C63E1133FD11864339D /* AnInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnInstanceOf.h; path = Source/Headers/Public/Matchers/Comparators/AnInstanceOf.h; sourceTree = "<group>"; };
-		A8CE37750E1727B8204192E5EEF48D44 /* AnyInstanceArgument.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = AnyInstanceArgument.mm; path = Source/Doubles/Arguments/AnyInstanceArgument.mm; sourceTree = "<group>"; };
+		A8CE37750E1727B8204192E5EEF48D44 /* AnyInstanceArgument.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = AnyInstanceArgument.mm; path = Source/Doubles/Arguments/AnyInstanceArgument.mm; sourceTree = "<group>"; };
 		AD0DA2AA8DF600B63CB3D1DB26B02E56 /* Contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Contain.h; path = Source/Headers/Public/Matchers/Container/Contain.h; sourceTree = "<group>"; };
 		AFAA1F60F7DBA10CAC5B0586B1045854 /* CDRColorizedReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRColorizedReporter.m; path = Source/Reporters/CDRColorizedReporter.m; sourceTree = "<group>"; };
 		B18C3366237E60EF411C6388538BA749 /* CedarComparators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CedarComparators.h; path = Source/Headers/Public/Matchers/CedarComparators.h; sourceTree = "<group>"; };
@@ -358,8 +358,8 @@
 		BEAB9CAC9F94BA739E013AE772507EC4 /* InvocationMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InvocationMatcher.h; path = Source/Headers/Public/Doubles/InvocationMatcher.h; sourceTree = "<group>"; };
 		C03A165233E7364467B9139A3489E0C7 /* Cedar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cedar.xcconfig; sourceTree = "<group>"; };
 		C0B6E74222E757FB2816AD0D5C92E3C2 /* CDRExampleBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRExampleBase.m; path = Source/CDRExampleBase.m; sourceTree = "<group>"; };
-		C19EBC6D9630E180DEF9E10DDC057A6E /* CDRClassFake.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CDRClassFake.mm; path = Source/Doubles/CDRClassFake.mm; sourceTree = "<group>"; };
-		C5083A1F568BDC9B8EC43B0D0C87C0A6 /* CedarDoubleImpl.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CedarDoubleImpl.mm; path = Source/Doubles/CedarDoubleImpl.mm; sourceTree = "<group>"; };
+		C19EBC6D9630E180DEF9E10DDC057A6E /* CDRClassFake.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CDRClassFake.mm; path = Source/Doubles/CDRClassFake.mm; sourceTree = "<group>"; };
+		C5083A1F568BDC9B8EC43B0D0C87C0A6 /* CedarDoubleImpl.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = CedarDoubleImpl.mm; path = Source/Doubles/CedarDoubleImpl.mm; sourceTree = "<group>"; };
 		C611FB4922CDCEFFFFA0EE8D496247A8 /* CDRDefaultReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRDefaultReporter.h; path = Source/Headers/Public/Reporters/CDRDefaultReporter.h; sourceTree = "<group>"; };
 		C666498A1C6C4C110ED03D6A2FAA1E6F /* CDRJUnitXMLReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRJUnitXMLReporter.m; path = Source/Reporters/CDRJUnitXMLReporter.m; sourceTree = "<group>"; };
 		C6F4640A40B8DA2B7C400CF821FC9E18 /* CDRProtocolFake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRProtocolFake.h; path = Source/Headers/Public/Doubles/CDRProtocolFake.h; sourceTree = "<group>"; };
@@ -377,28 +377,28 @@
 		D6BE263AD64D59C2F63837CFA82AC53E /* CDRReportDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRReportDispatcher.m; path = Source/Reporters/CDRReportDispatcher.m; sourceTree = "<group>"; };
 		D6F6754E0CD2D22D196F1805AE18EBFD /* KSDeferred.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KSDeferred.xcconfig; sourceTree = "<group>"; };
 		D7619BD50E2424072BCC7DA607E2611E /* CDRClassFake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRClassFake.h; path = Source/Headers/Public/Doubles/CDRClassFake.h; sourceTree = "<group>"; };
-		DAD7E7D762F18008515A0DBA5CDE037D /* AnyInstanceConformingToProtocolArgument.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = AnyInstanceConformingToProtocolArgument.mm; path = Source/Doubles/Arguments/AnyInstanceConformingToProtocolArgument.mm; sourceTree = "<group>"; };
+		DAD7E7D762F18008515A0DBA5CDE037D /* AnyInstanceConformingToProtocolArgument.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = AnyInstanceConformingToProtocolArgument.mm; path = Source/Doubles/Arguments/AnyInstanceConformingToProtocolArgument.mm; sourceTree = "<group>"; };
 		DB96DA05CA8C5BBD8A9163D0AD94862F /* UIView+Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "Toast/Toast/UIView+Toast.h"; sourceTree = "<group>"; };
 		DB9FD122E1D022623B728DD27ECF486F /* CDRSlowTestStatistics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRSlowTestStatistics.m; path = Source/ReporterHelpers/CDRSlowTestStatistics.m; sourceTree = "<group>"; };
 		DDEBCA5AFF368F4D8A1CA9E73E37101D /* NSInvocation+CDRXExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+CDRXExample.h"; path = "Source/Headers/Project/XCTest/NSInvocation+CDRXExample.h"; sourceTree = "<group>"; };
 		DE508FCA2511FDDF39F3C70B7E20214C /* CDRSharedExampleGroupPool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRSharedExampleGroupPool.m; path = Source/CDRSharedExampleGroupPool.m; sourceTree = "<group>"; };
 		E14B8B72A176B7EF7D3BBEE11780ADE4 /* CDRTypeUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRTypeUtilities.h; path = Source/Headers/Project/CDRTypeUtilities.h; sourceTree = "<group>"; };
-		E1991A2F5461D1CDF2B770B1F5CF0F4A /* AnyArgument.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = AnyArgument.mm; path = Source/Doubles/Arguments/AnyArgument.mm; sourceTree = "<group>"; };
-		E747462D93C097729B376BAD5E6E9D7A /* StubbedMethod.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = StubbedMethod.mm; path = Source/Doubles/StubbedMethod.mm; sourceTree = "<group>"; };
+		E1991A2F5461D1CDF2B770B1F5CF0F4A /* AnyArgument.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = AnyArgument.mm; path = Source/Doubles/Arguments/AnyArgument.mm; sourceTree = "<group>"; };
+		E747462D93C097729B376BAD5E6E9D7A /* StubbedMethod.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = StubbedMethod.mm; path = Source/Doubles/StubbedMethod.mm; sourceTree = "<group>"; };
 		E86C0827F1C427E75A7527B8241C8A2F /* CDRXCTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRXCTestSuite.m; path = Source/XCTest/CDRXCTestSuite.m; sourceTree = "<group>"; };
 		EAF1CFEBF294BA12A85F6C588792B6D5 /* CDRTypeUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRTypeUtilities.m; path = Source/CDRTypeUtilities.m; sourceTree = "<group>"; };
-		EBB6F8D45DDA3CF5B099FE1F6201715F /* HaveReceived.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = HaveReceived.mm; path = Source/Doubles/HaveReceived.mm; sourceTree = "<group>"; };
+		EBB6F8D45DDA3CF5B099FE1F6201715F /* HaveReceived.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = HaveReceived.mm; path = Source/Doubles/HaveReceived.mm; sourceTree = "<group>"; };
 		EDCAB7C4F2F60DD2D4478B43023C67A5 /* BeGTE.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeGTE.h; path = Source/Headers/Public/Matchers/Base/BeGTE.h; sourceTree = "<group>"; };
 		EE2D7750174B1F6315C2EDA6D55C3934 /* Toast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-prefix.pch"; sourceTree = "<group>"; };
 		EE38E01A329ED7EDE4E8446F0666B9D6 /* ActualValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActualValue.h; path = Source/Headers/Public/Matchers/ActualValue.h; sourceTree = "<group>"; };
-		EFCDC7BDDA817D0E852105CA6F975F56 /* RaiseException.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RaiseException.mm; path = Source/Matchers/Base/RaiseException.mm; sourceTree = "<group>"; };
+		EFCDC7BDDA817D0E852105CA6F975F56 /* RaiseException.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RaiseException.mm; path = Source/Matchers/Base/RaiseException.mm; sourceTree = "<group>"; };
 		F06148A2DF89D63FA23587B3FA584053 /* CDRPrivateFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRPrivateFunctions.h; path = Source/Headers/Project/CDRPrivateFunctions.h; sourceTree = "<group>"; };
 		F45A38DC3C370140F3C942BA9AFDD01E /* CDRExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRExampleGroup.h; path = Source/Headers/Public/CDRExampleGroup.h; sourceTree = "<group>"; };
 		F4E7C55AEA9BD0B8117EAEF8E1FE2140 /* CDRExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDRExampleGroup.m; path = Source/CDRExampleGroup.m; sourceTree = "<group>"; };
 		F5EEE4210D6CDDB26AF26B005153A9CE /* CDRSpecHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDRSpecHelper.h; path = Source/Headers/Public/CDRSpecHelper.h; sourceTree = "<group>"; };
 		F6A545AC9F3B4A9F547C302FED3D3340 /* KSPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSPromise.h; path = Deferred/KSPromise.h; sourceTree = "<group>"; };
 		F9FAF7CFF9B8EF778E4376CA09AAAFFB /* CDROTestReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDROTestReporter.m; path = Source/Reporters/CDROTestReporter.m; sourceTree = "<group>"; };
-		FA90F466EE175424D199EB89634D3386 /* libCedar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCedar.a; path = libCedar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA90F466EE175424D199EB89634D3386 /* libCedar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCedar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3CF5241C490F69E51CB9B7D459A26D /* ReturnValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReturnValue.h; path = Source/Headers/Public/Doubles/Arguments/ReturnValue.h; sourceTree = "<group>"; };
 		FBFE9AAD194B261A4164479390DA9D5D /* NSBundle+MainBundleHijack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MainBundleHijack.m"; path = "Source/iOS/NSBundle+MainBundleHijack.m"; sourceTree = "<group>"; };
 		FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -469,7 +469,6 @@
 				38B855FB245400716F005D36E65E594D /* KSURLSessionClient.m */,
 				8A67BA13D9C66C6948FD5F114FAED70F /* Support Files */,
 			);
-			name = KSDeferred;
 			path = KSDeferred;
 			sourceTree = "<group>";
 		};
@@ -567,7 +566,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = MagicalRecord;
 			path = MagicalRecord;
 			sourceTree = "<group>";
 		};
@@ -743,7 +741,6 @@
 				57DD412A51AEB85AD88CE590CF64A7B4 /* ValueArgument.h */,
 				5F96EC3E99EFABC5F2FB68C512F46D3D /* Support Files */,
 			);
-			name = Cedar;
 			path = Cedar;
 			sourceTree = "<group>";
 		};
@@ -769,7 +766,6 @@
 				4C0ADFA4901322AD48539956EC324B5F /* UIView+Toast.m */,
 				57E296222CC656DA1FE887873994D649 /* Support Files */,
 			);
-			name = Toast;
 			path = Toast;
 			sourceTree = "<group>";
 		};
@@ -999,7 +995,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1156,7 +1152,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Cedar/Cedar-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1226,7 +1222,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/KSDeferred/KSDeferred-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1250,7 +1246,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/KSDeferred/KSDeferred-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1274,7 +1270,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1297,7 +1293,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1305,14 +1303,20 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -1365,7 +1369,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1389,7 +1393,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Cedar/Cedar-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1435,7 +1439,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1443,15 +1449,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
