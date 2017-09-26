@@ -8,6 +8,7 @@
 
 #import "KYTImageSelectorDelegate.h"
 #import "KYTMemberViewController.h"
+#import "KYTConstants.h"
 
 @implementation KYTImageSelectorDelegate
 
@@ -32,9 +33,11 @@
     
     if ([self userSelectedImageIsNull:info]) {
         _viewController.memberImage.image = info[UIImagePickerControllerOriginalImage];
+        [_viewController.memberImage setTranslatesAutoresizingMaskIntoConstraints:YES];
     }
     
     [_viewController dismissViewControllerAnimated:YES completion:nil];
+    
     
 }
 
