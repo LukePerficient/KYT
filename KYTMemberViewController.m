@@ -64,8 +64,6 @@ BOOL allowChangeFlag;
 }
 
 // MARK: Actions
-
-
 - (IBAction)selectImageFromLibrary:(UITapGestureRecognizer *)sender {
     if (allowChangeFlag){
         [self removeKeyboard];

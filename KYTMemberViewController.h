@@ -11,7 +11,7 @@
 @class KYTTeamMember;
 @class KYTImageSelectorDelegate;
 
-@interface KYTMemberViewController : UIViewController
+@interface KYTMemberViewController : UIViewController 
 
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTxt;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameText;

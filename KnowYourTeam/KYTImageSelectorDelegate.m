@@ -27,15 +27,13 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
-    
     if ([self userSelectedImageIsNull:info]) {
         _viewController.memberImage.image = info[UIImagePickerControllerOriginalImage];
         [_viewController.memberImage setTranslatesAutoresizingMaskIntoConstraints:YES];
     }
     
     [_viewController dismissViewControllerAnimated:YES completion:nil];
-}
-
+ }
 
 // Private Methods
 - (BOOL)userSelectedImageIsNull:(NSDictionary<NSString *,id> *)info
