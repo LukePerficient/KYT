@@ -10,7 +10,7 @@
 
 @class KYTTeamMember;
 
-@interface KYTTestMemberItemViewController : UIViewController
+@interface KYTTestMemberItemViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *memberTestTextField;
 @property (weak, nonatomic) IBOutlet UIImageView *memberPhoto;

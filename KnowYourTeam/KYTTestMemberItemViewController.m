@@ -27,6 +27,7 @@
     
     [self initializeMembers];
     _testNumber.text = [NSString stringWithFormat:@"%lu of %lu", _itemIndex+1, (unsigned long)_totalUsers];
+    _memberTestTextField.delegate = self;
 }
 
 // MARK: Actions
@@ -47,6 +48,13 @@
     
     // Implemented KSPromise to check for test completion
     [self checkTestCompletion];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 
 // MARK: Private Methods
