@@ -69,6 +69,7 @@ BOOL allowChangeFlag;
         [self removeKeyboard];
         self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         [self presentViewController:self.imagePickerController animated:YES completion:nil];
+        //_imagePickerController = nil;//
     }
 }
 

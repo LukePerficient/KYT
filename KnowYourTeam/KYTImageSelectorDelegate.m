@@ -24,6 +24,8 @@
 // MARK: UIImagePickerControllerDelegate
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [_viewController dismissViewControllerAnimated:YES completion:nil];
+    picker.delegate = nil;
+
 }
 
 //- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
@@ -36,6 +38,7 @@
     }
     
     [_viewController dismissViewControllerAnimated:YES completion:nil];
+    
  }
 
 // Private Methods
