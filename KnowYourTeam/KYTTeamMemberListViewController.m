@@ -71,7 +71,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"Members";
+    return TABLE_HEADER_NAME;
 }
 
 // Mark: Navigation

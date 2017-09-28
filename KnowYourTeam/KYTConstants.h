@@ -32,5 +32,7 @@ FOUNDATION_EXPORT NSInteger const IMAGE_VIEW_HEIGHT;
 FOUNDATION_EXPORT NSInteger const IMAGE_VIEW_X;
 FOUNDATION_EXPORT NSInteger const IMAGE_VIEW_Y;
 
+// Table Constants
+FOUNDATION_EXPORT NSString *const TABLE_HEADER_NAME;
 
 #endif /* KYTConstants_h */

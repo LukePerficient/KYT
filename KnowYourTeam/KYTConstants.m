@@ -28,3 +28,6 @@ NSInteger const IMAGE_VIEW_WIDTH = 250;
 NSInteger const IMAGE_VIEW_HEIGHT = 165;
 NSInteger const IMAGE_VIEW_X = 62;
 NSInteger const IMAGE_VIEW_Y = 251;
+
+// Table Constants
+NSString *const TABLE_HEADER_NAME = @"Members";
