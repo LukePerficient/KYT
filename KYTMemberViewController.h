@@ -22,5 +22,7 @@
 @property (strong, atomic) UIImagePickerController *imagePickerController;
 @property (strong, atomic) KYTImageSelectorDelegate *imageSelectorDelegate;
 @property (nonatomic) NSUInteger itemIndex;
+- (IBAction)scaleImage:(UIPinchGestureRecognizer *)recognizer;
+
 
 @end

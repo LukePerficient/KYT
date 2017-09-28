@@ -26,10 +26,13 @@
     [_viewController dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+//- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info{
     if ([self userSelectedImageIsNull:info]) {
-        _viewController.memberImage.image = info[UIImagePickerControllerOriginalImage];
-        [_viewController.memberImage setTranslatesAutoresizingMaskIntoConstraints:YES];
+        UIImage *img = [info valueForKey:UIImagePickerControllerOriginalImage];
+        
+        _viewController.memberImage.image = img; //info[UIImagePickerControllerOriginalImage];
+       // [_viewController.memberImage setTranslatesAutoresizingMaskIntoConstraints:YES];
     }
     
     [_viewController dismissViewControllerAnimated:YES completion:nil];

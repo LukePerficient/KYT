@@ -76,8 +76,7 @@ BOOL allowChangeFlag;
     recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
     recognizer.scale = 1;
     if (recognizer.state == UIGestureRecognizerStateEnded) {
-        //Reset ImageView to initial size when user lets go
-        _memberImage.frame = CGRectMake(IMAGE_VIEW_X, IMAGE_VIEW_Y, IMAGE_VIEW_WIDTH, IMAGE_VIEW_HEIGHT);
+        recognizer.view.transform = CGAffineTransformIdentity;
     }
 }
 
@@ -117,6 +116,7 @@ BOOL allowChangeFlag;
 {
     NSLog(@"MemberViewController is being deallocated");
     _imageSelectorDelegate = nil;
+    _imagePickerController = nil;//
 }
 
 @end
