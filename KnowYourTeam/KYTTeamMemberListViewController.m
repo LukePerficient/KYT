@@ -65,7 +65,8 @@
     if (editingStyle==UITableViewCellEditingStyleDelete){
         [_teamMemberList removeObjectAtIndex:indexPath.row];
         [_teamMemberTableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation: UITableViewRowAnimationFade];
-        [KYTTeamMemberPersistence writeArray:self.teamMemberList toFilePath:TEAM_MEMBER_FILE_NAME];
+        
+        [self performSelectorInBackground:@selector(saveMemberData) withObject:nil];
     }
 }
 
@@ -110,11 +111,9 @@
             [[self teamMemberTableView] insertRowsAtIndexPaths:path withRowAnimation:UITableViewRowAnimationAutomatic];
             
             // Save updated member list.
-            [KYTTeamMemberPersistence writeArray:self.teamMemberList toFilePath:TEAM_MEMBER_FILE_NAME];
+            [self performSelectorInBackground:@selector(saveMemberData) withObject:nil];
         }
     }
-    
-    
 }
 
 // Mark: Private Methods
@@ -152,8 +151,13 @@
         [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Titus" withLastName:@"Treme" withTitle:@"Associate Technical Consultant" withPhoto:[UIImage imageNamed:@"TitusTreme.jpeg"]]];
         
         //Save initial member list
-        [KYTTeamMemberPersistence writeArray:self.teamMemberList toFilePath:TEAM_MEMBER_FILE_NAME];
-        }
+        [self performSelectorInBackground:@selector(saveMemberData) withObject:nil];
+    }
+}
+
+- (void)saveMemberData
+{
+    [KYTTeamMemberPersistence writeArray:self.teamMemberList toFilePath:TEAM_MEMBER_FILE_NAME];
 }
 
 -(void)dealloc

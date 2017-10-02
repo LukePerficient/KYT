@@ -21,6 +21,7 @@
 		4443B6EC1F604B0D008522BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4443B6EA1F604B0D008522BB /* LaunchScreen.storyboard */; };
 		4443B7041F606B39008522BB /* KYTTeamMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B7031F606B39008522BB /* KYTTeamMember.m */; };
 		4443B7081F6071E3008522BB /* KYTTeamMemberViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4443B7071F6071E3008522BB /* KYTTeamMemberViewCell.m */; };
+		444758391F82C4C400AC4C01 /* KYTPersistenceWithMultiThreadingSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 444758381F82C4C400AC4C01 /* KYTPersistenceWithMultiThreadingSpec.mm */; };
 		444DE4591F618FC300DF7499 /* KYTMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE4581F618FC300DF7499 /* KYTMemberViewController.m */; };
 		444DE45B1F61C27E00DF7499 /* KYTTeamMemberModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE45A1F61C27E00DF7499 /* KYTTeamMemberModelTests.m */; };
 		444DE4601F61CF9E00DF7499 /* KYTStringValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE45F1F61CF9E00DF7499 /* KYTStringValidation.m */; };
@@ -70,6 +71,7 @@
 		4443B7031F606B39008522BB /* KYTTeamMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMember.m; sourceTree = "<group>"; };
 		4443B7061F6071E3008522BB /* KYTTeamMemberViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTTeamMemberViewCell.h; sourceTree = "<group>"; };
 		4443B7071F6071E3008522BB /* KYTTeamMemberViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberViewCell.m; sourceTree = "<group>"; };
+		444758381F82C4C400AC4C01 /* KYTPersistenceWithMultiThreadingSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KYTPersistenceWithMultiThreadingSpec.mm; sourceTree = "<group>"; };
 		444DE4571F618FC300DF7499 /* KYTMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KYTMemberViewController.h; path = ../KYTMemberViewController.h; sourceTree = "<group>"; };
 		444DE4581F618FC300DF7499 /* KYTMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KYTMemberViewController.m; path = ../KYTMemberViewController.m; sourceTree = "<group>"; };
 		444DE45A1F61C27E00DF7499 /* KYTTeamMemberModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberModelTests.m; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				443EF3CD1F68B412005CADE3 /* KYTTeamMemberSpec.mm */,
+				444758381F82C4C400AC4C01 /* KYTPersistenceWithMultiThreadingSpec.mm */,
 				444DE45A1F61C27E00DF7499 /* KYTTeamMemberModelTests.m */,
 				444DE4681F61D47D00DF7499 /* KYTPersistenceTests.m */,
 				4401D5D71F6C5E2300214460 /* KYTMagicalRecordTests.m */,
@@ -537,6 +540,7 @@
 			files = (
 				444DE4691F61D47D00DF7499 /* KYTPersistenceTests.m in Sources */,
 				444DE45B1F61C27E00DF7499 /* KYTTeamMemberModelTests.m in Sources */,
+				444758391F82C4C400AC4C01 /* KYTPersistenceWithMultiThreadingSpec.mm in Sources */,
 				4401D5D81F6C5E2300214460 /* KYTMagicalRecordTests.m in Sources */,
 				4423BA981F797E0800A3614A /* KYTPromisesTraining.m in Sources */,
 				443EF3CE1F68B412005CADE3 /* KYTTeamMemberSpec.mm in Sources */,
