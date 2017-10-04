@@ -39,7 +39,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     KYTTeamMemberViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_IDENTIFIER forIndexPath:indexPath];
-    KYTTeamMember *teamMember = self.teamMemberList[indexPath.row];
+    __block KYTTeamMember *teamMember = self.teamMemberList[indexPath.row];
     
     // Rounded Rect for cell image
     CALayer *cellImageLayer = cell.imageViewTable.layer;
@@ -135,6 +135,7 @@
 {
     //Load data from plist
     self.teamMemberList = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
+    
     //If plist is blank, fill project with temp user data
     if ([self.teamMemberList count] <= 0 ){
         [self.teamMemberList addObject:[[KYTTeamMember alloc] initWithFirstName:@"Dustin" withLastName:@"Landry" withTitle:@"Technical Consultant" withPhoto:[UIImage imageNamed:@"DustinLandry.jpeg"]]];
