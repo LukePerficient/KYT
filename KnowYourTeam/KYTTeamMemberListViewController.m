@@ -15,6 +15,7 @@
 #import "KYTConstants.h"
 #import "KYTTeamMemberListTableViewDelegate.h"
 #import <QuartzCore/CALayer.h>
+@import Firebase;
 
 @interface KYTTeamMemberListViewController ()
 
@@ -81,6 +82,9 @@
     // Make sure your segue name in storyboard is the same as this line
     if ([[segue identifier] isEqualToString:SHOW_PAGE_VIEW_SEGUE])
     {
+        // Log: Google Analytics
+        [FIRAnalytics logEventWithName:@"MemberList: memberListItemPressed" parameters:nil];
+        
         // Get reference to the destination view controller
         KYTPageInitViewController *vc = [segue destinationViewController];
         

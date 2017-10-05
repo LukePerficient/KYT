@@ -13,6 +13,7 @@
 #import "KYTStringValidation.h"
 #import "KYTPImageSelector.h"
 #import "KYTConstants.h"
+@import Firebase;
 
 @interface KYTMemberViewController ()
 
@@ -60,12 +61,18 @@ BOOL allowChangeFlag;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    // Log: Google Analytics
+    [FIRAnalytics logEventWithName:@"MemberAdd: doneButtonPressed" parameters:nil];
+    
     self.member = [[KYTTeamMember alloc] initWithFirstName:self.firstNameTxt.text withLastName:self.lastNameText.text withTitle:self.titleText.text withPhoto:self.memberImage.image];
 }
 
 // MARK: Actions
 - (IBAction)selectImageFromLibrary:(UITapGestureRecognizer *)sender {
     if (allowChangeFlag){
+        // Log: Google Analytics
+        [FIRAnalytics logEventWithName:@"MemberAdd: selectImageFromLibrary" parameters:nil];
+        
         [self removeKeyboard];
         self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         [self presentViewController:self.imagePickerController animated:YES completion:nil];
@@ -83,6 +90,9 @@ BOOL allowChangeFlag;
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender
 {
+    // Log: Google Analytics
+    [FIRAnalytics logEventWithName:@"MemberAdd: cancelButtonPressed" parameters:nil];
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 

@@ -12,6 +12,7 @@
 #import "KYTTeamMemberListViewController.h"
 #import "KYTPageInitViewController.h"
 #import "KSPromise.h"
+@import Firebase;
 
 
 @interface KYTTestMemberItemViewController ()
@@ -32,6 +33,9 @@
 
 // MARK: Actions
 - (IBAction)checkUserAnswer:(UIButton *)sender {
+    // Log: Google Analytics
+    [FIRAnalytics logEventWithName:@"MemberTest: checkAnswerButton" parameters:nil];
+    
     if (![_member.firstName caseInsensitiveCompare:_memberTestTextField.text]) {
         [self prepareAnswerTextFieldWithColor:[UIColor greenColor]];
         _answerTextField.text = @"Correct";
@@ -96,6 +100,9 @@
     KSPromise *testFinishedStep = [parent verifyFinishedTest];
     
     [[testFinishedStep then:^id (id value) {
+        // Log: Google Analytics
+        [FIRAnalytics logEventWithName:@"MemberTest: testCompleted" parameters:nil];
+        
         return [parent notifyUserScore];
     }] then:^id (id value) {
         return [parent verifyTestIsReset];
