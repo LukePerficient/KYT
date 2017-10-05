@@ -37,7 +37,6 @@ BOOL allowChangeFlag;
         _lastNameText.enabled = NO;
         _titleText.enabled = NO;
     }
-    
 }
 
 - (void)didReceiveMemoryWarning {

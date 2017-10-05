@@ -38,7 +38,8 @@
     }
     
     [_viewController dismissViewControllerAnimated:YES completion:nil];
-    
+    self.viewController = nil;
+
  }
 
 // Private Methods

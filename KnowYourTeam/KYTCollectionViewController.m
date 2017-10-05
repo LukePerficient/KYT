@@ -24,26 +24,17 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     [super viewWillAppear:animated];
     _members = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
-    NSLog(@"Members: %lu", (unsigned long)_members.count);
+    //NSLog(@"Members: %lu", (unsigned long)_members.count);
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    NSLog(@"Selected Index (CollectionViewWillDissappear): %lu", self.tabBarController.selectedIndex);
+    //NSLog(@"Selected Index (CollectionViewWillDissappear): %lu", self.tabBarController.selectedIndex);
     self.view = nil;
-//    UINavigationController *navController = (UINavigationController*)self.tabBarController.viewControllers[0];
- //   [navController popToRootViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //_members = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-   
-    // Register cell classes
-   // [self.collectionView registerClass:[KYTCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
     // Do any additional setup after loading the view.
 }
 
