@@ -22,12 +22,15 @@
 
 @implementation KYTTestMemberItemViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
+- (void)viewWillAppear:(BOOL)animated
+{
     [self initializeMembers];
     _testNumber.text = [NSString stringWithFormat:@"%lu of %lu", _itemIndex+1, (unsigned long)_totalUsers];
     _memberTestTextField.delegate = self;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
 }
 
 // MARK: Actions
@@ -74,7 +77,6 @@
     _answerTextField.clipsToBounds = YES;
 
 }
-
 -(void)dealloc
 {
     //NSLog(@"TeamMemberItemViewController is being deallocated");

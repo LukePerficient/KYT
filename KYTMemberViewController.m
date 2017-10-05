@@ -118,6 +118,7 @@ BOOL allowChangeFlag;
     NSLog(@"MemberViewController is being deallocated");
     _imageSelectorDelegate = nil;
     _imagePickerController = nil;//
+   
 }
 
 @end

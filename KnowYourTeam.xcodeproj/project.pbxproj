@@ -32,6 +32,8 @@
 		44B86FF61F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B86FF51F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m */; };
 		44BFEAC91F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BFEAC81F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m */; };
 		59E483F31B5DDF4B2ED890FE /* libPods-KnowYourTeamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F2D91110495B90C8785E42 /* libPods-KnowYourTeamTests.a */; };
+		7C2E33491F828FB9003386D8 /* KYTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2E33481F828FB9003386D8 /* KYTCollectionViewController.m */; };
+		7C2E334C1F82911C003386D8 /* KYTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2E334B1F82911C003386D8 /* KYTCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,10 @@
 		44BFEAC81F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberListTableViewDelegate.m; sourceTree = "<group>"; };
 		50F2D91110495B90C8785E42 /* libPods-KnowYourTeamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowYourTeamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FED5FA1100159159AE95BDB /* Pods-KnowYourTeam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowYourTeam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowYourTeam/Pods-KnowYourTeam.debug.xcconfig"; sourceTree = "<group>"; };
+		7C2E33471F828FB9003386D8 /* KYTCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTCollectionViewController.h; sourceTree = "<group>"; };
+		7C2E33481F828FB9003386D8 /* KYTCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYTCollectionViewController.m; sourceTree = "<group>"; };
+		7C2E334A1F82911C003386D8 /* KYTCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTCollectionViewCell.h; sourceTree = "<group>"; };
+		7C2E334B1F82911C003386D8 /* KYTCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYTCollectionViewCell.m; sourceTree = "<group>"; };
 		B06C5A44165CFDDF2F27A470 /* Pods-KnowYourTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowYourTeam.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowYourTeam/Pods-KnowYourTeam.release.xcconfig"; sourceTree = "<group>"; };
 		C0E273890B94E5AB5360D3B6 /* libPods-KnowYourTeam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowYourTeam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -225,6 +231,7 @@
 		444DE4631F61D2AA00DF7499 /* TeamMember */ = {
 			isa = PBXGroup;
 			children = (
+				7C84409C1F82D97E0061DC20 /* Views */,
 				44B86FF31F6B05A8004DAEF2 /* Delegates */,
 				444DE4661F61D31900DF7499 /* Controllers */,
 			);
@@ -256,6 +263,8 @@
 				444217151F702706009F6D32 /* KYTPageInitViewController.m */,
 				444DE4571F618FC300DF7499 /* KYTMemberViewController.h */,
 				444DE4581F618FC300DF7499 /* KYTMemberViewController.m */,
+				7C2E33471F828FB9003386D8 /* KYTCollectionViewController.h */,
+				7C2E33481F828FB9003386D8 /* KYTCollectionViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -294,6 +303,15 @@
 				44BFEAC81F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m */,
 			);
 			name = Delegates;
+			sourceTree = "<group>";
+		};
+		7C84409C1F82D97E0061DC20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C2E334A1F82911C003386D8 /* KYTCollectionViewCell.h */,
+				7C2E334B1F82911C003386D8 /* KYTCollectionViewCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		D0F6AC5B5F834D6B82A68A92 /* Frameworks */ = {
@@ -517,6 +535,7 @@
 				444DE4701F61E17800DF7499 /* KYTTeamMemberPersistence.m in Sources */,
 				44B86FF61F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m in Sources */,
 				4443B7041F606B39008522BB /* KYTTeamMember.m in Sources */,
+				7C2E334C1F82911C003386D8 /* KYTCollectionViewCell.m in Sources */,
 				44BFEAC91F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m in Sources */,
 				4443B6E11F604B0D008522BB /* KYTAppDelegate.m in Sources */,
 				44B86FEF1F6AE05B004DAEF2 /* KYTCustomAlerts.m in Sources */,
@@ -524,6 +543,7 @@
 				444DE4591F618FC300DF7499 /* KYTMemberViewController.m in Sources */,
 				44B86FF11F6AE397004DAEF2 /* KYTConstants.m in Sources */,
 				44AEECA01F7182EE00E18965 /* KYTTestMemberItemViewController.m in Sources */,
+				7C2E33491F828FB9003386D8 /* KYTCollectionViewController.m in Sources */,
 				444DE4601F61CF9E00DF7499 /* KYTStringValidation.m in Sources */,
 				4443B7081F6071E3008522BB /* KYTTeamMemberViewCell.m in Sources */,
 				4443B6DE1F604B0D008522BB /* main.m in Sources */,

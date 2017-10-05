@@ -32,6 +32,10 @@
     [self createPageViewController];
     [self setupPageControl];
 }
+-(void)viewWillDisappear:(BOOL)animated
+{
+    self.view = nil;
+}
 
 - (void)createPageViewController
 {
@@ -223,17 +227,27 @@
 {
     KSPromise *step2 = [KSPromise promise:^(resolveType resolve, rejectType reject) {
         
+        __block BOOL isUserNotified = NO;
+        
         //[KYTCustomAlerts notifyUserOfScore:_answerCount viewType:self.view];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Test Complete" message:[NSString stringWithFormat:@"You scored %lu", _answerCount] preferredStyle:(UIAlertControllerStyleAlert)];
         
+        NSString *answerString =@"";
+        if (_answerCount < 10){
+             answerString = @"I can do better";
+        }
+        else {
+            answerString = @"I KNOW MY TEAM!";
+        }
         
-        UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"Test Complete"
-                                   message:[NSString stringWithFormat:@"You scored %lu", _answerCount]
-                                  delegate:self
-                         cancelButtonTitle:@"OK"
-                         otherButtonTitles:nil];
-        [alert show];
+        UIAlertAction *yesButton = [UIAlertAction actionWithTitle:answerString
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action){
+                                                              isUserNotified = YES;
+                                                          }];
         
-        BOOL isUserNotified = [alert cancelButtonIndex];
+        [alert addAction:yesButton];
+        [self presentViewController:alert animated:YES completion:nil];
         
         if (!isUserNotified) {
             NSLog(@"Pass 2");

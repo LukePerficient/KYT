@@ -77,13 +77,9 @@
 // Mark: Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Make sure your segue name in storyboard is the same as this line
     if ([[segue identifier] isEqualToString:SHOW_PAGE_VIEW_SEGUE])
     {
-        // Get reference to the destination view controller
         KYTPageInitViewController *vc = [segue destinationViewController];
-        
-        // Pass any objects to the view controller here, like...
         vc.selectedRowIndex = self.selectedRowIndex;
     }
     //Deselect row item
@@ -113,8 +109,6 @@
             [KYTTeamMemberPersistence writeArray:self.teamMemberList toFilePath:TEAM_MEMBER_FILE_NAME];
         }
     }
-    
-    
 }
 
 // Mark: Private Methods
