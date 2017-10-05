@@ -27,6 +27,8 @@
 		444DE4601F61CF9E00DF7499 /* KYTStringValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE45F1F61CF9E00DF7499 /* KYTStringValidation.m */; };
 		444DE4691F61D47D00DF7499 /* KYTPersistenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE4681F61D47D00DF7499 /* KYTPersistenceTests.m */; };
 		444DE4701F61E17800DF7499 /* KYTTeamMemberPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 444DE46F1F61E17800DF7499 /* KYTTeamMemberPersistence.m */; };
+		446F9C7E1F86CF09000D54C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 446F9C7D1F86CE7F000D54C9 /* GoogleService-Info.plist */; };
+		446F9C7F1F86CF09000D54C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 446F9C7D1F86CE7F000D54C9 /* GoogleService-Info.plist */; };
 		44AEECA01F7182EE00E18965 /* KYTTestMemberItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AEEC9F1F7182EE00E18965 /* KYTTestMemberItemViewController.m */; };
 		44B86FEF1F6AE05B004DAEF2 /* KYTCustomAlerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B86FEE1F6AE05B004DAEF2 /* KYTCustomAlerts.m */; };
 		44B86FF11F6AE397004DAEF2 /* KYTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B86FF01F6AE397004DAEF2 /* KYTConstants.m */; };
@@ -82,6 +84,7 @@
 		444DE4681F61D47D00DF7499 /* KYTPersistenceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTPersistenceTests.m; sourceTree = "<group>"; };
 		444DE46E1F61E12F00DF7499 /* KYTTeamMemberPersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTTeamMemberPersistence.h; sourceTree = "<group>"; };
 		444DE46F1F61E17800DF7499 /* KYTTeamMemberPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberPersistence.m; sourceTree = "<group>"; };
+		446F9C7D1F86CE7F000D54C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		449F8B681F72E4EB00C71B90 /* KYTPImageSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTPImageSelector.h; sourceTree = "<group>"; };
 		44AEEC9E1F7182EE00E18965 /* KYTTestMemberItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTTestMemberItemViewController.h; sourceTree = "<group>"; };
 		44AEEC9F1F7182EE00E18965 /* KYTTestMemberItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTestMemberItemViewController.m; sourceTree = "<group>"; };
@@ -162,6 +165,7 @@
 				444DE4631F61D2AA00DF7499 /* TeamMember */,
 				444DE45E1F61CF1C00DF7499 /* Utils */,
 				4443B7011F606AEF008522BB /* Models */,
+				446F9C7D1F86CE7F000D54C9 /* GoogleService-Info.plist */,
 				4443B6DF1F604B0D008522BB /* KYTAppDelegate.h */,
 				4443B6E01F604B0D008522BB /* KYTAppDelegate.m */,
 				4443B6E51F604B0D008522BB /* Main.storyboard */,
@@ -416,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4443B6EC1F604B0D008522BB /* LaunchScreen.storyboard in Resources */,
+				446F9C7E1F86CF09000D54C9 /* GoogleService-Info.plist in Resources */,
 				4443B6E91F604B0D008522BB /* Assets.xcassets in Resources */,
 				4443B6E71F604B0D008522BB /* Main.storyboard in Resources */,
 			);
@@ -425,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446F9C7F1F86CF09000D54C9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,6 +712,7 @@
 			baseConfigurationReference = 5FED5FA1100159159AE95BDB /* Pods-KnowYourTeam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KnowYourTeam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Perficient.KnowYourTeam;
@@ -718,6 +725,7 @@
 			baseConfigurationReference = B06C5A44165CFDDF2F27A470 /* Pods-KnowYourTeam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KnowYourTeam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Perficient.KnowYourTeam;
