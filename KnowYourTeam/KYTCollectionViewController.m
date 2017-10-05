@@ -31,6 +31,7 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     //NSLog(@"Selected Index (CollectionViewWillDissappear): %lu", self.tabBarController.selectedIndex);
     self.view = nil;
+    //
 }
 
 - (void)viewDidLoad {
