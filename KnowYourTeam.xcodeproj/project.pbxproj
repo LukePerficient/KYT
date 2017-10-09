@@ -32,6 +32,10 @@
 		44B86FF11F6AE397004DAEF2 /* KYTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B86FF01F6AE397004DAEF2 /* KYTConstants.m */; };
 		44B86FF61F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B86FF51F6B05E6004DAEF2 /* KYTImageSelectorDelegate.m */; };
 		44BFEAC91F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BFEAC81F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m */; };
+		44E4301A1F8BD35800B487D2 /* NSMutableArray_ShufflingSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44E430191F8BD35800B487D2 /* NSMutableArray_ShufflingSpec.mm */; };
+		44E4301C1F8BD36900B487D2 /* KYTStringValidationSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44E4301B1F8BD36900B487D2 /* KYTStringValidationSpec.mm */; };
+		44E430201F8BD3B300B487D2 /* KYTCustomAlertsSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44E4301F1F8BD3B300B487D2 /* KYTCustomAlertsSpec.mm */; };
+		44E430221F8BD3BF00B487D2 /* KYTConstantsSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44E430211F8BD3BF00B487D2 /* KYTConstantsSpec.mm */; };
 		59E483F31B5DDF4B2ED890FE /* libPods-KnowYourTeamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F2D91110495B90C8785E42 /* libPods-KnowYourTeamTests.a */; };
 		7C2E33491F828FB9003386D8 /* KYTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2E33481F828FB9003386D8 /* KYTCollectionViewController.m */; };
 		7C2E334C1F82911C003386D8 /* KYTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2E334B1F82911C003386D8 /* KYTCollectionViewCell.m */; };
@@ -94,6 +98,10 @@
 		44BFEAC71F7420220038DDED /* KYTTeamMemberListTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTTeamMemberListTableViewDelegate.h; sourceTree = "<group>"; };
 		44BFEAC81F7420220038DDED /* KYTTeamMemberListTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTTeamMemberListTableViewDelegate.m; sourceTree = "<group>"; };
 		44E430161F8BC88A00B487D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		44E430191F8BD35800B487D2 /* NSMutableArray_ShufflingSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NSMutableArray_ShufflingSpec.mm; sourceTree = "<group>"; };
+		44E4301B1F8BD36900B487D2 /* KYTStringValidationSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KYTStringValidationSpec.mm; sourceTree = "<group>"; };
+		44E4301F1F8BD3B300B487D2 /* KYTCustomAlertsSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KYTCustomAlertsSpec.mm; sourceTree = "<group>"; };
+		44E430211F8BD3BF00B487D2 /* KYTConstantsSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KYTConstantsSpec.mm; sourceTree = "<group>"; };
 		50F2D91110495B90C8785E42 /* libPods-KnowYourTeamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowYourTeamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FED5FA1100159159AE95BDB /* Pods-KnowYourTeam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowYourTeam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowYourTeam/Pods-KnowYourTeam.debug.xcconfig"; sourceTree = "<group>"; };
 		7C2E33471F828FB9003386D8 /* KYTCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTCollectionViewController.h; sourceTree = "<group>"; };
@@ -193,6 +201,10 @@
 				4401D5D71F6C5E2300214460 /* KYTMagicalRecordTests.m */,
 				4423BA971F797E0800A3614A /* KYTPromisesTraining.m */,
 				4443B6F81F604B0D008522BB /* Info.plist */,
+				44E430191F8BD35800B487D2 /* NSMutableArray_ShufflingSpec.mm */,
+				44E4301B1F8BD36900B487D2 /* KYTStringValidationSpec.mm */,
+				44E4301F1F8BD3B300B487D2 /* KYTCustomAlertsSpec.mm */,
+				44E430211F8BD3BF00B487D2 /* KYTConstantsSpec.mm */,
 			);
 			path = KnowYourTeamTests;
 			sourceTree = "<group>";
@@ -563,9 +575,13 @@
 				444DE4691F61D47D00DF7499 /* KYTPersistenceTests.m in Sources */,
 				444DE45B1F61C27E00DF7499 /* KYTTeamMemberModelTests.m in Sources */,
 				444758391F82C4C400AC4C01 /* KYTPersistenceWithMultiThreadingSpec.mm in Sources */,
+				44E430221F8BD3BF00B487D2 /* KYTConstantsSpec.mm in Sources */,
+				44E430201F8BD3B300B487D2 /* KYTCustomAlertsSpec.mm in Sources */,
 				4401D5D81F6C5E2300214460 /* KYTMagicalRecordTests.m in Sources */,
+				44E4301A1F8BD35800B487D2 /* NSMutableArray_ShufflingSpec.mm in Sources */,
 				4423BA981F797E0800A3614A /* KYTPromisesTraining.m in Sources */,
 				443EF3CE1F68B412005CADE3 /* KYTTeamMemberSpec.mm in Sources */,
+				44E4301C1F8BD36900B487D2 /* KYTStringValidationSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
