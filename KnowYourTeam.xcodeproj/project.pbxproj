@@ -37,6 +37,8 @@
 		44E430201F8BD3B300B487D2 /* KYTCustomAlertsSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44E4301F1F8BD3B300B487D2 /* KYTCustomAlertsSpec.mm */; };
 		44E430221F8BD3BF00B487D2 /* KYTConstantsSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44E430211F8BD3BF00B487D2 /* KYTConstantsSpec.mm */; };
 		59E483F31B5DDF4B2ED890FE /* libPods-KnowYourTeamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F2D91110495B90C8785E42 /* libPods-KnowYourTeamTests.a */; };
+		7C008A1B1F8BF2F80081F269 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44E430161F8BC88A00B487D2 /* GoogleService-Info.plist */; };
+		7C008A1C1F8BF2F90081F269 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44E430161F8BC88A00B487D2 /* GoogleService-Info.plist */; };
 		7C2E33491F828FB9003386D8 /* KYTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2E33481F828FB9003386D8 /* KYTCollectionViewController.m */; };
 		7C2E334C1F82911C003386D8 /* KYTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2E334B1F82911C003386D8 /* KYTCollectionViewCell.m */; };
 /* End PBXBuildFile section */
@@ -430,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4443B6EC1F604B0D008522BB /* LaunchScreen.storyboard in Resources */,
+				7C008A1B1F8BF2F80081F269 /* GoogleService-Info.plist in Resources */,
 				4443B6E91F604B0D008522BB /* Assets.xcassets in Resources */,
 				4443B6E71F604B0D008522BB /* Main.storyboard in Resources */,
 			);
@@ -439,6 +442,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C008A1C1F8BF2F90081F269 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
