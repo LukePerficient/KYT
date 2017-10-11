@@ -78,7 +78,16 @@ BOOL allowChangeFlag;
         //_imagePickerController = nil;//
     }
 }
+- (void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    [self adjustViewsForOrientation:toInterfaceOrientation];
+}
 
+- (void) adjustViewsForOrientation:(UIInterfaceOrientation)orientation {
+    if (orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight) {
+        
+        
+    }
+}
 - (IBAction)scaleImage:(UIPinchGestureRecognizer *)recognizer {
     recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
     recognizer.scale = 1;

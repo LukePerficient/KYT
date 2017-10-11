@@ -44,7 +44,7 @@
     
     // Rounded Rect for cell image
     CALayer *cellImageLayer = cell.imageViewTable.layer;
-    [cellImageLayer setCornerRadius:25];
+    [cellImageLayer setCornerRadius:55];
     [cellImageLayer setMasksToBounds:YES];
 
     
@@ -132,6 +132,7 @@
 
 - (void)loadMemberData
 {
+    [self clearMemberData];
     //Load data from plist
     self.teamMemberList = [KYTTeamMemberPersistence readFileToArray:TEAM_MEMBER_FILE_NAME];
     //If plist is blank, fill project with temp user data
@@ -158,6 +159,13 @@
 {
     [KYTTeamMemberPersistence writeArray:self.teamMemberList toFilePath:TEAM_MEMBER_FILE_NAME];
 }
+- (void)clearMemberData
+{
+    self.teamMemberList = nil;
+    [KYTTeamMemberPersistence writeArray:self.teamMemberList toFilePath:TEAM_MEMBER_FILE_NAME];
+}
+
+
 
 -(void)dealloc
 {
